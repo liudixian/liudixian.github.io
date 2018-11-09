@@ -648,7 +648,7 @@
 </li>
 </ul>
 <p>alphabetic monopoly(no concept of medium)1800-1839——-&gt;technical media diferentiation(1839相机–1850 留声机–1890电影)—–&gt;digital</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">    a(alphabetic,&lt;br&gt;1800-1839)--&gt;e(&quot;technical &lt;br&gt;media&quot;)</span><br><span class="line">    e--&gt;d(digital)</span><br></pre></td></tr></table></figure>
+<p><pre class="mermaid">graph LR<br>    a(alphabetic,<br>1800-1839)–&gt;e(“technical <br>media”)<br>    e–&gt;d(digital)</pre></p>
 <ol>
 <li>Key role of time/teaporrality</li>
 <li>role of Foucault</li>
@@ -669,10 +669,11 @@
 <p>####Induiduation 个体化</p>
 <ul>
 <li><p>圣诞节哈萨克<br>  信息存在与个体化之前<br>-</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line"></span><br><span class="line">    a(information)--&gt;b(Processing--efect by media)</span><br><span class="line">    b--&gt;c(human)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>media as mediation of human experience</p>
-</li>
+<pre class="mermaid">graph LR
+
+  a(information)-->b(Processing--efect by media)
+  b-->c(human)</pre></li>
+<li>media as mediation of human experience</li>
 <li>media as a sort of the operationaty of the world</li>
 </ul>
 <p>量子力学并没有支持自由意志，只是于微观世界物质具有概率波等存在不确定性，不过其依然具有稳定的客观规律，不以人的意志为转移。<br>[^2]:该装置有一个直径9米的圆柱形投影屏幕，中央有一个圆形的机动平台，三台视频投影仪将图像传输到屏幕的120度部分。在屏幕周围连续旋转这个观察窗口可以看到完整的360度计算机生成的场景。虽然工作受到控制，并且通常从屏幕的圆周内观看，路人也可以在其外表面上观看投影图像。<br><br>这项工作中的用户界面是一个修改后的摄像机。通过旋转此相机并使用其缩放和播放按钮，观看者可控制其在虚拟场景中的前进，后退和旋转运动，以及平台和投影图像在圆形屏幕周围的旋转。投影的景观显示了一个电脑环境，有11个圆柱体，可以在不同地点拍摄全景风景照片，包括澳大利亚，日本，拉帕尔马，巴厘岛，法国和德国。<br><br>每个虚拟圆柱具有与实际投影屏幕相同的高度和直径，以便当观看者位于全景图像的中心时，它填充屏幕并精确重构原始的360度相机视图。通过这种方式，艺术品将其全景图像放置在一个建筑框架中，该框架将虚拟景观的设计与安装本身的设计相关联，从而使虚拟空间和实际空间在多层次意义上共同活动。<br><br>这些全景圆柱体放置在地面上，标有希伯利’生命之树’图。每幅全景的位置将其景观的视觉特征与其在图中的符号位置的内涵联系起来。相机界面上的取景器显示了该图的一幅鸟瞰图，该图以观看者在景观中的实际位置动态居中。<br><br>相机接口顶部的麦克风可拾取观看者制作的任何声音，并控制投影场景中滚动的三维文字的释放。从各种来源引用，这些文本提供了关于地点和语言问题的讨论。虽然字母起源于屏幕中心，但是观看者的运动在组成上决定了他们在虚拟空间中的物理排列。形成每个观众在这部作品中出现的叙述和空间痕迹，他们生成的字母在几分钟后变得越来越透明，直到它们消失。</p>
@@ -2276,6 +2277,15 @@ glass projection
   <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.5.0</div>
 
 
+
+
+
+  <script src="https://unpkg.com/mermaid@<%= theme.mermaid.version %>/dist/mermaid.min.js"></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: 'forest'});
+    }
+  </script>
 
 
         
