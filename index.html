@@ -814,7 +814,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-11-22 21:18:48" itemprop="dateModified" datetime="2018-11-22T21:18:48+08:00">2018-11-22</time>
+                <time title="Modified: 2018-11-23 12:47:27" itemprop="dateModified" datetime="2018-11-23T12:47:27+08:00">2018-11-23</time>
               
             
           </span>
@@ -849,7 +849,8 @@
       
         
           
-            <p>你好，<br>
+            <h1 id="构建一个普顿精度磁力计"><a class="markdownIt-Anchor" href="#构建一个普顿精度磁力计"></a> 构建一个普顿精度磁力计</h1>
+<p>你好，<br>
 我正在用WordPress重建我的旧网站，当我分析404错误时，我看到有数百人想看一个名为«构建质子进动磁力计»的前一页。 主要推荐人是：<br>
 <a href="https://www.1010.co.uk/org/geophysics.html">https://www.1010.co.uk/org/geophysics.html</a></p>
 <p>所以，我再次复制前一篇文章，因为我没有在网上找到它，除了这里：<br>
@@ -857,7 +858,7 @@
 <p>和这儿：<br>
 <a href="https://fr.scribd.com/doc/148525063/Build-a-Proton-Precession-Magnetometer">https://fr.scribd.com/doc/148525063/Build-a-Proton-Precession-Magnetometer</a></p>
 <p>文章中的“我”不是“我”。 所以，请不要联系我获取有关此项目的信息。 上面的文章是aol.com上发现的1999年原创文章的副本（<a href="http://members.aol.com/_ht_a/alka1/ProMag.html%EF%BC%89">http://members.aol.com/_ht_a/alka1/ProMag.html）</a></p>
-<h1 id="构建一个普顿精度磁力计"><a class="markdownIt-Anchor" href="#构建一个普顿精度磁力计"></a> 构建一个普顿精度磁力计</h1>
+<h1 id="构建一个普顿精度磁力计-2"><a class="markdownIt-Anchor" href="#构建一个普顿精度磁力计-2"></a> 构建一个普顿精度磁力计</h1>
 <p>一个教育性的“后院”项目，使用易于获得的电子零件构建。 频率计数器用于测量后极化脉冲质子进动频率。 测量的频率通过物理常数与局部地磁场的大小相关。</p>
 <hr>
 <h3 id="背景"><a class="markdownIt-Anchor" href="#背景"></a> 背景：</h3>
@@ -951,6 +952,65 @@
 <li>详细教程：<a href="http://www.exstrom.com/magnum/master-Z-H-4.html">http://www.exstrom.com/magnum/master-Z-H-4.html</a></li>
 <li>从地磁探测中制造声音的参考：<a href="http://marineemlab.ucsd.edu/~steve/bio/SoundMantle.pdf">http://marineemlab.ucsd.edu/~steve/bio/SoundMantle.pdf</a></li>
 </ul>
+<hr>
+<h1 id="来自亚原子世界的信号-signals-from-subatomic-world"><a class="markdownIt-Anchor" href="#来自亚原子世界的信号-signals-from-subatomic-world"></a> 来自亚原子世界的信号-Signals From subatomic world</h1>
+<h2 id="第六章-chapter-6-数据采集与pc控制-data-acquisition-and-pc-control"><a class="markdownIt-Anchor" href="#第六章-chapter-6-数据采集与pc控制-data-acquisition-and-pc-control"></a> 第六章 Chapter 6 数据采集与PC控制- Data Acquisition and PC control</h2>
+<h3 id="61-如何使用抽样-what-sampling-rate-to-use"><a class="markdownIt-Anchor" href="#61-如何使用抽样-what-sampling-rate-to-use"></a> 6.1 如何使用抽样-What sampling rate to Use</h3>
+<p>有关数据采集的最重要问题是如何采样。可用于采集任何信号的频率是最高频率的两倍信号中存在的分量。 例如，如果信号的频率不高于1000 Hz（1 kHz），则最小采样率为每秒2000个样本（2 ksps）。 如果以小于2 ksps的速度采样1 kHz正弦波，那么它将与较低频率的正弦波无法区分。 这种现象称为混叠，如果不进行预防，可能会导致虚假结果。</p>
+<p>为了防止数据中的混叠问题，首先选择一个频率fmax，它大约是您可以观察到的最大进动频率的两倍。 然后确保数据采集系统的输入信号没有大于fmax的显着频率分量，并将采样频率设置为fmax的至少两倍。 这将确保进动信号的采样速率超过最小速率的两倍，并且可以防止任何混叠。</p>
+<p>例如，在地球的磁场中，您不应该遇到1.5 - 2.4 kHz范围之外的任何进动频率。 因此，您可以使用5 kHz的fmax和10 ksps的最小采样率。 使用Magnum放大器，您还可以确保没有频率大于5 kHz的重要信号将进入数据采集系统。</p>
+<h3 id="62-what-solution-to-use"><a class="markdownIt-Anchor" href="#62-what-solution-to-use"></a> 6.2 What solution to use</h3>
+<p>接下来要考虑的是使用什么分辨率。 分辨率是指数据采集系统识别出多少个独特的电压电平，这取决于用于表示每个采样的位数。 所发生的是系统将连续电压信号转换为固定长度的二进制数，该二进制数只能代表一定数量的独特电压。</p>
+<p>例如，假设数据采集系统使用8位来表示每个样本。 然后它将能够区分28 = 256个唯一级别。 这意味着如果输入电压范围为-10到+10伏，则只能区分超过20/256 = 0.078伏的电压。</p>
+<p>数据采集系统不能精确地表示输入信号样本称为量化误差。 这错误地将噪声有效地引入数据中，这可能降低整体信噪比。 因此，所需的分辨率或位数取决于信号的特征以及您尝试从中提取的信息类型。</p>
+<p>对于Magnum，12位的分辨率足以允许进动信号的峰值以高精度定位。 如果您只使用Magnum作为磁力计，那么这就是您需要的所有信息。 如果您计划使用Magnum进行更一般的NMR类型实验，我们将不需要讨论，您只需要更高的分辨率。</p>
+<h3 id="63-获取数据的时间-how-long-to-take-data"><a class="markdownIt-Anchor" href="#63-获取数据的时间-how-long-to-take-data"></a> 6.3 获取数据的时间 How long to take Data</h3>
+<p>获取数据的时间长度决定了可以解决不同频率的程度。 您有多少数据或样本有效地设置频率分辨率。 样本越多，频率分辨率越高。</p>
+<p>对于Magnum，您应该获取至少半秒的数据。 如果你明显少于此，则进动信号频谱将开始变宽，并且可能变得更难以精确定位峰值。 可用的进动信号将持续不超过2到3秒，因此不需要比这更长时间地获取数据。 对于大多数目的而言，从0.5到3.0秒的任何地方获取数据应该是足够的。</p>
+<h3 id="64-用magnum制作的模数转换器-the-adc-board-used-in-the-magnum"><a class="markdownIt-Anchor" href="#64-用magnum制作的模数转换器-the-adc-board-used-in-the-magnum"></a> 6.4 用Magnum制作的模数转换器 The ADC board used in the Magnum</h3>
+<p>Magnum中使用的ADC板是IOtech（<a href="http://www.iotech.com/">http://www.iotech.com/</a>)的ADAC / 5501MF（<a href="ftp://ftp.iotech.com/ADAC.5500.20Series.20Users.20Manual.pdf%EF%BC%89%E3%80%82">ftp://ftp.iotech.com/ADAC.5500.20Series.20Users.20Manual.pdf）。</a> 它是一个12位ADC，具有8个不对称（或16个单端）模拟输入，最大采样率为100 kHz。</p>
+<p>需要从IOtech获取的部件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> - Data acquisition board: ADAC/5501MF $384</span><br><span class="line"> - Terminal board: ADAC-TB-16 $139</span><br><span class="line"> - Cable: CA-G55-ADAC $69</span><br></pre></td></tr></table></figure>
+<p>没有必要使用这个特定的数据采集板，但本书附带的软件（用于与电路板通信并获取数据）是为该电路板编写的。如果您更喜欢使用不同的数据采集板， 所需的基本功能是：</p>
+<ol>
+<li>不同的输入口</li>
+<li>用于触发数据采集的外部引脚。</li>
+<li>最低采样率为每秒10千样本。</li>
+<li>每个样本12bit或更多。</li>
+</ol>
+<h3 id="65-脉冲控制器和数据采集软件-pulse-controller-and-data-acquisition-software"><a class="markdownIt-Anchor" href="#65-脉冲控制器和数据采集软件-pulse-controller-and-data-acquisition-software"></a> 6.5 脉冲控制器和数据采集软件 Pulse controller and data acquisition software</h3>
+<p>Magnum的整体控制和操作由PC上运行的名为ADL（名称无意义）的程序处理。该程序读取参数文件le，该参数文件指定如何运行Magnum。参数文件是纯文本文件，可以使用任何文本编辑器创建。</p>
+<p>ADL将参数文件中的一些信息转换为脉冲切换器中微控制器的指令。然后，它通过串行RS232连接将这些指令发送到切换台。指令告诉切换器开启极化线圈中的电流需要多长时间以及在转向o之间等待多长时间？当前和触发数据收购。</p>
+<p>设置切换台后，ADL使用参数文件中的附加信息来设置数据采集系统。重要的数据采集参数是增益，采样率和要采样的样本数。这些都是将在下面进一步描述。</p>
+<p>要启动脉冲，ADL将运行程序命令发送到脉冲切换器。然后脉冲切换器在指定时间内接通偏振线圈中的电流。关闭电流后，切换器等待很短的时间才触发数据采集系统（DAQ）开始拍摄<br>
+数据。</p>
+<p>数据采集完成后，ADL将缩放数据，以便值反映真实的电压电平。 如果指定了多于一个脉冲，则将另一个运行程序命令发送到脉冲切换器，并重复上述过程。 程序平均来自所有脉冲的数据并将结果存储在数据文件中。</p>
+<p>如上所述，ADL执行系统设置和运行所需的参数包含在程序运行时在命令行中指定的参数文件中。 示例参数le如下所示。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">ADAC5501 // Device name (32 char max)</span><br><span class="line">D // Input type [D]ifferential or [S]ingle ended</span><br><span class="line">0 // Channel number [0-7] (Diff) or [0-15] (SE)</span><br><span class="line">B // Polarity [U]nipolar or [B]ipolar</span><br><span class="line">1 // Gain [1,2,4,8,16,32,64]</span><br><span class="line">16384 // Samples per second</span><br><span class="line">65536 // Number of samples</span><br><span class="line">6.0 // Pulse length in seconds [0-13]</span><br><span class="line">0.1 // Daq trigger delay in seconds</span><br><span class="line">4 // Number of pulses</span><br><span class="line">10.0 // Pulse delay in seconds</span><br><span class="line">magnum1.dat // Output file name</span><br></pre></td></tr></table></figure>
+<p>所有这些参数必须出现在每个参数文件中，并且必须按所示顺序显示。 每行的第一项是参数的值，双斜杠标记后面的所有内容都是注释。 注释描述了参数是什么以及它可以采用的可能值。</p>
+<p>前七个参数用于初始化数据采集系统。接下来的四个用于初始化脉冲编程器和运行脉冲序列。最后一个参数给出了程序运行时创建的数据文件的名称。我们现在将描述每个参数的含义。</p>
+<p>如果系统使用多个数据采集卡，则设备名称参数仅具有意义。该参数实际上并未由ADL使用，但它包含在内，因此可以轻松修改程序以使用多个数据采集卡。但它必须保留为参数文件中的第一项。</p>
+<p>输入类型参数有两个可能的值：D表示不同的值，S表示单端的值。该参数指的是数据采集系统处理其输入通道上存在的信号的方式。单端输入电压16个输入通道相对于地被数字化。对于差分输入，数字化的是相邻奇数和偶数通道之间的电压差。差分输入比单端输入提供更高程度的抗噪声投入。因此，建议将差值输入始终与Magnum一起使用。</p>
+<hr>
+<h2 id="第七章-数据处理与分析-chapter-7-data-processing-and-analysis"><a class="markdownIt-Anchor" href="#第七章-数据处理与分析-chapter-7-data-processing-and-analysis"></a> 第七章 数据处理与分析-Chapter 7 Data Processing and Analysis</h2>
+<h3 id="信号平均"><a class="markdownIt-Anchor" href="#信号平均"></a> 信号平均</h3>
+<h4 id="711-为什么它会提高信噪比"><a class="markdownIt-Anchor" href="#711-为什么它会提高信噪比"></a> 7.11 为什么它会提高信噪比</h4>
+<p>信号平均是将在相同条件下采集的数据集合在一起的做法。 期望的效果是降低噪声并增强信号。 信号平均的工作原理是噪声是随机的，而信号则嵌入其中<br>
+噪音不是。 因此，将多个数据集合在一起往往会在加强信号的同时消除噪声。</p>
+<h3 id="72-过滤数据"><a class="markdownIt-Anchor" href="#72-过滤数据"></a> 7.2 过滤数据</h3>
+<p>Magnum的脉冲控制器使用MOSFET来关闭极化线圈中的电流。 每次关闭电流时，执行此操作所需的能量在MOSFET中耗散，导致它们升温。 随着电流开启和关闭，MOSFET继续变暖。</p>
+<p>MOSFET的关断时间随着温度的升高而增加。 结果是，利用脉冲控制器获得的每个连续数据集具有稍微减小的信号并且稍后稍微移位。 因此，每个数据集中的信号不相同，并且在这种情况下的信号平均不如理论上的那样有效。</p>
+<p>请注意，保持MOSFET热连接在一起并与良好的散热器接触，如脉冲控制器中所做的那样，可以最大限度地减少MOSFET的这种限制。</p>
+<h3 id="73-利用fft进行光谱分析"><a class="markdownIt-Anchor" href="#73-利用fft进行光谱分析"></a> 7.3 利用FFT进行光谱分析</h3>
+<p>原始数据通常包含很多噪音。 图7.1显示了原始数据的前4秒图，DAQ触发延迟为0.1秒（采样率：16384，样本：蒸馏水，地点：Longmont，Colorado，时间：2007年2月8日，17：34<br>
+MST）。</p>
+<img src="/2018/11/21/地磁/rawdata.jpg" title="图七：原始数据">
+<p><img src="/2018/11/21/地磁/rawdata.jpg" alt=""></p>
+<h3 id="74-将bin编号转化为实际的频率-convert-bin-number-to-actual-frequency"><a class="markdownIt-Anchor" href="#74-将bin编号转化为实际的频率-convert-bin-number-to-actual-frequency"></a> 7.4 将bin编号转化为实际的频率-Convert bin number to actual frequency</h3>
+<p>一旦你在FFT图中识别出质子进动峰值，就可以读出峰值的二进制数。 该图表告诉您bin编号的活动域，但您实际上可以查看FFT幅度数据文件以获得精确的bin编号。</p>
+<p>在上面的FFT中，峰值位于数据点4492处。要获得频率，我们必须计算Hz / bin。 从原始数据文件中，采样率为16393.4426 sps。 我们的FFT使用了32768个数据点。 因此，我们有16393.4426 / 32768 = 0.500288 Hz / bin。 所以我们在峰值的频率是（44921）* 0.500288 = 2246.7934赫兹。</p>
+<p>了解峰值的频率，您现在可以在本书的网页（<a href="http://www.exstrom.com/magnum.html">http://www.exstrom.com/magnum.html</a>)上使用频率到磁场转换器来获得磁场。</p>
+<h3 id="75-峰值位置的高分辨率光谱"><a class="markdownIt-Anchor" href="#75-峰值位置的高分辨率光谱"></a> 7.5 峰值位置的高分辨率光谱</h3>
 
           
         
@@ -2147,12 +2207,24 @@ Shift Register是Martin Howse，Jonathan Kemp和Jamie Allen（关键媒体实验
                 
               
 
-              <time title="Created: 2018-11-10 20:24:14 / Modified: 20:28:40" itemprop="dateCreated datePublished" datetime="2018-11-10T20:24:14+08:00">2018-11-10</time>
+              <time title="Created: 2018-11-10 20:24:14" itemprop="dateCreated datePublished" datetime="2018-11-10T20:24:14+08:00">2018-11-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-11-23 00:56:21" itemprop="dateModified" datetime="2018-11-23T00:56:21+08:00">2018-11-23</time>
               
             
           </span>
