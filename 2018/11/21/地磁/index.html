@@ -126,8 +126,7 @@
 <meta property="og:image" content="http://ilotresor.com/wp-content/uploads/mcschp.gif">
 <meta property="og:image" content="http://ilotresor.com/wp-content/uploads/squarewave.gif">
 <meta property="og:image" content="http://yoursite.com/2018/11/21/地磁/rawdata.jpg">
-<meta property="og:image" content="http://yoursite.com/2018/11/21/地磁/rawdata.jpg">
-<meta property="og:updated_time" content="2018-11-23T04:47:27.000Z">
+<meta property="og:updated_time" content="2018-11-23T04:52:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="地磁">
 <meta name="twitter:description" content="构建一个普顿精度磁力计 你好， 我正在用WordPress重建我的旧网站，当我分析404错误时，我看到有数百人想看一个名为«构建质子进动磁力计»的前一页。 主要推荐人是： https://www.1010.co.uk/org/geophysics.html 所以，我再次复制前一篇文章，因为我没有在网上找到它，除了这里： https://vdocuments.site/build-a-proton">
@@ -410,7 +409,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-11-23 12:47:27" itemprop="dateModified" datetime="2018-11-23T12:47:27+08:00">2018-11-23</time>
+                <time title="Modified: 2018-11-23 12:52:04" itemprop="dateModified" datetime="2018-11-23T12:52:04+08:00">2018-11-23</time>
               
             
           </span>
@@ -589,8 +588,7 @@
 <h2 id="第七章-数据处理与分析-chapter-7-data-processing-and-analysis"><a class="markdownIt-Anchor" href="#第七章-数据处理与分析-chapter-7-data-processing-and-analysis"></a> 第七章 数据处理与分析-Chapter 7 Data Processing and Analysis</h2>
 <h3 id="信号平均"><a class="markdownIt-Anchor" href="#信号平均"></a> 信号平均</h3>
 <h4 id="711-为什么它会提高信噪比"><a class="markdownIt-Anchor" href="#711-为什么它会提高信噪比"></a> 7.11 为什么它会提高信噪比</h4>
-<p>信号平均是将在相同条件下采集的数据集合在一起的做法。 期望的效果是降低噪声并增强信号。 信号平均的工作原理是噪声是随机的，而信号则嵌入其中<br>
-噪音不是。 因此，将多个数据集合在一起往往会在加强信号的同时消除噪声。</p>
+<p>信号平均是将在相同条件下采集的数据集合在一起的做法。 期望的效果是降低噪声并增强信号。 信号平均的工作原理是噪声是随机的，而信号则嵌入其中噪音不是。 因此，将多个数据集合在一起往往会在加强信号的同时消除噪声。</p>
 <h3 id="72-过滤数据"><a class="markdownIt-Anchor" href="#72-过滤数据"></a> 7.2 过滤数据</h3>
 <p>Magnum的脉冲控制器使用MOSFET来关闭极化线圈中的电流。 每次关闭电流时，执行此操作所需的能量在MOSFET中耗散，导致它们升温。 随着电流开启和关闭，MOSFET继续变暖。</p>
 <p>MOSFET的关断时间随着温度的升高而增加。 结果是，利用脉冲控制器获得的每个连续数据集具有稍微减小的信号并且稍后稍微移位。 因此，每个数据集中的信号不相同，并且在这种情况下的信号平均不如理论上的那样有效。</p>
@@ -598,7 +596,6 @@
 <h3 id="73-利用fft进行光谱分析"><a class="markdownIt-Anchor" href="#73-利用fft进行光谱分析"></a> 7.3 利用FFT进行光谱分析</h3>
 <p>原始数据通常包含很多噪音。 图7.1显示了原始数据的前4秒图，DAQ触发延迟为0.1秒（采样率：16384，样本：蒸馏水，地点：Longmont，Colorado，时间：2007年2月8日，17：34<br>
 MST）。</p>
-<img src="/2018/11/21/地磁/rawdata.jpg" title="图七：原始数据">
 <p><img src="/2018/11/21/地磁/rawdata.jpg" alt=""></p>
 <h3 id="74-将bin编号转化为实际的频率-convert-bin-number-to-actual-frequency"><a class="markdownIt-Anchor" href="#74-将bin编号转化为实际的频率-convert-bin-number-to-actual-frequency"></a> 7.4 将bin编号转化为实际的频率-Convert bin number to actual frequency</h3>
 <p>一旦你在FFT图中识别出质子进动峰值，就可以读出峰值的二进制数。 该图表告诉您bin编号的活动域，但您实际上可以查看FFT幅度数据文件以获得精确的bin编号。</p>
