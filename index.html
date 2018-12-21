@@ -2,15 +2,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
   
 
 
@@ -18,11 +9,8 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
-
-
-
 
 
 
@@ -50,6 +38,10 @@
 
 
 
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
 
 
 
@@ -58,25 +50,43 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=6.5.0" rel="stylesheet" type="text/css">
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.5.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.5.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.5.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=6.5.0" color="#222">
-
-
-
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
 
 
 
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="keywords" content="media art and theory">
+<meta property="og:type" content="website">
+<meta property="og:title" content="刘迪先">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="刘迪先">
+<meta property="og:locale" content="zh">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="刘迪先">
 
 
 
@@ -85,13 +95,15 @@
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    version: '6.5.0',
+    version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
+    fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -103,34 +115,12 @@
 </script>
 
 
-  
-
-
-
-
-  <meta name="keywords" content="media art and theory">
-<meta property="og:type" content="website">
-<meta property="og:title" content="刘迪先">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="刘迪先">
-<meta property="og:locale" content="zh">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="刘迪先">
-
-
-
-
-
 
   <link rel="canonical" href="http://yoursite.com/">
 
 
 
-<script type="text/javascript" id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
+
 
   <title>刘迪先</title>
   
@@ -141,36 +131,6 @@
 
 
 
-
-
-
-
-  <noscript>
-  <style type="text/css">
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
-
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
-    }
-
-    .use-motion {
-      .logo-line-before i { left: initial; }
-      .logo-line-after i { right: initial; }
-    }
-  </style>
-</noscript>
 
 </head>
 
@@ -197,15 +157,13 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-    
       
         <p class="site-subtitle">uilxxx</p>
       
-    
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
+    <button>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -213,89 +171,35 @@
   </div>
 </div>
 
-
-
 <nav class="site-nav">
+  
+
   
     <ul id="menu" class="menu">
       
         
-        
-        
-          
-          <li class="menu-item menu-item-home menu-item-active">
-
-    
-    
-    
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
       
-    
-
-    
-
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
-
-  </li>
         
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-    
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
       
-    
 
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-painting">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/painting/" rel="section"><i class="menu-item-icon fa fa-fw fa-绘画"></i> <br>painting</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-mt&t">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/mt&t/" rel="section"><i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>MT&T</a>
-
-  </li>
-
-      
       
     </ul>
-  
-
-  
-    
-
   
 
   
@@ -303,20 +207,12 @@
 
 
 
-  
-
-
-
-</div>
+ </div>
     </header>
-
-    
-
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -329,8 +225,6 @@
   
   
 
-  
-
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -339,7 +233,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/29/Rhino基础操作/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="liudixian">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -355,20 +249,11 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2018/11/29/Rhino基础操作/" class="post-title-link" itemprop="http://yoursite.com/index.html">Rhino基础操作</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2018/11/29/Rhino基础操作/" itemprop="url">Rhino基础操作</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -376,30 +261,13 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-
-              
-                
-              
-
-              <time title="Created: 2018-11-29 19:09:10" itemprop="dateCreated datePublished" datetime="2018-11-29T19:09:10+08:00">2018-11-29</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-29T19:09:10+08:00">
+                2018-11-29
+              </time>
             
 
             
-              
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-11-30 15:14:21" itemprop="dateModified" datetime="2018-11-30T15:14:21+08:00">2018-11-30</time>
-              
             
           </span>
 
@@ -465,18 +333,12 @@
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-       
-    
     
 
     
@@ -509,8 +371,6 @@
   
   
 
-  
-
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -519,7 +379,7 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/27/Zbrush/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="liudixian">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -535,20 +395,11 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2018/11/27/Zbrush/" class="post-title-link" itemprop="http://yoursite.com/index.html">Zbrush 建模基础</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2018/11/27/Zbrush/" itemprop="url">Zbrush 建模基础</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -556,18 +407,13 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-
-              
-                
-              
-
-              <time title="Created: 2018-11-27 15:55:49 / Modified: 16:38:46" itemprop="dateCreated datePublished" datetime="2018-11-27T15:55:49+08:00">2018-11-27</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-27T15:55:49+08:00">
+                2018-11-27
+              </time>
             
 
             
-              
 
-              
             
           </span>
 
@@ -614,18 +460,12 @@ alt+move</p>
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-       
-    
     
 
     
@@ -658,8 +498,6 @@ alt+move</p>
   
   
 
-  
-
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -668,7 +506,7 @@ alt+move</p>
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/26/c4d/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="liudixian">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -684,20 +522,11 @@ alt+move</p>
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2018/11/26/c4d/" class="post-title-link" itemprop="http://yoursite.com/index.html">c4d-建模基础</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2018/11/26/c4d/" itemprop="url">c4d-建模基础</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -705,30 +534,13 @@ alt+move</p>
               
                 <span class="post-meta-item-text">Posted on</span>
               
-
-              
-                
-              
-
-              <time title="Created: 2018-11-26 21:07:46" itemprop="dateCreated datePublished" datetime="2018-11-26T21:07:46+08:00">2018-11-26</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-26T21:07:46+08:00">
+                2018-11-26
+              </time>
             
 
             
-              
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-11-27 20:35:46" itemprop="dateModified" datetime="2018-11-27T20:35:46+08:00">2018-11-27</time>
-              
             
           </span>
 
@@ -805,18 +617,12 @@ alt+move</p>
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-       
-    
     
 
     
@@ -849,8 +655,6 @@ alt+move</p>
   
   
 
-  
-
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -859,7 +663,7 @@ alt+move</p>
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/26/11-26-Krac/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="liudixian">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -875,20 +679,11 @@ alt+move</p>
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2018/11/26/11-26-Krac/" class="post-title-link" itemprop="http://yoursite.com/index.html">科技艺术史工作坊_Krac</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2018/11/26/11-26-Krac/" itemprop="url">科技艺术史工作坊_Krac</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -896,30 +691,13 @@ alt+move</p>
               
                 <span class="post-meta-item-text">Posted on</span>
               
-
-              
-                
-              
-
-              <time title="Created: 2018-11-26 09:18:54" itemprop="dateCreated datePublished" datetime="2018-11-26T09:18:54+08:00">2018-11-26</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-26T09:18:54+08:00">
+                2018-11-26
+              </time>
             
 
             
-              
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-11-27 15:32:00" itemprop="dateModified" datetime="2018-11-27T15:32:00+08:00">2018-11-27</time>
-              
             
           </span>
 
@@ -1111,18 +889,12 @@ Bio Art</p>
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-       
-    
     
 
     
@@ -1155,8 +927,6 @@ Bio Art</p>
   
   
 
-  
-
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -1165,7 +935,7 @@ Bio Art</p>
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/25/11-25-mt/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="liudixian">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -1181,20 +951,11 @@ Bio Art</p>
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2018/11/25/11-25-mt/" class="post-title-link" itemprop="http://yoursite.com/index.html">11/25_mt</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2018/11/25/11-25-mt/" itemprop="url">11/25_mt</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1202,18 +963,13 @@ Bio Art</p>
               
                 <span class="post-meta-item-text">Posted on</span>
               
-
-              
-                
-              
-
-              <time title="Created: 2018-11-25 20:53:05 / Modified: 21:56:06" itemprop="dateCreated datePublished" datetime="2018-11-25T20:53:05+08:00">2018-11-25</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-25T20:53:05+08:00">
+                2018-11-25
+              </time>
             
 
             
-              
 
-              
             
           </span>
 
@@ -1268,18 +1024,12 @@ Bio Art</p>
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-       
-    
     
 
     
@@ -1312,8 +1062,6 @@ Bio Art</p>
   
   
 
-  
-
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -1322,7 +1070,7 @@ Bio Art</p>
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/25/processing入门工作坊/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="liudixian">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -1338,20 +1086,11 @@ Bio Art</p>
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2018/11/25/processing入门工作坊/" class="post-title-link" itemprop="http://yoursite.com/index.html">processing入门工作坊</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2018/11/25/processing入门工作坊/" itemprop="url">processing入门工作坊</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1359,18 +1098,13 @@ Bio Art</p>
               
                 <span class="post-meta-item-text">Posted on</span>
               
-
-              
-                
-              
-
-              <time title="Created: 2018-11-25 14:47:09 / Modified: 14:48:58" itemprop="dateCreated datePublished" datetime="2018-11-25T14:47:09+08:00">2018-11-25</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-25T14:47:09+08:00">
+                2018-11-25
+              </time>
             
 
             
-              
 
-              
             
           </span>
 
@@ -1487,18 +1221,12 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-       
-    
     
 
     
@@ -1531,8 +1259,6 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
   
   
 
-  
-
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -1541,7 +1267,7 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/25/媒体技术课程/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="liudixian">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -1557,20 +1283,11 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2018/11/25/媒体技术课程/" class="post-title-link" itemprop="http://yoursite.com/index.html">媒体技术课程</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2018/11/25/媒体技术课程/" itemprop="url">媒体技术课程</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1578,18 +1295,13 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
               
                 <span class="post-meta-item-text">Posted on</span>
               
-
-              
-                
-              
-
-              <time title="Created: 2018-11-25 13:14:12 / Modified: 19:24:46" itemprop="dateCreated datePublished" datetime="2018-11-25T13:14:12+08:00">2018-11-25</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-25T13:14:12+08:00">
+                2018-11-25
+              </time>
             
 
             
-              
 
-              
             
           </span>
 
@@ -1665,18 +1377,12 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-       
-    
     
 
     
@@ -1709,8 +1415,6 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
   
   
 
-  
-
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -1719,7 +1423,7 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/23/soundSculpture/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="liudixian">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -1735,20 +1439,11 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2018/11/23/soundSculpture/" class="post-title-link" itemprop="http://yoursite.com/index.html">soundSculpture</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2018/11/23/soundSculpture/" itemprop="url">soundSculpture</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1756,18 +1451,13 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
               
                 <span class="post-meta-item-text">Posted on</span>
               
-
-              
-                
-              
-
-              <time title="Created: 2018-11-23 20:08:10 / Modified: 20:15:12" itemprop="dateCreated datePublished" datetime="2018-11-23T20:08:10+08:00">2018-11-23</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-23T20:08:10+08:00">
+                2018-11-23
+              </time>
             
 
             
-              
 
-              
             
           </span>
 
@@ -1807,18 +1497,12 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-       
-    
     
 
     
@@ -1851,8 +1535,6 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
   
   
 
-  
-
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -1861,7 +1543,7 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/21/p5js-learning/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="liudixian">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -1877,20 +1559,11 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2018/11/21/p5js-learning/" class="post-title-link" itemprop="http://yoursite.com/index.html">p5js_learning</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2018/11/21/p5js-learning/" itemprop="url">p5js_learning</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1898,30 +1571,13 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
               
                 <span class="post-meta-item-text">Posted on</span>
               
-
-              
-                
-              
-
-              <time title="Created: 2018-11-21 17:02:52" itemprop="dateCreated datePublished" datetime="2018-11-21T17:02:52+08:00">2018-11-21</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-21T17:02:52+08:00">
+                2018-11-21
+              </time>
             
 
             
-              
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-11-22 01:05:17" itemprop="dateModified" datetime="2018-11-22T01:05:17+08:00">2018-11-22</time>
-              
             
           </span>
 
@@ -2047,18 +1703,12 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-       
-    
     
 
     
@@ -2091,8 +1741,6 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
   
   
 
-  
-
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -2101,7 +1749,7 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/21/Mechine-learning/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="liudixian">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
@@ -2117,20 +1765,11 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2018/11/21/Mechine-learning/" class="post-title-link" itemprop="http://yoursite.com/index.html">Mechine_learning</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2018/11/21/Mechine-learning/" itemprop="url">Mechine_learning</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -2138,30 +1777,13 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
               
                 <span class="post-meta-item-text">Posted on</span>
               
-
-              
-                
-              
-
-              <time title="Created: 2018-11-21 16:44:03" itemprop="dateCreated datePublished" datetime="2018-11-21T16:44:03+08:00">2018-11-21</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-21T16:44:03+08:00">
+                2018-11-21
+              </time>
             
 
             
-              
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-12-19 19:07:33" itemprop="dateModified" datetime="2018-12-19T19:07:33+08:00">2018-12-19</time>
-              
             
           </span>
 
@@ -2218,18 +1840,12 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-       
-    
     
 
     
@@ -2258,12 +1874,15 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
 
           </div>
+          
+
+
           
 
         </div>
@@ -2290,87 +1909,57 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">John Doe</p>
+              <p class="site-author-name" itemprop="name">liudixian</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">26</span>
-                    <span class="site-state-item-name">posts</span>
-                  </a>
-                </div>
-              
+          <nav class="site-state motion-element">
 
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">3</span>
-                    <span class="site-state-item-name">categories</span>
-                  
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">9</span>
-                    <span class="site-state-item-name">tags</span>
-                  
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-
-          
-
-          
-          
-
-          
             
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">categories</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
+            
+
+          </nav>
+
           
+
+          
+
+          
+          
+
+          
+          
+
           
 
         </div>
@@ -2391,18 +1980,16 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love" id="animate">
+  <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
-
-  
+  <span class="author" itemprop="copyrightHolder">liudixian</span>
 
   
 </div>
 
 
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
@@ -2410,22 +1997,12 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
 
 
 
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.5.0</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
 
 
-
-
-
-  <script src="https://unpkg.com/mermaid@<%= theme.mermaid.version %>/dist/mermaid.min.js"></script>
-  <script>
-    if (window.mermaid) {
-      mermaid.initialize({theme: 'forest'});
-    }
-  </script>
 
 
         
-
 
 
 
@@ -2445,10 +2022,7 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
     
 
     
-	
-    
 
-    
   </div>
 
   
@@ -2467,11 +2041,7 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
 
 
 
-
-
-
-
-
+  
 
 
 
@@ -2491,6 +2061,16 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
 
   
   
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
     <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -2499,58 +2079,20 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=6.5.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=6.5.0"></script>
-
-
-
   
   
-
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.5.0"></script>
-
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
 
-  
-
-
-
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
 
 
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
 
   
   
@@ -2559,6 +2101,57 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
 
   
 
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
   
 
   
@@ -2566,35 +2159,6 @@ reveal 教程 <a href="https://vxhly.github.io/2016/09/reveal-js-cn-document/">h
   
 
   
-  
-
-  
-  
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  
-
-  
-
 
 </body>
 </html>
