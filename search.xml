@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[newTest]]></title>
-    <url>%2F2018%2F12%2F21%2FnewTest%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[test]]></title>
-    <url>%2F2018%2F12%2F21%2Ftest%2F</url>
-    <content type="text"><![CDATA[萨达所大撒 奥术大师]]></content>
-      <tags>
-        <tag>技术</tag>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Rhino基础操作]]></title>
     <url>%2F2018%2F11%2F29%2FRhino%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C%2F</url>
     <content type="text"><![CDATA[基本几何形： 方体 球体 椎体 球体 椭圆 管体 Fushion360 建模基本概念： 草图方式 建构平面–&gt;绘制草图–&gt;给与特征–&gt;修饰外形 shift+鼠标中建:旋转 拉伸: 选定草图–创建-拉伸； 修饰外形： 倒角： 圆角： 自由模型]]></content>
