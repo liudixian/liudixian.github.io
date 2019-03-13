@@ -19,7 +19,7 @@
 <meta property="og:locale" content="zh">
 <meta property="og:image" content="http://liudixian.github.io/2019/03/13/流场与boid/6-25.png">
 <meta property="og:image" content="http://liudixian.github.io/2019/03/13/流场与boid/6-28.png">
-<meta property="og:updated_time" content="2019-03-13T06:26:32.000Z">
+<meta property="og:updated_time" content="2019-03-13T09:23:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="流场与boid">
 <meta name="twitter:description" content="模拟自然的算法基础  流场  跟随路径：  跟随路径实现步骤：  随机一个向量矩阵 计算当前速度的未来位置 点 p 计算 向量 A ：流场起始位置 a 到 点 p 的向量 计算向量 B ：计算流场起始 点 a 到 末点 b 计算法线交点位置：  标量投影法   seek( terget) 转向到法线交点延长线上的前方某点   流场：跟随路径： 一、 点乘（点积）： 通过点乘的两个公式可以计算两向">
@@ -84,7 +84,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -103,10 +103,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Articles',
+            POSTS: 'Entradas',
             PAGES: 'Pages',
-            CATEGORIES: 'Catégories',
-            TAGS: 'Tags',
+            CATEGORIES: 'Categorias',
+            TAGS: 'Etiquetas',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -137,7 +137,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar">
     </div>
 
                 </td>
@@ -154,7 +154,7 @@
         
     <div class="widget-wrap" id="categories">
         <h3 class="widget-title">
-            <span>Catégories</span>
+            <span>Categorias</span>
             &nbsp;
             <a id="allExpand" href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -199,7 +199,7 @@
                         </a>
                          <ul class="unstyled" id="tree">  <li class="file"><a href="/2018/11/02/Qinshi/">侵蚀</a></li>  <li class="file"><a href="/2018/11/02/cotom/">Mt&t 年终分享</a></li>  <li class="file"><a href="/2018/11/02/landscape/">银灰色的风景</a></li>  </ul> 
                     </li> 
-                     <li class="file"><a href="/2018/11/26/11-26-Krac/">科技艺术史工作坊_Krac</a></li>  <li class="file"><a href="/2018/11/25/11-25-mt/">11/25_mt</a></li>  <li class="file"><a href="/2018/11/17/East2018/">East2018</a></li>  <li class="file"><a href="/2018/11/08/MarkHansen/">MarkHansen</a></li>  <li class="file"><a href="/2018/11/21/Mechine-learning/">Mechine_learning</a></li>  <li class="file"><a href="/2018/11/29/Rhino基础操作/">Rhino基础操作</a></li>  <li class="file"><a href="/2018/11/20/Vehicles-Vatentino/">Vehicles-Vatentino</a></li>  <li class="file"><a href="/2018/11/27/Zbrush/">Zbrush 建模基础</a></li>  <li class="file"><a href="/2018/11/26/c4d/">c4d-建模基础</a></li>  <li class="file"><a href="/2018/05/10/Zielinski/">Zielinski</a></li>  <li class="file"><a href="/2018/11/21/p5js-learning/">p5js_learning</a></li>  <li class="file"><a href="/2018/11/25/processing入门工作坊/">processing入门工作坊</a></li>  <li class="file"><a href="/2018/11/23/soundSculpture/">soundSculpture</a></li>  <li class="file"><a href="/2018/11/10/交流，互动和系统/">系统美学与交互语境</a></li>  <li class="file"><a href="/2018/11/25/媒体技术课程/">媒体技术课程</a></li>  <li class="file"><a href="/2018/11/19/打开黑匣子/">打开黑匣子</a></li>  <li class="file"><a href="/2018/11/21/地磁/">地磁</a></li>  <li class="file"><a href="/2018/12/22/网站资源/">网站资源</a></li>  <li class="file"><a href="/2018/12/22/艺术驻留/">艺术驻留</a></li>  <li class="file"><a href="/2019/01/03/虚拟叙事-md/">虚拟叙事</a></li>  <li class="file"><a href="/2018/11/10/艺术，科学和技术/">艺术，科学与技术</a></li>  <li class="file"><a href="/2018/11/15/虚构的生态学/">虚构的生态学</a></li>  </ul> 
+                     <li class="file"><a href="/2018/11/25/11-25-mt/">11/25_mt</a></li>  <li class="file"><a href="/2018/11/17/East2018/">East2018</a></li>  <li class="file"><a href="/2018/11/26/11-26-Krac/">科技艺术史工作坊_Krac</a></li>  <li class="file"><a href="/2018/11/08/MarkHansen/">MarkHansen</a></li>  <li class="file"><a href="/2018/11/21/Mechine-learning/">Mechine_learning</a></li>  <li class="file"><a href="/2018/11/29/Rhino基础操作/">Rhino基础操作</a></li>  <li class="file"><a href="/2018/11/20/Vehicles-Vatentino/">Vehicles-Vatentino</a></li>  <li class="file"><a href="/2018/11/27/Zbrush/">Zbrush 建模基础</a></li>  <li class="file"><a href="/2018/05/10/Zielinski/">Zielinski</a></li>  <li class="file"><a href="/2018/11/26/c4d/">c4d-建模基础</a></li>  <li class="file"><a href="/2018/11/25/processing入门工作坊/">processing入门工作坊</a></li>  <li class="file"><a href="/2018/11/21/p5js-learning/">p5js_learning</a></li>  <li class="file"><a href="/2018/11/23/soundSculpture/">soundSculpture</a></li>  <li class="file"><a href="/2018/11/10/交流，互动和系统/">系统美学与交互语境</a></li>  <li class="file"><a href="/2018/11/19/打开黑匣子/">打开黑匣子</a></li>  <li class="file"><a href="/2018/11/25/媒体技术课程/">媒体技术课程</a></li>  <li class="file"><a href="/2018/11/21/地磁/">地磁</a></li>  <li class="file"><a href="/2018/12/22/艺术驻留/">艺术驻留</a></li>  <li class="file"><a href="/2018/12/22/网站资源/">网站资源</a></li>  <li class="file"><a href="/2019/01/03/虚拟叙事-md/">虚拟叙事</a></li>  <li class="file"><a href="/2018/11/10/艺术，科学和技术/">艺术，科学与技术</a></li>  <li class="file"><a href="/2018/11/15/虚构的生态学/">虚构的生态学</a></li>  </ul> 
     </div>
     <script>
         $(document).ready(function() {
@@ -269,7 +269,7 @@
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title"><span>Nuage de tags</span></h3>
+        <h3 class="widget-title"><span>Nube de etiquetas</span></h3>
         <div class="widget tagcloud">
             <a href="/tags/3d/" style="font-size: 10px;">3d</a> <a href="/tags/East/" style="font-size: 10px;">East</a> <a href="/tags/MediaArtNetII/" style="font-size: 20px;">MediaArtNetII</a> <a href="/tags/c4d/" style="font-size: 10px;">c4d</a> <a href="/tags/ever-Elusive/" style="font-size: 10px;">ever Elusive</a> <a href="/tags/mt-t/" style="font-size: 10px;">mt&t</a> <a href="/tags/processing/" style="font-size: 10px;">processing</a> <a href="/tags/sound/" style="font-size: 10px;">sound</a> <a href="/tags/workshop/" style="font-size: 10px;">workshop</a> <a href="/tags/媒体理论/" style="font-size: 10px;">媒体理论</a> <a href="/tags/技术/" style="font-size: 10px;">技术</a> <a href="/tags/流场/" style="font-size: 10px;">流场</a> <a href="/tags/网站收藏/" style="font-size: 10px;">网站收藏</a> <a href="/tags/艺术驻留/" style="font-size: 10px;">艺术驻留</a>
         </div>
@@ -339,7 +339,7 @@
         
             
                 <div id="toc" class="toc-article">
-                <strong class="toc-title">Catalogue</strong>
+                <strong class="toc-title">Catálogo</strong>
                     <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#模拟自然的算法基础"><span class="toc-number">1.</span> <span class="toc-text"> 模拟自然的算法基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#流场"><span class="toc-number">1.1.</span> <span class="toc-text"> 流场</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#跟随路径"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 跟随路径：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#跟随路径实现步骤"><span class="toc-number">1.1.1.0.1.</span> <span class="toc-text"> 跟随路径实现步骤：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#流场跟随路径"><span class="toc-number">1.1.1.0.2.</span> <span class="toc-text"> 流场：跟随路径：</span></a></li></ol></li></ol></li></ol></li></ol>
                 </div>
             
@@ -363,13 +363,12 @@
 </ol>
 <h5 id="流场跟随路径"><a class="markdownIt-Anchor" href="#流场跟随路径"></a> 流场：跟随路径：</h5>
 <p>一、 点乘（点积）： <strong>通过点乘的两个公式可以计算两向量之间的夹角值</strong></p>
-<ul>
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi><mi>o</mi><mi>s</mi><mo>(</mo><mi>θ</mi><mo>)</mo><mo>=</mo><mo>(</mo><mover accent="true"><mi>A</mi><mo>⃗</mo></mover><mo separator="true">⋅</mo><mover accent="true"><mi>B</mi><mo>⃗</mo></mover><mo>)</mo><mi mathvariant="normal">/</mi><mrow><mo fence="true">(</mo><mi mathvariant="normal">∥</mi><mover accent="true"><mi>A</mi><mo>⃗</mo></mover><mi mathvariant="normal">∥</mi><mo>∗</mo><mi mathvariant="normal">∥</mi><mover accent="true"><mi>B</mi><mo>⃗</mo></mover><mi mathvariant="normal">∥</mi><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi><mi>o</mi><mi>s</mi><mo>(</mo><mi>θ</mi><mo>)</mo><mo>=</mo><mo>(</mo><mover accent="true"><mi>A</mi><mo>⃗</mo></mover><mo separator="true">⋅</mo><mover accent="true"><mi>B</mi><mo>⃗</mo></mover><mo>)</mo><mi mathvariant="normal">/</mi><mrow><mo fence="true">(</mo><mi mathvariant="normal">∥</mi><mover accent="true"><mi>A</mi><mo>⃗</mo></mover><mi mathvariant="normal">∥</mi><mo>∗</mo><mi mathvariant="normal">∥</mi><mover accent="true"><mi>B</mi><mo>⃗</mo></mover><mi mathvariant="normal">∥</mi><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">
 cos(\theta) = (\vec A·\vec B)/
-              \left(
-                  \Vert \vec A \Vert *
-                  \Vert \vec B \Vert
-                   \right)
+                \left(
+                    \Vert \vec A \Vert *
+                    \Vert \vec B \Vert
+                     \right)
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.15em;"></span><span class="strut bottom" style="height:1.80002em;vertical-align:-0.65002em;"></span><span class="base"><span class="mord mathit">c</span><span class="mord mathit">o</span><span class="mord mathit">s</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.02778em;">θ</span><span class="mclose">)</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9663299999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathit">A</span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.09660999999999997em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width="0.471em" height="0.714em" style="width:0.471em" viewbox="0 0 471 714" preserveaspectratio="xMinYMin"><path d="M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
 3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
 10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
@@ -394,15 +393,16 @@ c-16-25.333-24-45-24-59z"/></svg></span></span></span></span></span></span></spa
 -1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
 -7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
 H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z"/></svg></span></span></span></span></span></span></span><span class="mord">∥</span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size2">)</span></span></span></span></span></span></li>
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>θ</mi><mo>=</mo><mi>c</mi><mi>o</mi><msup><mi>s</mi><mo>−</mo></msup><mn>1</mn><mrow><mo fence="true">(</mo><mo>(</mo><mover accent="true"><mi>A</mi><mo>⃗</mo></mover><mo separator="true">⋅</mo><mover accent="true"><mi>B</mi><mo>⃗</mo></mover><mo>)</mo><mi mathvariant="normal">/</mi><mrow><mo fence="true">(</mo><mi mathvariant="normal">∥</mi><mover accent="true"><mi>A</mi><mo>⃗</mo></mover><mi mathvariant="normal">∥</mi><mo>∗</mo><mi mathvariant="normal">∥</mi><mover accent="true"><mi>B</mi><mo>⃗</mo></mover><mi mathvariant="normal">∥</mi><mo fence="true">)</mo></mrow><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+c-16-25.333-24-45-24-59z"/></svg></span></span></span></span></span></span></span><span class="mord">∥</span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size2">)</span></span></span></span></span></span><br>
+<br><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>θ</mi><mo>=</mo><mi>c</mi><mi>o</mi><msup><mi>s</mi><mo>−</mo></msup><mn>1</mn><mrow><mo fence="true">(</mo><mo>(</mo><mover accent="true"><mi>A</mi><mo>⃗</mo></mover><mo separator="true">⋅</mo><mover accent="true"><mi>B</mi><mo>⃗</mo></mover><mo>)</mo><mi mathvariant="normal">/</mi><mrow><mo fence="true">(</mo><mi mathvariant="normal">∥</mi><mover accent="true"><mi>A</mi><mo>⃗</mo></mover><mi mathvariant="normal">∥</mi><mo>∗</mo><mi mathvariant="normal">∥</mi><mover accent="true"><mi>B</mi><mo>⃗</mo></mover><mi mathvariant="normal">∥</mi><mo fence="true">)</mo></mrow><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">
 \theta = cos^-1 \left(
-  (\vec A·\vec B)/
-              \left(
-                  \Vert \vec A \Vert *
-                  \Vert \vec B \Vert
-                   \right)
-   \right)
+    (\vec A·\vec B)/
+                \left(
+                    \Vert \vec A \Vert *
+                    \Vert \vec B \Vert
+                     \right)
+     \right)
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.15em;"></span><span class="strut bottom" style="height:1.80002em;vertical-align:-0.65002em;"></span><span class="base"><span class="mord mathit" style="margin-right:0.02778em;">θ</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord mathit">c</span><span class="mord mathit">o</span><span class="mord"><span class="mord mathit">s</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.771331em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">−</span></span></span></span></span></span></span></span><span class="mord">1</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size2">(</span></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9663299999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathit">A</span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.09660999999999997em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width="0.471em" height="0.714em" style="width:0.471em" viewbox="0 0 471 714" preserveaspectratio="xMinYMin"><path d="M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
 3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
 10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
@@ -427,8 +427,7 @@ c-16-25.333-24-45-24-59z"/></svg></span></span></span></span></span></span></spa
 -1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
 -7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
 H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z"/></svg></span></span></span></span></span></span></span><span class="mord">∥</span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size2">)</span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size2">)</span></span></span></span></span></span></li>
-</ul>
+c-16-25.333-24-45-24-59z"/></svg></span></span></span></span></span></span></span><span class="mord">∥</span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size2">)</span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size2">)</span></span></span></span></span></span></p>
 <figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//processing 实现</span></span><br><span class="line"><span class="keyword">PVector</span> a = <span class="keyword">new</span> <span class="keyword">PVector</span>(<span class="number">10</span>,<span class="number">2</span>);</span><br><span class="line"><span class="keyword">PVector</span> b = <span class="keyword">new</span> <span class="keyword">PVector</span>(<span class="number">4</span>,<span class="number">-3</span>);</span><br><span class="line"><span class="built_in">float</span> theta = <span class="built_in">acos</span>(a.dot(b)/a.<span class="built_in">mag</span>() * b.<span class="built_in">mag</span>());</span><br><span class="line"><span class="comment">//现成的函数 void public float angleBetween(PVector v1, PVector v2);  &#123;… :return theta&#125;</span></span><br></pre></td></tr></table></figure>
 <p>二、 <strong>标量投影：</strong> 计算法线交点</p>
 <p>1） <img src="/2019/03/13/流场与boid/6-25.png" alt=""></p>
@@ -455,7 +454,7 @@ c-16-25.333-24-45-24-59z"/></svg></span></span></span></span></span></span></spa
     
     
         <a href="/2019/01/03/虚拟叙事-md/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Plus ancien</strong>
+            <strong class="article-nav-caption">Más viejo</strong>
             <div class="article-nav-title">虚拟叙事</div>
         </a>
     
