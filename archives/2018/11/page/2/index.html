@@ -77,7 +77,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -96,9 +96,9 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'Articles',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
+            CATEGORIES: 'Catégories',
             TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
@@ -130,7 +130,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher">
     </div>
 
                 </td>
@@ -147,7 +147,7 @@
         
     <div class="widget-wrap" id="categories">
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>Catégories</span>
             &nbsp;
             <a id="allExpand" href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -170,6 +170,15 @@
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
                             &nbsp;
+                            Nature of code
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/2019/03/13/流场与boid/">流场与boid</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
                             painting
                         </a>
                          <ul class="unstyled" id="tree">  <li class="file"><a href="/2018/11/02/history space/">历史空间</a></li>  <li class="file"><a href="/2018/11/01/数列/">数列</a></li>  </ul> 
@@ -183,7 +192,7 @@
                         </a>
                          <ul class="unstyled" id="tree">  <li class="file"><a href="/2018/11/02/Qinshi/">侵蚀</a></li>  <li class="file"><a href="/2018/11/02/cotom/">Mt&t 年终分享</a></li>  <li class="file"><a href="/2018/11/02/landscape/">银灰色的风景</a></li>  </ul> 
                     </li> 
-                     <li class="file"><a href="/2018/11/25/11-25-mt/">11/25_mt</a></li>  <li class="file"><a href="/2018/11/08/MarkHansen/">MarkHansen</a></li>  <li class="file"><a href="/2018/11/17/East2018/">East2018</a></li>  <li class="file"><a href="/2018/11/26/11-26-Krac/">科技艺术史工作坊_Krac</a></li>  <li class="file"><a href="/2018/11/21/Mechine-learning/">Mechine_learning</a></li>  <li class="file"><a href="/2018/11/29/Rhino基础操作/">Rhino基础操作</a></li>  <li class="file"><a href="/2018/11/27/Zbrush/">Zbrush 建模基础</a></li>  <li class="file"><a href="/2018/11/20/Vehicles-Vatentino/">Vehicles-Vatentino</a></li>  <li class="file"><a href="/2018/05/10/Zielinski/">Zielinski</a></li>  <li class="file"><a href="/2018/11/26/c4d/">c4d-建模基础</a></li>  <li class="file"><a href="/2018/11/25/processing入门工作坊/">processing入门工作坊</a></li>  <li class="file"><a href="/2018/11/23/soundSculpture/">soundSculpture</a></li>  <li class="file"><a href="/2018/11/21/p5js-learning/">p5js_learning</a></li>  <li class="file"><a href="/2018/11/10/交流，互动和系统/">系统美学与交互语境</a></li>  <li class="file"><a href="/2018/11/25/媒体技术课程/">媒体技术课程</a></li>  <li class="file"><a href="/2018/11/19/打开黑匣子/">打开黑匣子</a></li>  <li class="file"><a href="/2018/11/21/地磁/">地磁</a></li>  <li class="file"><a href="/2018/12/22/艺术驻留/">艺术驻留</a></li>  <li class="file"><a href="/2018/11/15/虚构的生态学/">虚构的生态学</a></li>  <li class="file"><a href="/2018/11/10/艺术，科学和技术/">艺术，科学与技术</a></li>  <li class="file"><a href="/2018/12/22/网站资源/">网站资源</a></li>  </ul> 
+                     <li class="file"><a href="/2018/11/26/11-26-Krac/">科技艺术史工作坊_Krac</a></li>  <li class="file"><a href="/2018/11/25/11-25-mt/">11/25_mt</a></li>  <li class="file"><a href="/2018/11/17/East2018/">East2018</a></li>  <li class="file"><a href="/2018/11/08/MarkHansen/">MarkHansen</a></li>  <li class="file"><a href="/2018/11/21/Mechine-learning/">Mechine_learning</a></li>  <li class="file"><a href="/2018/11/29/Rhino基础操作/">Rhino基础操作</a></li>  <li class="file"><a href="/2018/11/20/Vehicles-Vatentino/">Vehicles-Vatentino</a></li>  <li class="file"><a href="/2018/11/27/Zbrush/">Zbrush 建模基础</a></li>  <li class="file"><a href="/2018/11/26/c4d/">c4d-建模基础</a></li>  <li class="file"><a href="/2018/05/10/Zielinski/">Zielinski</a></li>  <li class="file"><a href="/2018/11/21/p5js-learning/">p5js_learning</a></li>  <li class="file"><a href="/2018/11/25/processing入门工作坊/">processing入门工作坊</a></li>  <li class="file"><a href="/2018/11/23/soundSculpture/">soundSculpture</a></li>  <li class="file"><a href="/2018/11/10/交流，互动和系统/">系统美学与交互语境</a></li>  <li class="file"><a href="/2018/11/25/媒体技术课程/">媒体技术课程</a></li>  <li class="file"><a href="/2018/11/19/打开黑匣子/">打开黑匣子</a></li>  <li class="file"><a href="/2018/11/21/地磁/">地磁</a></li>  <li class="file"><a href="/2018/12/22/网站资源/">网站资源</a></li>  <li class="file"><a href="/2018/12/22/艺术驻留/">艺术驻留</a></li>  <li class="file"><a href="/2019/01/03/虚拟叙事-md/">虚拟叙事</a></li>  <li class="file"><a href="/2018/11/10/艺术，科学和技术/">艺术，科学与技术</a></li>  <li class="file"><a href="/2018/11/15/虚构的生态学/">虚构的生态学</a></li>  </ul> 
     </div>
     <script>
         $(document).ready(function() {
@@ -253,9 +262,9 @@
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title"><span>tag cloud</span></h3>
+        <h3 class="widget-title"><span>Nuage de tags</span></h3>
         <div class="widget tagcloud">
-            <a href="/tags/3d/" style="font-size: 10px;">3d</a> <a href="/tags/East/" style="font-size: 10px;">East</a> <a href="/tags/MediaArtNetII/" style="font-size: 20px;">MediaArtNetII</a> <a href="/tags/c4d/" style="font-size: 10px;">c4d</a> <a href="/tags/ever-Elusive/" style="font-size: 10px;">ever Elusive</a> <a href="/tags/mt-t/" style="font-size: 10px;">mt&t</a> <a href="/tags/processing/" style="font-size: 10px;">processing</a> <a href="/tags/sound/" style="font-size: 10px;">sound</a> <a href="/tags/workshop/" style="font-size: 10px;">workshop</a> <a href="/tags/媒体理论/" style="font-size: 10px;">媒体理论</a> <a href="/tags/技术/" style="font-size: 10px;">技术</a> <a href="/tags/网站收藏/" style="font-size: 10px;">网站收藏</a> <a href="/tags/艺术驻留/" style="font-size: 10px;">艺术驻留</a>
+            <a href="/tags/3d/" style="font-size: 10px;">3d</a> <a href="/tags/East/" style="font-size: 10px;">East</a> <a href="/tags/MediaArtNetII/" style="font-size: 20px;">MediaArtNetII</a> <a href="/tags/c4d/" style="font-size: 10px;">c4d</a> <a href="/tags/ever-Elusive/" style="font-size: 10px;">ever Elusive</a> <a href="/tags/mt-t/" style="font-size: 10px;">mt&t</a> <a href="/tags/processing/" style="font-size: 10px;">processing</a> <a href="/tags/sound/" style="font-size: 10px;">sound</a> <a href="/tags/workshop/" style="font-size: 10px;">workshop</a> <a href="/tags/媒体理论/" style="font-size: 10px;">媒体理论</a> <a href="/tags/技术/" style="font-size: 10px;">技术</a> <a href="/tags/流场/" style="font-size: 10px;">流场</a> <a href="/tags/网站收藏/" style="font-size: 10px;">网站收藏</a> <a href="/tags/艺术驻留/" style="font-size: 10px;">艺术驻留</a>
         </div>
     </div>
 
@@ -598,14 +607,14 @@
 </div>
 
     <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/archives/2018/11/">&laquo; Prev</a><a class="page-number" href="/archives/2018/11/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2018/11/page/3/">3</a><a class="extend next" rel="next" href="/archives/2018/11/page/3/">Next &raquo;</a>
+        <a class="extend prev" rel="prev" href="/archives/2018/11/">&laquo; Préc</a><a class="page-number" href="/archives/2018/11/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2018/11/page/3/">3</a><a class="extend next" rel="next" href="/archives/2018/11/page/3/">Suiv &raquo;</a>
     </nav>
 </section>
         </div>
         <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            liudixian &copy; 2018 
+            liudixian &copy; 2019 
             <a rel="external nofollow noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png"></a>
             <br> Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten" rel="external nofollow noopener noreferrer" target="_blank">wikitten</a>
             
