@@ -77,7 +77,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -96,10 +96,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Entradas',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Categorias',
-            TAGS: 'Etiquetas',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -130,7 +130,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
     </div>
 
                 </td>
@@ -147,7 +147,7 @@
         
     <div class="widget-wrap" id="categories">
         <h3 class="widget-title">
-            <span>Categorias</span>
+            <span>categories</span>
             &nbsp;
             <a id="allExpand" href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -157,6 +157,15 @@
         
         
          <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            3d渲染
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/2019/03/17/Shader-Study-01/">Shader_Study_01</a></li>  </ul> 
+                    </li> 
+                    
                     <li class="directory">
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
@@ -192,7 +201,7 @@
                         </a>
                          <ul class="unstyled" id="tree">  <li class="file"><a href="/2018/11/02/Qinshi/">侵蚀</a></li>  <li class="file"><a href="/2018/11/02/cotom/">Mt&t 年终分享</a></li>  <li class="file"><a href="/2018/11/02/landscape/">银灰色的风景</a></li>  </ul> 
                     </li> 
-                     <li class="file"><a href="/2018/11/26/11-26-Krac/">科技艺术史工作坊_Krac</a></li>  <li class="file"><a href="/2018/11/25/11-25-mt/">11/25_mt</a></li>  <li class="file"><a href="/2018/11/17/East2018/">East2018</a></li>  <li class="file"><a href="/2018/11/08/MarkHansen/">MarkHansen</a></li>  <li class="file"><a href="/2018/11/21/Mechine-learning/">Mechine_learning</a></li>  <li class="file"><a href="/2018/11/29/Rhino基础操作/">Rhino基础操作</a></li>  <li class="file"><a href="/2018/11/27/Zbrush/">Zbrush 建模基础</a></li>  <li class="file"><a href="/2018/11/20/Vehicles-Vatentino/">Vehicles-Vatentino</a></li>  <li class="file"><a href="/2018/11/26/c4d/">c4d-建模基础</a></li>  <li class="file"><a href="/2018/05/10/Zielinski/">Zielinski</a></li>  <li class="file"><a href="/2018/11/10/交流，互动和系统/">系统美学与交互语境</a></li>  <li class="file"><a href="/2018/11/21/p5js-learning/">p5js_learning</a></li>  <li class="file"><a href="/2018/11/25/processing入门工作坊/">processing入门工作坊</a></li>  <li class="file"><a href="/2018/11/23/soundSculpture/">soundSculpture</a></li>  <li class="file"><a href="/2018/11/25/媒体技术课程/">媒体技术课程</a></li>  <li class="file"><a href="/2018/11/21/地磁/">地磁</a></li>  <li class="file"><a href="/2018/11/19/打开黑匣子/">打开黑匣子</a></li>  <li class="file"><a href="/2018/12/22/艺术驻留/">艺术驻留</a></li>  <li class="file"><a href="/2019/01/03/虚拟叙事-md/">虚拟叙事</a></li>  <li class="file"><a href="/2018/12/22/网站资源/">网站资源</a></li>  <li class="file"><a href="/2018/11/15/虚构的生态学/">虚构的生态学</a></li>  <li class="file"><a href="/2018/11/10/艺术，科学和技术/">艺术，科学与技术</a></li>  </ul> 
+                     <li class="file"><a href="/2018/11/25/11-25-mt/">11/25_mt</a></li>  <li class="file"><a href="/2018/11/26/11-26-Krac/">科技艺术史工作坊_Krac</a></li>  <li class="file"><a href="/2018/11/17/East2018/">East2018</a></li>  <li class="file"><a href="/2018/11/08/MarkHansen/">MarkHansen</a></li>  <li class="file"><a href="/2018/11/21/Mechine-learning/">Mechine_learning</a></li>  <li class="file"><a href="/2018/11/29/Rhino基础操作/">Rhino基础操作</a></li>  <li class="file"><a href="/2018/11/20/Vehicles-Vatentino/">Vehicles-Vatentino</a></li>  <li class="file"><a href="/2018/11/27/Zbrush/">Zbrush 建模基础</a></li>  <li class="file"><a href="/2018/05/10/Zielinski/">Zielinski</a></li>  <li class="file"><a href="/2018/11/26/c4d/">c4d-建模基础</a></li>  <li class="file"><a href="/2018/11/21/p5js-learning/">p5js_learning</a></li>  <li class="file"><a href="/2018/11/25/processing入门工作坊/">processing入门工作坊</a></li>  <li class="file"><a href="/2018/11/23/soundSculpture/">soundSculpture</a></li>  <li class="file"><a href="/2018/11/10/交流，互动和系统/">系统美学与交互语境</a></li>  <li class="file"><a href="/2018/11/21/地磁/">地磁</a></li>  <li class="file"><a href="/2018/11/25/媒体技术课程/">媒体技术课程</a></li>  <li class="file"><a href="/2018/11/19/打开黑匣子/">打开黑匣子</a></li>  <li class="file"><a href="/2018/12/22/艺术驻留/">艺术驻留</a></li>  <li class="file"><a href="/2019/01/03/虚拟叙事-md/">虚拟叙事</a></li>  <li class="file"><a href="/2018/11/10/艺术，科学和技术/">艺术，科学与技术</a></li>  <li class="file"><a href="/2018/11/15/虚构的生态学/">虚构的生态学</a></li>  <li class="file"><a href="/2018/12/22/网站资源/">网站资源</a></li>  </ul> 
     </div>
     <script>
         $(document).ready(function() {
@@ -262,9 +271,9 @@
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title"><span>Nube de etiquetas</span></h3>
+        <h3 class="widget-title"><span>tag cloud</span></h3>
         <div class="widget tagcloud">
-            <a href="/tags/3d/" style="font-size: 10px;">3d</a> <a href="/tags/East/" style="font-size: 10px;">East</a> <a href="/tags/MediaArtNetII/" style="font-size: 20px;">MediaArtNetII</a> <a href="/tags/c4d/" style="font-size: 10px;">c4d</a> <a href="/tags/ever-Elusive/" style="font-size: 10px;">ever Elusive</a> <a href="/tags/mt-t/" style="font-size: 10px;">mt&t</a> <a href="/tags/processing/" style="font-size: 10px;">processing</a> <a href="/tags/sound/" style="font-size: 10px;">sound</a> <a href="/tags/workshop/" style="font-size: 10px;">workshop</a> <a href="/tags/媒体理论/" style="font-size: 10px;">媒体理论</a> <a href="/tags/技术/" style="font-size: 10px;">技术</a> <a href="/tags/流场/" style="font-size: 10px;">流场</a> <a href="/tags/网站收藏/" style="font-size: 10px;">网站收藏</a> <a href="/tags/艺术驻留/" style="font-size: 10px;">艺术驻留</a>
+            <a href="/tags/3d/" style="font-size: 10px;">3d</a> <a href="/tags/East/" style="font-size: 10px;">East</a> <a href="/tags/MediaArtNetII/" style="font-size: 20px;">MediaArtNetII</a> <a href="/tags/c4d/" style="font-size: 10px;">c4d</a> <a href="/tags/ever-Elusive/" style="font-size: 10px;">ever Elusive</a> <a href="/tags/mt-t/" style="font-size: 10px;">mt&t</a> <a href="/tags/processing/" style="font-size: 10px;">processing</a> <a href="/tags/shader/" style="font-size: 10px;">shader</a> <a href="/tags/sound/" style="font-size: 10px;">sound</a> <a href="/tags/workshop/" style="font-size: 10px;">workshop</a> <a href="/tags/媒体理论/" style="font-size: 10px;">媒体理论</a> <a href="/tags/技术/" style="font-size: 10px;">技术</a> <a href="/tags/流场/" style="font-size: 10px;">流场</a> <a href="/tags/网站收藏/" style="font-size: 10px;">网站收藏</a> <a href="/tags/艺术驻留/" style="font-size: 10px;">艺术驻留</a>
         </div>
     </div>
 
@@ -273,6 +282,105 @@
 </aside>
             
             <section id="main">
+        <article id="post-交流，互动和系统" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/MediaArtNetII/">MediaArtNetII</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018/11/10/交流，互动和系统/">
+            <time datetime="2018-11-10T12:24:14.000Z" itemprop="datePublished">2018-11-10</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a href="https://github.com/Catwiki/Catwiki.github.io/raw/master/source/_posts/交流，互动和系统.md" rel="external nofollow noopener noreferrer" target="_blank"> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href="https://github.com/Catwiki/Catwiki.github.io/edit/master/source/_posts/交流，互动和系统.md" rel="external nofollow noopener noreferrer" target="_blank"> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a href="https://github.com/Catwiki/Catwiki.github.io/commits/master/source/_posts/交流，互动和系统.md" rel="external nofollow noopener noreferrer" target="_blank"> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2018/11/10/交流，互动和系统/">系统美学与交互语境</a>
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                
+                    
+                    <p></p><h1 id="cybernetic-aesthetics-and-communicative-context"><a class="markdownIt-Anchor" href="#cybernetic-aesthetics-and-communicative-context"></a> Cybernetic Aesthetics and communicative Context</h1>
+<p><em>Claudia Giannetti</em></p>
+<p><a href="http://mediaartnet.org/themes/aesthetics_of_the_digital/aesthetics_and_communicative%20Context/" rel="external nofollow noopener noreferrer" target="_blank">http://mediaartnet.org/themes/aesthetics_of_the_digital/aesthetics_and_communicative Context/</a></p>
+<h6 id="tags-翻译"><a class="markdownIt-Anchor" href="#tags-翻译"></a> tags: <code>翻译</code></h6>
+<h3 id="communication-interaction-and-systems交流互动和系统"><a class="markdownIt-Anchor" href="#communication-interaction-and-systems交流互动和系统"></a> Communication, interaction, and systems交流，互动，和系统</h3>
+<p>
+                
+            
+        
+        
+            </p></div>   
+            <div class="article-more-link">
+                <a href="/2018/11/10/交流，互动和系统/#more">Read More</a>
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+
+
+
+
+    
         <article id="post-艺术，科学和技术" class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
         
@@ -1066,102 +1174,8 @@ Poststructuralism, America name for a movement in France from 1960-1970-80<br>
 
 
     
-        <article id="post-Zielinski" class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-                        
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/05/10/Zielinski/">
-            <time datetime="2018-05-09T16:25:33.000Z" itemprop="datePublished">2018-05-10</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                            <div class="article-meta-button">
-                                <a href="https://github.com/Catwiki/Catwiki.github.io/raw/master/source/_posts/Zielinski.md" rel="external nofollow noopener noreferrer" target="_blank"> Source </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a href="https://github.com/Catwiki/Catwiki.github.io/edit/master/source/_posts/Zielinski.md" rel="external nofollow noopener noreferrer" target="_blank"> Edit </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a href="https://github.com/Catwiki/Catwiki.github.io/commits/master/source/_posts/Zielinski.md" rel="external nofollow noopener noreferrer" target="_blank"> History </a>
-                            </div>
-                        
-                    </div>
-                
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2018/05/10/Zielinski/">Zielinski</a>
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
-            
-                
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                
-                    
-                    <p></p><h1 id="2018515-上午-prospective-archeology展望式考古学"><a class="markdownIt-Anchor" href="#2018515-上午-prospective-archeology展望式考古学"></a> 2018/5/15 上午-prospective archeology展望式考古学</h1>
-<h3 id="i"><a class="markdownIt-Anchor" href="#i"></a> I</h3>
-<p>Prospective archology – respective archology（回溯的，考古学，是传统的考古学）</p>
-<p>organ projection器官投射<br>
-<strong>massage</strong> 按摩 推拿</p>
-<p>
-                
-            
-        
-        
-            </p></div>   
-            <div class="article-more-link">
-                <a href="/2018/05/10/Zielinski/#more">Read More</a>
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
-    </div>
-</article>
-
-
-
-
-
-
-    
         <nav id="page-nav">
-        <a class="extend prev" rel="prev" href="/page/2/">&laquo; Anterior</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+        <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
         </nav>
     
 </section>

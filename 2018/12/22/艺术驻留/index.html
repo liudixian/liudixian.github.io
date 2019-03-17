@@ -89,7 +89,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -108,10 +108,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Entradas',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Categorias',
-            TAGS: 'Etiquetas',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -142,7 +142,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
     </div>
 
                 </td>
@@ -159,7 +159,7 @@
         
     <div class="widget-wrap" id="categories">
         <h3 class="widget-title">
-            <span>Categorias</span>
+            <span>categories</span>
             &nbsp;
             <a id="allExpand" href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -169,6 +169,15 @@
         
         
          <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            3d渲染
+                        </a>
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/2019/03/17/Shader-Study-01/">Shader_Study_01</a></li>  </ul> 
+                    </li> 
+                    
                     <li class="directory">
                         <a href="#" data-role="directory">
                             <i class="fa fa-folder"></i>
@@ -204,7 +213,7 @@
                         </a>
                          <ul class="unstyled" id="tree">  <li class="file"><a href="/2018/11/02/Qinshi/">侵蚀</a></li>  <li class="file"><a href="/2018/11/02/cotom/">Mt&t 年终分享</a></li>  <li class="file"><a href="/2018/11/02/landscape/">银灰色的风景</a></li>  </ul> 
                     </li> 
-                     <li class="file"><a href="/2018/11/26/11-26-Krac/">科技艺术史工作坊_Krac</a></li>  <li class="file"><a href="/2018/11/25/11-25-mt/">11/25_mt</a></li>  <li class="file"><a href="/2018/11/17/East2018/">East2018</a></li>  <li class="file"><a href="/2018/11/08/MarkHansen/">MarkHansen</a></li>  <li class="file"><a href="/2018/11/21/Mechine-learning/">Mechine_learning</a></li>  <li class="file"><a href="/2018/11/29/Rhino基础操作/">Rhino基础操作</a></li>  <li class="file"><a href="/2018/11/27/Zbrush/">Zbrush 建模基础</a></li>  <li class="file"><a href="/2018/11/20/Vehicles-Vatentino/">Vehicles-Vatentino</a></li>  <li class="file"><a href="/2018/11/26/c4d/">c4d-建模基础</a></li>  <li class="file"><a href="/2018/05/10/Zielinski/">Zielinski</a></li>  <li class="file"><a href="/2018/11/10/交流，互动和系统/">系统美学与交互语境</a></li>  <li class="file"><a href="/2018/11/21/p5js-learning/">p5js_learning</a></li>  <li class="file"><a href="/2018/11/25/processing入门工作坊/">processing入门工作坊</a></li>  <li class="file"><a href="/2018/11/23/soundSculpture/">soundSculpture</a></li>  <li class="file"><a href="/2018/11/25/媒体技术课程/">媒体技术课程</a></li>  <li class="file"><a href="/2018/11/21/地磁/">地磁</a></li>  <li class="file"><a href="/2018/11/19/打开黑匣子/">打开黑匣子</a></li>  <li class="file active"><a href="/2018/12/22/艺术驻留/">艺术驻留</a></li>  <li class="file"><a href="/2019/01/03/虚拟叙事-md/">虚拟叙事</a></li>  <li class="file"><a href="/2018/12/22/网站资源/">网站资源</a></li>  <li class="file"><a href="/2018/11/15/虚构的生态学/">虚构的生态学</a></li>  <li class="file"><a href="/2018/11/10/艺术，科学和技术/">艺术，科学与技术</a></li>  </ul> 
+                     <li class="file"><a href="/2018/11/25/11-25-mt/">11/25_mt</a></li>  <li class="file"><a href="/2018/11/26/11-26-Krac/">科技艺术史工作坊_Krac</a></li>  <li class="file"><a href="/2018/11/17/East2018/">East2018</a></li>  <li class="file"><a href="/2018/11/08/MarkHansen/">MarkHansen</a></li>  <li class="file"><a href="/2018/11/21/Mechine-learning/">Mechine_learning</a></li>  <li class="file"><a href="/2018/11/29/Rhino基础操作/">Rhino基础操作</a></li>  <li class="file"><a href="/2018/11/20/Vehicles-Vatentino/">Vehicles-Vatentino</a></li>  <li class="file"><a href="/2018/11/27/Zbrush/">Zbrush 建模基础</a></li>  <li class="file"><a href="/2018/05/10/Zielinski/">Zielinski</a></li>  <li class="file"><a href="/2018/11/26/c4d/">c4d-建模基础</a></li>  <li class="file"><a href="/2018/11/21/p5js-learning/">p5js_learning</a></li>  <li class="file"><a href="/2018/11/25/processing入门工作坊/">processing入门工作坊</a></li>  <li class="file"><a href="/2018/11/23/soundSculpture/">soundSculpture</a></li>  <li class="file"><a href="/2018/11/10/交流，互动和系统/">系统美学与交互语境</a></li>  <li class="file"><a href="/2018/11/21/地磁/">地磁</a></li>  <li class="file"><a href="/2018/11/25/媒体技术课程/">媒体技术课程</a></li>  <li class="file"><a href="/2018/11/19/打开黑匣子/">打开黑匣子</a></li>  <li class="file active"><a href="/2018/12/22/艺术驻留/">艺术驻留</a></li>  <li class="file"><a href="/2019/01/03/虚拟叙事-md/">虚拟叙事</a></li>  <li class="file"><a href="/2018/11/10/艺术，科学和技术/">艺术，科学与技术</a></li>  <li class="file"><a href="/2018/11/15/虚构的生态学/">虚构的生态学</a></li>  <li class="file"><a href="/2018/12/22/网站资源/">网站资源</a></li>  </ul> 
     </div>
     <script>
         $(document).ready(function() {
@@ -274,9 +283,9 @@
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title"><span>Nube de etiquetas</span></h3>
+        <h3 class="widget-title"><span>tag cloud</span></h3>
         <div class="widget tagcloud">
-            <a href="/tags/3d/" style="font-size: 10px;">3d</a> <a href="/tags/East/" style="font-size: 10px;">East</a> <a href="/tags/MediaArtNetII/" style="font-size: 20px;">MediaArtNetII</a> <a href="/tags/c4d/" style="font-size: 10px;">c4d</a> <a href="/tags/ever-Elusive/" style="font-size: 10px;">ever Elusive</a> <a href="/tags/mt-t/" style="font-size: 10px;">mt&t</a> <a href="/tags/processing/" style="font-size: 10px;">processing</a> <a href="/tags/sound/" style="font-size: 10px;">sound</a> <a href="/tags/workshop/" style="font-size: 10px;">workshop</a> <a href="/tags/媒体理论/" style="font-size: 10px;">媒体理论</a> <a href="/tags/技术/" style="font-size: 10px;">技术</a> <a href="/tags/流场/" style="font-size: 10px;">流场</a> <a href="/tags/网站收藏/" style="font-size: 10px;">网站收藏</a> <a href="/tags/艺术驻留/" style="font-size: 10px;">艺术驻留</a>
+            <a href="/tags/3d/" style="font-size: 10px;">3d</a> <a href="/tags/East/" style="font-size: 10px;">East</a> <a href="/tags/MediaArtNetII/" style="font-size: 20px;">MediaArtNetII</a> <a href="/tags/c4d/" style="font-size: 10px;">c4d</a> <a href="/tags/ever-Elusive/" style="font-size: 10px;">ever Elusive</a> <a href="/tags/mt-t/" style="font-size: 10px;">mt&t</a> <a href="/tags/processing/" style="font-size: 10px;">processing</a> <a href="/tags/shader/" style="font-size: 10px;">shader</a> <a href="/tags/sound/" style="font-size: 10px;">sound</a> <a href="/tags/workshop/" style="font-size: 10px;">workshop</a> <a href="/tags/媒体理论/" style="font-size: 10px;">媒体理论</a> <a href="/tags/技术/" style="font-size: 10px;">技术</a> <a href="/tags/流场/" style="font-size: 10px;">流场</a> <a href="/tags/网站收藏/" style="font-size: 10px;">网站收藏</a> <a href="/tags/艺术驻留/" style="font-size: 10px;">艺术驻留</a>
         </div>
     </div>
 
@@ -339,7 +348,7 @@
         
             
                 <div id="toc" class="toc-article">
-                <strong class="toc-title">Catálogo</strong>
+                <strong class="toc-title">Catalogue</strong>
                     <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#艺术驻留与新媒体画廊"><span class="toc-number">1.</span> <span class="toc-text"> 艺术驻留与新媒体画廊</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#论美术馆的自我转型-whitney-museum-of-art"><span class="toc-number">1.0.0.1.</span> <span class="toc-text"> “ 论美术馆的自我转型 ”-Whitney Museum of Art</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#更潮更跨界-the-shed-museum"><span class="toc-number">1.0.0.2.</span> <span class="toc-text"> “ 更潮，更跨界 ”-The SHED Museum</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#媒体艺术机构的鼻祖-eai-electronic-arts-intermix"><span class="toc-number">1.0.0.3.</span> <span class="toc-text"> “ 媒体艺术机构的鼻祖 ”-EAI, Electronic Arts Intermix</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#白盒子空间内的探险-new-museum-new-inc"><span class="toc-number">1.0.0.4.</span> <span class="toc-text"> “白盒子空间内的探险 ”-New Museum &amp; New inc</span></a></li></ol></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#212-219-2122"><span class="toc-number">1.1.</span> <span class="toc-text"> 📞：(212) 219 2122</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#更像潮店的艺术空间-redbull-art-newyork"><span class="toc-number">1.1.0.1.</span> <span class="toc-text"> “ 更像潮店的艺术空间 ”-Redbull Art NewYork</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#住宅内的实践-yveyang-gallery"><span class="toc-number">1.1.0.2.</span> <span class="toc-text"> “住宅内的实践 ”-YveYang Gallery</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#infoyveyangcom"><span class="toc-number">1.2.</span> <span class="toc-text"> 📧：info@yveyang.com</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#只销售新媒体艺术-bitform-gallery"><span class="toc-number">1.2.0.1.</span> <span class="toc-text"> “ 只销售新媒体艺术 ”-Bitform Gallery</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#212-366-6939"><span class="toc-number">1.3.</span> <span class="toc-text"> 📞：(212) 366 6939</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#可以做工作室的空间-practice"><span class="toc-number">1.3.0.1.</span> <span class="toc-text"> “ 可以做工作室的空间 ”-PRACTICE</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#空间游击-daata-editions-vanity-project"><span class="toc-number">1.3.0.2.</span> <span class="toc-text"> “ 空间游击 ”-Daata editions @ Vanity project</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#infodaata-editionscom"><span class="toc-number">1.4.</span> <span class="toc-text"> 📧：info@daata-editions.com</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#多样生态-47-canal-gallery"><span class="toc-number">1.4.0.1.</span> <span class="toc-text"> “ 多样生态 ”-47 Canal Gallery</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#646-415-7712"><span class="toc-number">1.5.</span> <span class="toc-text"> 📞：(646) 415 7712</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#大画廊中的异类-gavin-browns-enterprise"><span class="toc-number">1.5.0.1.</span> <span class="toc-text"> “ 大画廊中的异类 ”-Gavin Brown’s Enterprise</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#646-627-5258"><span class="toc-number">1.6.</span> <span class="toc-text"> 📞：(646) 627 5258</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#老而弥新-12_postmasters"><span class="toc-number">1.6.0.1.</span> <span class="toc-text"> “ 老而弥新 ”-12_Postmasters</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#13-虚拟的画廊-reena-spaulings"><span class="toc-number">1.6.0.2.</span> <span class="toc-text"> 13.“ 虚拟的画廊 ”—Reena Spaulings</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#14-接地气的实践空间-sleepcenter"><span class="toc-number">1.6.0.3.</span> <span class="toc-text"> 14.“ 接地气的实践空间 ”-Sleepcenter</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#15-一站式驻留-lower-manhattan-cutrual-council"><span class="toc-number">1.6.0.4.</span> <span class="toc-text"> 15. “ 一站式驻留 ”–Lower Manhattan Cutrual Council</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#queens皇后区"><span class="toc-number">1.7.</span> <span class="toc-text"> Queens皇后区</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-先锋新媒体的定义-moma-ps1"><span class="toc-number">1.7.0.1.</span> <span class="toc-text"> 1.“ 先锋新媒体的定义 ”–MOMA PS1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-影像艺术大本营-museum-of-the-moving-image"><span class="toc-number">1.7.0.2.</span> <span class="toc-text"> 2.“ 影像艺术大本营 ”— Museum of the Moving Image</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#非商业化驻留-nars-foundation"><span class="toc-number">1.7.0.3.</span> <span class="toc-text"> “ 非商业化驻留 ”–(NARS) Foundation</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#跨学科式驻留-residencymuseum-of-art-and-design-pioneer-works"><span class="toc-number">1.7.0.4.</span> <span class="toc-text"> “ 跨学科式驻留 ”-Residency@Museum of Art and Design Pioneer Works</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#线上与线下-iscp驻留机构"><span class="toc-number">1.7.0.5.</span> <span class="toc-text"> “ 线上与线下 ”–Iscp驻留机构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#重新定义新媒体-transfer-gallery"><span class="toc-number">1.7.0.6.</span> <span class="toc-text"> “ 重新定义新媒体 ”–Transfer Gallery</span></a></li></ol></li>
                 </div>
             
@@ -536,7 +545,7 @@
 <nav id="article-nav">
     
         <a href="/2019/01/03/虚拟叙事-md/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Más nuevo</strong>
+            <strong class="article-nav-caption">Newer</strong>
             <div class="article-nav-title">
                 
                     虚拟叙事
@@ -546,7 +555,7 @@
     
     
         <a href="/2018/12/22/网站资源/" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">Más viejo</strong>
+            <strong class="article-nav-caption">Older</strong>
             <div class="article-nav-title">网站资源</div>
         </a>
     
