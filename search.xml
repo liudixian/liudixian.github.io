@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[GitHub_tutorial]]></title>
-    <url>%2F2019%2F03%2F19%2FGitHub_tutorial%2F</url>
+    <title><![CDATA[Github_tutorial]]></title>
+    <url>%2F2019%2F03%2F20%2FGithub-tutorial%2F</url>
     <content type="text"><![CDATA[Github 上传步骤 一、 初始化本地仓库 1git init 二、 将文件加入到暂存区 123git add filenamegit add -A //添加所有 三、 提交文件 1git commit -m &quot;提交附加信息&quot; 四、链接远程仓库 1git remote add origin git@github.com:&lt;myCount&gt;/&lt;myPath&gt;.git 另外： git status 查看状态 git log 上传日志]]></content>
       <tags>
         <tag>github</tag>

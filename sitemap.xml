@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://liudixian.github.io/2019/03/19/GitHub_tutorial/</loc>
+    <loc>http://liudixian.github.io/2019/03/20/Github-tutorial/</loc>
     
-    <lastmod>2019-03-20T14:25:40.258Z</lastmod>
+    <lastmod>2019-03-20T14:29:19.244Z</lastmod>
     
   </url>
   
@@ -198,6 +198,13 @@
   </url>
   
   <url>
+    <loc>http://liudixian.github.io/write/index.html</loc>
+    
+    <lastmod>2018-11-07T17:04:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://liudixian.github.io/2018/11/01/listenning/</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
@@ -212,13 +219,6 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/work/index.html</loc>
-    
-    <lastmod>2018-11-07T17:04:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://liudixian.github.io/trashed/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
@@ -226,7 +226,7 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/write/index.html</loc>
+    <loc>http://liudixian.github.io/work/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
