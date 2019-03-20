@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://liudixian.github.io/2019/03/19/GitHub_tutorial/</loc>
+    
+    <lastmod>2019-03-20T14:25:40.258Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://liudixian.github.io/2019/03/13/%E6%B5%81%E5%9C%BA%E4%B8%8Eboid/</loc>
     
     <lastmod>2019-03-17T17:13:59.957Z</lastmod>
@@ -44,13 +51,6 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/tags/index.html</loc>
-    
-    <lastmod>2018-12-21T13:34:48.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://liudixian.github.io/about/index.html</loc>
     
     <lastmod>2018-12-21T13:34:48.000Z</lastmod>
@@ -59,6 +59,13 @@
   
   <url>
     <loc>http://liudixian.github.io/categories/index.html</loc>
+    
+    <lastmod>2018-12-21T13:34:48.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://liudixian.github.io/tags/index.html</loc>
     
     <lastmod>2018-12-21T13:34:48.000Z</lastmod>
     
@@ -184,14 +191,14 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/2018/11/01/listenning/</loc>
+    <loc>http://liudixian.github.io/cv/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/cv/index.html</loc>
+    <loc>http://liudixian.github.io/2018/11/01/listenning/</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
@@ -205,7 +212,7 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/write/index.html</loc>
+    <loc>http://liudixian.github.io/work/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
@@ -219,7 +226,7 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/work/index.html</loc>
+    <loc>http://liudixian.github.io/write/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
