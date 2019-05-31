@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head tag -->
+  <head><meta name="generator" content="Hexo 3.8.0">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  
+  <title>地磁 - 刘迪先</title>
+
+  <!--Favicon-->
+  <link rel="icon" href="favicon/favicon.ico">
+
+  <!--Description-->
+  
+      <meta name="description" content="构建一个普顿精度磁力计
+你好，
+我正在用WordPress重建我的旧网站，当我分析404错误时，我看到有数百人想看一个名为«构建质子进动磁力计»的前一页。 主要推荐人是：
+https://www.1010.co.uk/org/geophysics.html
+所以，我再次复制前一篇文章，因为我没有在网">
+  
+
+  <!--Author-->
+  
+      <meta name="author" content="liudixian">
+  
+
+  <!-- Pure CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,800" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Analytics --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
+
+</head>
+
+
+  <body>
+  	<!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container-fluid navbar-container m-sm-5">
+      <!-- Header -->
+      <nav class="navbar navbar-toggleable-sm navbar-light px-1 py-3 my-3 mb-sm-5">
+  <a class="navbar-brand ml-2" href="/">刘迪先</a>
+  <button class="navbar-toggler navbar-toggler-right py-2" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse text-center" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto my-auto">
+      
+    </ul>
+    <hr class="hidden-md-up">
+  </div>
+</nav>
+
+
+  		<div class="row">
+  			<div class="col-12 mb-4">
+  <img class="img-fluid project-img" src="/images/unsplash.jpg" alt="地磁">
+</div>
+<div class="col-lg-4 col-12 pt-3 px-4 pr-lg-5">
+  <h1>地磁</h1>
+</div>
+<div class="col-lg-8 col-12 pt-lg-3 mb-4 pl-lg-5 px-lg-0 px-4 portfolio-content">
+  <h1 id="构建一个普顿精度磁力计"><a class="markdownIt-Anchor" href="#构建一个普顿精度磁力计"></a> 构建一个普顿精度磁力计</h1>
+<p>你好，<br>
+我正在用WordPress重建我的旧网站，当我分析404错误时，我看到有数百人想看一个名为«构建质子进动磁力计»的前一页。 主要推荐人是：<br>
+<a href="https://www.1010.co.uk/org/geophysics.html" rel="external nofollow noopener noreferrer" target="_blank">https://www.1010.co.uk/org/geophysics.html</a></p>
+<p>所以，我再次复制前一篇文章，因为我没有在网上找到它，除了这里：<br>
+<a href="https://vdocuments.site/build-a-proton-precession-magnetometer.html" rel="external nofollow noopener noreferrer" target="_blank">https://vdocuments.site/build-a-proton-precession-magnetometer.html</a></p>
+<p>和这儿：<br>
+<a href="https://fr.scribd.com/doc/148525063/Build-a-Proton-Precession-Magnetometer" rel="external nofollow noopener noreferrer" target="_blank">https://fr.scribd.com/doc/148525063/Build-a-Proton-Precession-Magnetometer</a></p>
+<p>文章中的“我”不是“我”。 所以，请不要联系我获取有关此项目的信息。 上面的文章是aol.com上发现的1999年原创文章的副本（<a href="http://members.aol.com/_ht_a/alka1/ProMag.html%EF%BC%89" rel="external nofollow noopener noreferrer" target="_blank">http://members.aol.com/_ht_a/alka1/ProMag.html）</a></p>
+<h1 id="构建一个普顿精度磁力计-2"><a class="markdownIt-Anchor" href="#构建一个普顿精度磁力计-2"></a> 构建一个普顿精度磁力计</h1>
+<p>一个教育性的“后院”项目，使用易于获得的电子零件构建。 频率计数器用于测量后极化脉冲质子进动频率。 测量的频率通过物理常数与局部地磁场的大小相关。</p>
+<hr>
+<h3 id="背景"><a class="markdownIt-Anchor" href="#背景"></a> 背景：</h3>
+<p>有关质子磁力计的一些背景信息和实际应用的描述，请参阅1968年2月出版的“科学美国人”杂志上的“业余科学家”一栏。描述了双线圈磁力计的构造。该条中的信息构成了此处所示细节的基础。</p>
+<p>几年前我建造了磁通门磁力计。它基于理查德·诺布尔在1991年9月的“电子世界+无线世界”杂志上发表的文章。使用图表记录仪，可以看到地球磁场的东西向分量的日变化，在消除了压倒性的总和南北分量之后。</p>
+<p>在找到1968年2月的“科学美国人”文章之后，我认为尝试在质子磁力计上添加一个频率计数器将是一个有趣的项目。这将是一个有趣的“后院科学”项目，用它来提供地球总量的测量磁场。增加数模转换器可以提供适合图表记录器的输出。</p>
+<p>然而，郊区的后院环境相当嘈杂。电源线频率的谐波一直延伸到音频范围。这些与衰退的进动频率音调竞争。采用差动串联方式连接传感器线圈，传感器的定位和音频信号的瞬时采样有助于对抗噪声。</p>
+<p>物理学中有一个量叫做“拉莫尔频率”，它定义了在磁场存在下进行进动的质子的角动量。</p>
+<p>目前有一些量子力学的观点可以解释粒子岁差，但是经典的解释似乎更容易理解。一个质子，一个带电粒子，可以被认为是具有围绕一个轴的确定的“自旋”，它起着一个小磁铁的作用。外加磁场不会改变自旋速率，但会使粒子以较慢的速率绕进动轴摆动。这个轴倾向于与外部磁场对齐。然而在弱磁场中，由于热效应和其他分子相互作用，任何排列都趋向于随机性。</p>
+<p>质子对外界施加的磁力的扰动作用作出反应，其进动速率与称为旋磁比的精确常数一致。对于质子，这个量大约等于267.53 x 1E6弧度/秒/特斯拉，或42.58 mHz/特斯拉。</p>
+<p>在美国北纬地区，总磁场强度约为5万到5.5万纳特斯拉，而且各地磁场强度不同。由磁暴引起的短周期变化可能达到几百纳特斯拉。由太阳诱导的电离层电流引起的日变化约为几十纳特斯拉。目前，整个磁场的长期趋势是每年负90纳米特斯拉(逐渐减少)。</p>
+<p>合适的传感器在地球地磁场中检测到的质子进动频率将在音频范围内:</p>
+<p>Example: 42.58 mHz / Tesla x 52500 x 1E-9 Tesla= 2235 Hz</p>
+<p>在我东北的位置，频率读数平均约2275赫兹，相当于大约53,400纳米特斯拉的总磁场。这似乎与已发表的模型有关。这个数字也与使用亥姆霍兹线圈校准的磁通门磁强计得到的值一致。磁通门传感器从水平位置向上倾斜到接近垂直位置，以获得地球磁场的最大读数。</p>
+<p>我注意到在过去的几个月里，传感器安装在后院的频率读数下降了一到两赫兹。这似乎也与预测的长期变化幅度一致。</p>
+<hr>
+<p>这是«只听»版本的框图。频率计数电路没有使用。仅包括传感器线圈、音频放大器和直流电源。定时器IC用于向继电器提供开关控制，继电器交替连接极化电流源和音频放大器输入之间的感应线圈。(单击figure查看更大的图)。</p>
+<p><img src="http://ilotresor.com/wp-content/uploads/pmlo.gif" alt="pmlo"></p>
+<hr>
+<p>这是一个磁强计设计的框图，增加了测量电压频率的能力，在传感器线圈由预处理质子诱导后极化电流持续几秒钟的时间。一个40年的BCD计数器dis-播放频率可选择的分辨率为1或0.1赫兹。一种频率倍增器方法使用锁相环提供这些分辨率，使用的是远小于一秒的计数门间隔。<br>
+<img src="http://ilotresor.com/wp-content/uploads/bdfc.gif" alt="bdfc"></p>
+<hr>
+<p>传感器结构<br>
+<img src="http://ilotresor.com/wp-content/uploads/sendwg.gif" alt="sendwg"><br>
+我发现当地的超市可以找到很好的线圈来源，在上面缠绕磁强计线圈和包含质子介质。检查香料摆放的地方。特别要找商店品牌的香料。我发现它们使用的是薄壁塑料容器，在底部和盖子下方有环绕的脊。这样就形成了一种多层线圈易于缠绕的形式。</p>
+<p>上面引用的页面显示了所使用的特定大小。有许多尺寸可供选择。还发现了一些更高的线圈，可以提供大约3.75英寸的线圈长度。稍微大一点的容器可以方便地使用更大的电线。它的优点是:线圈电阻低，线圈Q值高，极化电流也可能大(如果电源能提供的话)。极化电流越高，衰减信号的初始振幅越大。</p>
+<p>线圈Q越高，衰减信号引起的振铃效应持续时间越长。注意，线圈电感随匝数的平方而增加，而线圈电阻随匝数的线性函数而增加。这表明，在实际应用中，使用最大匝数和最大线径可以获得最佳结果(高Q和调谐电路选择性)。此外，也许最重要的是，线圈将通过增加并联电容来进行调谐——这可能是最重要的元件。</p>
+<p>线圈电感应足够高，以允许使用一个合理的价值非极化电容器。更高的Q值也有助于提供更窄的调谐电路带宽，这对于提高信噪比和减少高阶电力线谐波的拾取非常重要。</p>
+<hr>
+<h3 id="音频放大器"><a class="markdownIt-Anchor" href="#音频放大器"></a> 音频放大器</h3>
+<p>音频放大器采用四个双极晶体管和一个双运放集成电路。左边的框图显示了级增益分布。运算放大器提供以质子进动的期望频率为中心的两级有源带通滤波器。最大可用增益超过130分贝。理论增益与频率的关系如图所示。有了这样的高增益，需要谨慎的结构来防止振荡。<br>
+<img src="http://ilotresor.com/wp-content/uploads/aabd.gif" alt="audio Amplifier"><br>
+<img src="http://ilotresor.com/wp-content/uploads/aagvf.gif" alt=""><br>
+上图简要概述了物理细节。放大器采用双面镀铜PCB材料制作。组件被焊接到隔离端子上。采用推入式尼龙或聚四氟乙烯端子。矢量板很难用于完全由分立元件组成的电路。电路板封装在Radio Shack模制的项目案例中。箱内内衬有带胶背的铝带。<br>
+<img src="http://ilotresor.com/wp-content/uploads/aacn.gif" alt=""></p>
+<hr>
+<h3 id="音频放大器-2"><a class="markdownIt-Anchor" href="#音频放大器-2"></a> 音频放大器</h3>
+<p>输入级使用一个100欧姆的未旁路发射极电阻将输入阻抗提高到大约12千欧姆，以减少调谐传感器线圈上的负载。由线圈和谐振电容器组成的调谐电路具有大约3000欧姆的并联阻抗。为了找到一种具有最佳信噪比的设备，在输入阶段随机选择若干不同的设备进行试验。可以检测到跨输入端焊接的560欧姆电阻的噪声贡献。然而，来自传感器线圈和外部拾音器的噪声超过了固有放大器的噪声贡献。<br>
+<img src="http://ilotresor.com/wp-content/uploads/aasch.gif" alt="aasch"></p>
+<p>下一页连结到测量进动频率的计数器实作的示意图。它的目的是作为一个教育项目，试图提供一个测量当地地磁场的大小。本网站仅供参考之用。其他人可能会对它感兴趣，也可能会将它用于特定的实际应用。我的目标之一是节约，使用现成的或容易得到的标准部件。对于来自电池电源的操作，较低的功耗等效CMOS逻辑元件可以替代所示的TTL元件。</p>
+<h3 id="计数器电路描述"><a class="markdownIt-Anchor" href="#计数器电路描述"></a> 计数器电路描述</h3>
+<p>所示电路除其他分立元件外，还需要12个集成电路。集成电路的选择是基于经济性的——也就是说，使用现有的部件。有许多可替代的集成电路可以代替与非门、计数器和多谐振荡器。在任何情况下，4060计数器/振荡器和4046锁相环集成电路可能是很好的选择，但也有其他可能性。如果电能来自电池，用等效CMOS逻辑电路代替TTL类型将减少直流电流的要求。<br>
+<img src="http://ilotresor.com/wp-content/uploads/mcschp.gif" alt=""></p>
+<p>(在一个单独的部分中显示了另一个电路，它是一个更简单的只听版本。它消除了频率计数器，并使用计时器循环极化电流到传感器线圈的开关。</p>
+<p>偏振传感器的时间和测量频率是由一块手表晶体推导出来的。这些是在一些数字腕表中发现的微小圆柱形部件。它们在Active Electronics的售价约为2美元，在Radio Shack的售价为1美元。</p>
+<p>振子电路基本符合CD4060/MC14060的应用说明。振荡器部分产生32.768 kHz的输出频率，该输出频率应用于14级计数器。最后一个阶段的最终输出是2hz或0.5秒的脉冲重复率。这驱动一个4级二进制计数器，其最后一级提供4秒高/ 4秒低逻辑电平。为了简单起见，使用了4级二进制计数器的全计数周期。如果目的是在便携式搜索模式中使用磁强计，那么将4秒(听)非极化间隔缩短到半秒可能是有用的。这将需要添加至少一个4输入NAND门来解码计数器状态(10计数)并重置计数器。</p>
+<p>为了使进动信号的振幅达到最大，应将极化电流施加到感应线圈上几秒钟。三秒钟似乎足够了。除去极化电流后，继电器将线圈连接到音频放大器的输入端。音频放大器的输出是一个进动频率的振铃音，其振幅迅速减小到背景噪声级。为了获得准确的频率测量，计数器应在偏光电流消除后立即开始采样。此外，只有当信号振幅远高于噪声水平时才应进行计数。</p>
+<p>直接测量音频放大器的输出需要1秒的计数间隔，以便在期望的松弛频率下解析到1hz，并需要10秒来解析到0.1 Hz。当然，在最后一种情况下，信号会在放大器噪声或本地电源线谐波的作用下长期衰减。在后院环境中，一秒钟后，信号就会与交流电源线谐波相竞争。</p>
+<p>锁相环是用来允许测量进动频率到1的0.1赫兹分辨率使用计数间隔远远小于一秒。相位检测器的一个输入是音频放大器的输出。相位检测器的另一个输入来自压控振荡器(VCO)，其频率由两个插入的数字分压器划分;a除以10，再除以8。锁定时，VCO频率等于音频放大器输出频率乘以一个因子等于总除法(8×10 =80)。测量VCO输出频率在输出除以10计数器使用计数间隔八分之一秒允许分辨率为1赫兹。直接测量VCO频率(在除以10个计数器之前)可以使分辨率达到0.1 Hz。在这种情况下，最有效数字(千)溢出计数器的第四阶，留下百位、十位、个位和十分之一赫兹的显示。</p>
+<p>为了简单和经济，单个发光二极管用于显示十进制计数器的状态。该示意图显示最有效位有四个led，两个或三个应该足够了，因为这个阶段通常总是读取BCD等效于2(根据选择的分辨率选择2000或200)。在稳定条件下，当使用1赫兹分辨率时，只有最小有效位的变化，当使用1 / 10赫兹分辨率时，只有最后两个有效位的变化。如果打算用于便携式搜索，我想最好使用十进制显示，以便可以容易地看到读数的变化。(尽管只听音频输出可能足以检测磁性异常)。有许多选择来实现这种复合液晶显示器，七段液晶显示器等，这些将需要添加适当的BCD段解码器/驱动器或使用昂贵的集成计数器/显示集成电路。</p>
+<p>为了经济，尽量减少互连接线和元件计数，单稳态多谐振荡器(一次)用于设置十频计数器门控和定时间隔。这可能比解码来自32.768晶体的CD4060和74197计数器(U1和U2)的状态更容易。直译码需要多个输入NAND门以及逆变器(因为计数器不提供互补的逻辑输出——Q和倒Q)。</p>
+<p><img src="http://ilotresor.com/wp-content/uploads/squarewave.gif" alt=""></p>
+<p>多谐振荡器的周期必须有一定的精度，因为对定时元件标称值的公差不足以保证正确的时延。利用现有的精确时基波形和十进制计数器对时延进行精确设置。定时电阻器的值R3和R4可以根据需要进行更改，以提供正确的时间延迟。</p>
+<h3 id="时间延迟调整"><a class="markdownIt-Anchor" href="#时间延迟调整"></a> 时间延迟调整</h3>
+<p>CD4060振荡器/计数器输出(Q4)的第四个二进制级在引脚7处可用。振荡器的频率在这一点上被除以16，得到频率为2048 Hz。</p>
+<h3 id="u3a延迟"><a class="markdownIt-Anchor" href="#u3a延迟"></a> U3A延迟</h3>
+<p>进行以下临时连接:</p>
+<ol>
+<li>
+<p>点A1和点A2之间的连接打开。将A2连接到U1引脚7处的2048测试信号。</p>
+</li>
+<li>
+<p>打开点TC1和点TC2之间的连接。这为十进计数器输入门提供了一个激活信号，该信号等于多谐振荡器U3A的时延。</p>
+</li>
+</ol>
+<p>将U10引脚11处的R12值调整到8000欧姆左右。这应该调整CD4046 VCO的自由运行频率，使其达到允许对测试信号进行锁相的值。锁相时VCO频率为测试信号的80倍或163840hz。将分辨率开关(S1)设置为1hz。它将16384的除以(10)VCO频率与十进制计数器输入门连接起来。</p>
+<p>使用标称值56 kohms或62 kohms作为R3的定时电阻器。</p>
+<p>计数器显示应该每8秒产生一个新的读数。所需的计数器显示应该等效于0.2秒，0.2 X 16384或3277将被显示。选择电阻器的值，使时延在190到210毫秒之间，或者选择计数器读数在3112到3440之间。</p>
+<p>U3B延迟:</p>
+<p>保持以前的测试连接不变。进行以下临时测试连接:</p>
+<ol>
+<li>
+<p>点D1和点D2之间的连接打开。</p>
+</li>
+<li>
+<p>点B1和点B2之间的连接打开。将一根短绝缘电线连接到B1上，这样您就可以手动将其触地以重置十进制计数器零。</p>
+</li>
+<li>
+<p>从点E1到D1的临时连接。</p>
+</li>
+</ol>
+<p>手动接地B1，手动复位计数器。像以前一样观察计数器读数，并根据需要手动重置计数器。R4的初始值为27 kohms。</p>
+<p>调整R4的值以提供90到100毫秒之间的延迟时间，相当于1475到1638之间的计数器读数。</p>
+<p>恢复所有连接到正常的每个示意图。</p>
+<p>VCO频率:</p>
+<p>暂时连接A1/A2点至地面。调整R12的值以产生2230到2250的计数器读数。删除临时地面。</p>
+<hr>
+<ul>
+<li>Martin Hawse：<a href="http://www.1010.co.uk/org/geophysics.html" rel="external nofollow noopener noreferrer" target="_blank">http://www.1010.co.uk/org/geophysics.html</a></li>
+<li>参考：<a href="http://ilotresor.com/build-a-proton-precession-magnetometer/" rel="external nofollow noopener noreferrer" target="_blank">http://ilotresor.com/build-a-proton-precession-magnetometer/</a></li>
+<li>详细教程：<a href="http://www.exstrom.com/magnum/master-Z-H-4.html" rel="external nofollow noopener noreferrer" target="_blank">http://www.exstrom.com/magnum/master-Z-H-4.html</a></li>
+<li>从地磁探测中制造声音的参考：<a href="http://marineemlab.ucsd.edu/~steve/bio/SoundMantle.pdf" rel="external nofollow noopener noreferrer" target="_blank">http://marineemlab.ucsd.edu/~steve/bio/SoundMantle.pdf</a></li>
+</ul>
+<hr>
+<h1 id="来自亚原子世界的信号-signals-from-subatomic-world"><a class="markdownIt-Anchor" href="#来自亚原子世界的信号-signals-from-subatomic-world"></a> 来自亚原子世界的信号-Signals From subatomic world</h1>
+<h2 id="第一章"><a class="markdownIt-Anchor" href="#第一章"></a> 第一章</h2>
+<h3 id="13-概览"><a class="markdownIt-Anchor" href="#13-概览"></a> 1.3 概览</h3>
+<p>首先是如何操作Magnum的一般描述。 首先选择一些富含氢的物质，如水，酒精或石蜡，我们将从这里作为样品参考。 将约2盎司（59毫升）的样品放入圆柱形塑料瓶中。 将瓶子放在样品线圈内，然后将样品线圈放入偏振线圈内。 样品被极化线圈产生的场偏振一段时间。 当偏振线圈关闭时，由样本中的进动质子产生的信号由数据采集系统记录。 然后使用软件处理数字化信号以产生提供质子的进动频率的光谱。</p>
+<p><img src="/2018/11/21/地磁/Magnum.png" alt=""></p>
+<p>现在我们描述仪器的整体设计。 一般系统图如图1.3所示。 Magnum可以大致分为三个部分： <strong>极化系统，传感器系统，以及控制和数据采集系统。</strong> 我们从极化系统开始。</p>
+<p><strong>极化系统</strong> 的目的是产生一个垂直于地球的大磁场(相对于地球)。极化场是由安装在倾斜平台上的大线圈产生的。要求可倾斜的平台使偏振场与地面场垂直。极化场必须能够在规定的时间内打开，然后迅速关闭。极化脉冲控制器就是为此而设计的。控制器可以由操作员通过串行链路编程到PC机上。一旦编程，控制器等待来自PC的信号开始极化过程。这个过程包括在规定的时间内接通极化线圈的电流，迅速关闭电流，然后发送信号通知数据采集系统开始采集数据。极化线圈、可倾平台和脉冲控制器将在后续章节中详细介绍。</p>
+<p><strong>传感器系统</strong> 由两部分组成，即采样线圈和放大器。样品盘管容纳含有样品的瓶子。它的目的是诱导拾取由极化质子产生的非常小的振荡磁场，该磁场在地球的磁场上前进。样品线圈实际上由两个并排放置的相同线圈组成。一个线圈用于容纳样品，另一个用于抵消环境磁场。可以使用其中一个线圈来容纳样品，但是由于两个信号会抵消，所以不能将样品放在两个线圈中。由进动质子产生的信号非常弱。为了增强信号，必须使用电容器调谐采样线圈，以便在质子进动频率下形成谐振电路。放大器有一组电容器，可用于调谐采样线圈。放大器还将放大来自调谐样本线圈的信号约380万倍。具有如此高增益的放大器是一种非常灵敏的器件，必须非常小心地构造以防止它变成振荡器。放大器和样品线圈的结构细节可以在以下章节中找到。</p>
+<p><strong>数据采集​​和控制系统</strong> 由带有pci数据采集卡的个人计算机和一些软件组成。该软件允许操作员对脉冲控制器进行编程，然后启动极化和数据采集过程。软件可以控制多个极化和数据采集周期。将每个周期的数据平均在一起以获得更高的信噪比。该软件可以对脉冲控制器进行编程，以将极化场打开，从几分之一秒到几秒钟。在它向脉冲控制器发送信号以启动极化之后，它初始化数据采集系统以等待来自控制器的信号，指示极化已经完成并且数据采集可以开始。数据采集​​系统的通道选择，设置和采样率也由软件控制。在收集了所有数据之后，使用附加软件来过滤数据并计算信号的频谱。然后光谱给出质子进动频率，从中可以计算出磁性。所有这些将在以下章节中更详细地描述。</p>
+<h2 id="第六章-chapter-6-数据采集与pc控制-data-acquisition-and-pc-control"><a class="markdownIt-Anchor" href="#第六章-chapter-6-数据采集与pc控制-data-acquisition-and-pc-control"></a> 第六章 Chapter 6 数据采集与PC控制- Data Acquisition and PC control</h2>
+<h3 id="61-如何使用抽样-what-sampling-rate-to-use"><a class="markdownIt-Anchor" href="#61-如何使用抽样-what-sampling-rate-to-use"></a> 6.1 如何使用抽样-What sampling rate to Use</h3>
+<p>有关数据采集的最重要问题是如何采样。可用于采集任何信号的频率是最高频率的两倍信号中存在的分量。 例如，如果信号的频率不高于1000 Hz（1 kHz），则最小采样率为每秒2000个样本（2 ksps）。 如果以小于2 ksps的速度采样1 kHz正弦波，那么它将与较低频率的正弦波无法区分。 这种现象称为混叠，如果不进行预防，可能会导致虚假结果。</p>
+<p>为了防止数据中的混叠问题，首先选择一个频率fmax，它大约是您可以观察到的最大进动频率的两倍。 然后确保数据采集系统的输入信号没有大于fmax的显着频率分量，并将采样频率设置为fmax的至少两倍。 这将确保进动信号的采样速率超过最小速率的两倍，并且可以防止任何混叠。</p>
+<p>例如，在地球的磁场中，您不应该遇到1.5 - 2.4 kHz范围之外的任何进动频率。 因此，您可以使用5 kHz的fmax和10 ksps的最小采样率。 使用Magnum放大器，您还可以确保没有频率大于5 kHz的重要信号将进入数据采集系统。</p>
+<h3 id="62-what-solution-to-use"><a class="markdownIt-Anchor" href="#62-what-solution-to-use"></a> 6.2 What solution to use</h3>
+<p>接下来要考虑的是使用什么分辨率。 分辨率是指数据采集系统识别出多少个独特的电压电平，这取决于用于表示每个采样的位数。 所发生的是系统将连续电压信号转换为固定长度的二进制数，该二进制数只能代表一定数量的独特电压。</p>
+<p>例如，假设数据采集系统使用8位来表示每个样本。 然后它将能够区分28 = 256个唯一级别。 这意味着如果输入电压范围为-10到+10伏，则只能区分超过20/256 = 0.078伏的电压。</p>
+<p>数据采集系统不能精确地表示输入信号样本称为量化误差。 这错误地将噪声有效地引入数据中，这可能降低整体信噪比。 因此，所需的分辨率或位数取决于信号的特征以及您尝试从中提取的信息类型。</p>
+<p>对于Magnum，12位的分辨率足以允许进动信号的峰值以高精度定位。 如果您只使用Magnum作为磁力计，那么这就是您需要的所有信息。 如果您计划使用Magnum进行更一般的NMR类型实验，我们将不需要讨论，您只需要更高的分辨率。</p>
+<h3 id="63-获取数据的时间-how-long-to-take-data"><a class="markdownIt-Anchor" href="#63-获取数据的时间-how-long-to-take-data"></a> 6.3 获取数据的时间 How long to take Data</h3>
+<p>获取数据的时间长度决定了可以解决不同频率的程度。 您有多少数据或样本有效地设置频率分辨率。 样本越多，频率分辨率越高。</p>
+<p>对于Magnum，您应该获取至少半秒的数据。 如果你明显少于此，则进动信号频谱将开始变宽，并且可能变得更难以精确定位峰值。 可用的进动信号将持续不超过2到3秒，因此不需要比这更长时间地获取数据。 对于大多数目的而言，从0.5到3.0秒的任何地方获取数据应该是足够的。</p>
+<h3 id="64-用magnum制作的模数转换器-the-adc-board-used-in-the-magnum"><a class="markdownIt-Anchor" href="#64-用magnum制作的模数转换器-the-adc-board-used-in-the-magnum"></a> 6.4 用Magnum制作的模数转换器 The ADC board used in the Magnum</h3>
+<p>Magnum中使用的ADC板是IOtech（<a href="http://www.iotech.com/" rel="external nofollow noopener noreferrer" target="_blank">http://www.iotech.com/</a>)的ADAC / 5501MF（<a href="ftp://ftp.iotech.com/ADAC.5500.20Series.20Users.20Manual.pdf%EF%BC%89%E3%80%82" rel="external nofollow noopener noreferrer" target="_blank">ftp://ftp.iotech.com/ADAC.5500.20Series.20Users.20Manual.pdf）。</a> 它是一个12位ADC，具有8个不对称（或16个单端）模拟输入，最大采样率为100 kHz。</p>
+<p>需要从IOtech获取的部件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> - Data acquisition board: ADAC/5501MF $384</span><br><span class="line"> - Terminal board: ADAC-TB-16 $139</span><br><span class="line"> - Cable: CA-G55-ADAC $69</span><br></pre></td></tr></table></figure>
+<p>没有必要使用这个特定的数据采集板，但本书附带的软件（用于与电路板通信并获取数据）是为该电路板编写的。如果您更喜欢使用不同的数据采集板， 所需的基本功能是：</p>
+<ol>
+<li>不同的输入口</li>
+<li>用于触发数据采集的外部引脚。</li>
+<li>最低采样率为每秒10千样本。</li>
+<li>每个样本12bit或更多。</li>
+</ol>
+<h3 id="65-脉冲控制器和数据采集软件-pulse-controller-and-data-acquisition-software"><a class="markdownIt-Anchor" href="#65-脉冲控制器和数据采集软件-pulse-controller-and-data-acquisition-software"></a> 6.5 脉冲控制器和数据采集软件 Pulse controller and data acquisition software</h3>
+<p>Magnum的整体控制和操作由PC上运行的名为ADL（名称没有重要性）的程序处理。该程序读取一个参数文件，该文件指定如何运行Magnum。参数文件是纯文本文件，可以使用任何文本编辑器创建。</p>
+<p>ADL将参数文件中的一些信息转换为脉冲切换器中微控制器的指令。然后，它通过串行RS232连接将这些指令发送到切换台。指令告诉切换器打开偏振线圈中的电流多长时间以及关闭电流和触发数据采集之间等待的时间。</p>
+<p>设置切换台后，ADL使用参数文件中的附加信息来设置数据采集系统。重要的数据采集参数是增益，采样率和要采样的样本数。这些将在下面进一步描述。</p>
+<p>要启动脉冲，ADL将运行程序命令发送到脉冲切换器。然后脉冲切换器将偏振线圈中的电流接通指定的时间。关闭电流后，切换器会在触发数据采集系统（DAQ）开始采集数据之前等待很短的时间。</p>
+<p>数据采集完成后，ADL将对数据进行缩放，以使值反映真实的电压电平。 如果指定了多个脉冲，则将另一个运行程序命令发送到脉冲切换器，并重复上述过程。 程序平均来自所有脉冲的数据并将结果存储在数据文件中。</p>
+<p>如上所述，ADL执行系统设置和运行所需的参数包含在运行程序时在命令行上指定的参数文件中。 示例参数文件如下所示。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">ADAC5501 // Device name (32 char max)</span><br><span class="line">D // Input type [D]ifferential or [S]ingle ended</span><br><span class="line">0 // Channel number [0-7] (Diff) or [0-15] (SE)</span><br><span class="line">B // Polarity [U]nipolar or [B]ipolar</span><br><span class="line">1 // Gain [1,2,4,8,16,32,64]</span><br><span class="line">16384 // Samples per second</span><br><span class="line">65536 // Number of samples</span><br><span class="line">6.0 // Pulse length in seconds [0-13]</span><br><span class="line">0.1 // Daq trigger delay in seconds</span><br><span class="line">4 // Number of pulses</span><br><span class="line">10.0 // Pulse delay in seconds</span><br><span class="line">magnum1.dat // Output file name</span><br></pre></td></tr></table></figure>
+<p>所有这些参数必须出现在每个参数文件中，并且必须按所示顺序显示。 每行的第一项是参数的值，双斜杠标记后面的所有内容都是注释。 注释描述了参数是什么以及它可以采用的可能值。</p>
+<p>前七个参数用于初始化数据采集系统。接下来的四个用于初始化脉冲编程器和运行脉冲序列。最后一个参数给出了程序运行时创建的数据文件的名称。我们现在将描述每个参数的含义。</p>
+<p>如果系统使用多个数据采集卡，则设备名称参数仅具有意义。该参数实际上并未由ADL使用，但它包含在内，因此可以轻松修改程序以使用多个数据采集卡。但它必须保留为参数文件中的第一项。</p>
+<p>输入类型参数有两个可能的值：D表示不同的值，S表示单端的值。该参数指的是数据采集系统处理其输入通道上存在的信号的方式。单端输入电压16个输入通道相对于地被数字化。对于差分输入，数字化的是相邻奇数和偶数通道之间的电压差。差分输入比单端输入提供更高程度的抗噪声投入。因此，建议将差值输入始终与Magnum一起使用。</p>
+<hr>
+<h2 id="第七章-数据处理与分析-chapter-7-data-processing-and-analysis"><a class="markdownIt-Anchor" href="#第七章-数据处理与分析-chapter-7-data-processing-and-analysis"></a> 第七章 数据处理与分析-Chapter 7 Data Processing and Analysis</h2>
+<h3 id="71-信号平均"><a class="markdownIt-Anchor" href="#71-信号平均"></a> 7.1 信号平均</h3>
+<h4 id="711-为什么它会提高信噪比"><a class="markdownIt-Anchor" href="#711-为什么它会提高信噪比"></a> 7.11 为什么它会提高信噪比</h4>
+<p>信号平均是将在相同条件下采集的数据集合在一起的做法。 期望的效果是降低噪声并增强信号。 信号平均的工作原理是噪声是随机的，而信号则嵌入其中噪音不是。 因此，将多个数据集合在一起往往会在加强信号的同时消除噪声。</p>
+<h4 id="712-由于mosfet的减速导致的限制-limits-due-to-mosfet-slow-down"><a class="markdownIt-Anchor" href="#712-由于mosfet的减速导致的限制-limits-due-to-mosfet-slow-down"></a> 7.12 由于MOSFET的减速导致的限制-Limits due to MOSFET slow down</h4>
+<p>Magnum的脉冲控制器使用MOSFET<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>来关闭极化线圈中的电流。 每次关闭电流时，执行此操作所需的能量在MOSFET中耗散，导致它们升温。 随着电流开启和关闭，MOSFET继续变暖。</p>
+<p>MOSFET的关断时间随着温度的升高而增加。 结果是，利用脉冲控制器获得的每个连续数据集具有稍微减小的信号并且稍后稍微移位。 因此，每个数据集中的信号不相同，并且在这种情况下的信号平均不如理论上有效。</p>
+<p>请注意，保持MOSFET热连接在一起并与良好的散热器接触，如脉冲控制器中所做的那样，可以最大限度地减少MOSFET的这种限制。</p>
+<h3 id="72-过滤数据"><a class="markdownIt-Anchor" href="#72-过滤数据"></a> 7.2 过滤数据</h3>
+<p>原始数据通常包含很多噪音。 图7.1显示了原始数据的前4秒图，DAQ触发延迟为0.1秒（采样率：16384，样本：蒸馏水，地点：Longmont，Colorado，时间：2007年2月8日，17：34<br>
+MST）。</p>
+<p><img src="/2018/11/21/地磁/rawdata.jpg" alt=""></p>
+<p>图7.1：原始数据：第1个4秒，触发延迟0.1秒，蒸馏水样品。</p>
+<p>首先要注意的是，在左侧，我们会看到由于当前切换引起的瞬态。 此外，它非常嘈杂，无法看到信号。</p>
+<p>让我们删除第一个2000个数据点以消除瞬态，然后保持第一个2秒（32768点）。 图7.2显示了结果。</p>
+<p><img src="/2018/11/21/地磁/7.2.jpg" alt="7.2"></p>
+<p>图7.2：原始数据：去除瞬变后的第2秒。</p>
+<p>注意：下面提到的所有软件都可以在我们的数字信号处理页面（<a href="http://www.exstrom.com/journal/sigproc/" rel="external nofollow noopener noreferrer" target="_blank">http://www.exstrom.com/journal/sigproc/</a>)上找到。</p>
+<p>现在让我们通过对这些数据应用6阶Butter-worth带通滤波器来消除一些噪声。 根据我们对第5章所述的地球磁场强度的估计，我们在科罗拉多州朗蒙特的质子进动频率应该是大约2250赫兹。 所以我们将截止频率设为2100和2400 Hz。</p>
+<p>我们为我们的6阶Butterworth带通滤波器创建系数文件，如下所示：</p>
+<p>bwbp 6 0.25620000 0.29280000 1 bpfmagnum.cof</p>
+<p>其中浮点数是无量纲截止频率，使用我们的数字信号处理页面上的计算器从实际频率转换而来。 请注意，要进行此转换，您必须知道用于获取数据的采样率。 如果使用本书附带的软件，则它位于数据文件的标题中。 在这种情况下，它是16393.4426 sps。</p>
+<p>现在我们得到了带通滤波器的频率响应</p>
+<p>rffr bpfmagnum.cof 32768 bpfmagnum.fft</p>
+<p>提取幅度，这是该文件的第一列（第二列是阶段）：</p>
+<p>extract r bpfmagnum.fft 32768 bpfmagnum。</p>
+<p>现在我们可以在图7.3中看到滤波器的频率响应是什么。</p>
+<p><img src="/2018/11/21/地磁/7.3.jpg" alt="7.3"><br>
+图7.3：Butterworth带通滤波器频率响应，6阶，fc = 2100,2400 Hz。</p>
+<p>我们现在可以删除我们的Magnum数据文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rdf bpfmagnum.cof elpaso1.dat 2000 32768 elpaso1bpf.dat</span><br></pre></td></tr></table></figure>
+<p>结果如图7.3所示。</p>
+<p><img src="/2018/11/21/地磁/7.4.jpg" alt="7.4"></p>
+<p>图7.4：使用Butterworth BPF输入的数据，6阶。</p>
+<p>现在我们可以在两个2秒的数据中看到我们的自由感应衰减。</p>
+<h3 id="73-利用fft进行光谱分析"><a class="markdownIt-Anchor" href="#73-利用fft进行光谱分析"></a> 7.3 利用FFT进行光谱分析</h3>
+<p>让我们对原始数据和过滤数据进行FFT（记住过滤后的数据已经删除了前2000个点）</p>
+<p>fft 2000 32768 elpaso1.dat elpaso1.fft<br>
+fft 0 32768 elpaso1bpf.dat elpaso1bpf.fft</p>
+<p>考虑我们的FFT的幅度：</p>
+<p>提取m elpaso1.fft 32768 elpaso1.mag<br>
+提取m elpaso1bpf.fft 32768 elpaso1bpf.mag</p>
+<p>现在我们可以绘制和比较FFT，如图7.5和7.6所示</p>
+<p>您可以看到我们的带通滤波器有多好用。</p>
+<p>图7.7显示了峰区的特写视图。</p>
+<p>您可能想知道，在原始数据的FFT中有如此多的噪声，您如何知道哪个峰值是质子进动频率？ 很简单，只需取下样品瓶，再取一组数据，然后你所追求的峰值就会消失。 当然</p>
+<p><img src="/2018/11/21/地磁/7.5.jpg" alt="7.5"><br>
+图7.5：原始数据的FFT，32768点。</p>
+<p><img src="/2018/11/21/地磁/7.6.jpg" alt=""><br>
+图7.6：过滤数据的FFT，32768点。</p>
+<p><img src="/2018/11/21/地磁/7.7.jpg" alt="7.7"><br>
+图7.7：图7.7的特写视图。</p>
+<h3 id="74-将bin编号转化为实际的频率-convert-bin-number-to-actual-frequency"><a class="markdownIt-Anchor" href="#74-将bin编号转化为实际的频率-convert-bin-number-to-actual-frequency"></a> 7.4 将bin编号转化为实际的频率-Convert bin number to actual frequency</h3>
+<p>一旦你在FFT图中识别出质子进动峰值，就可以读出峰值的二进制数。 该图表告诉您bin编号的活动域，但您实际上可以查看FFT幅度数据文件以获得精确的bin编号。</p>
+<p>在上面的FFT中，峰值位于数据点4492处。要获得频率，我们必须计算Hz / bin。 从原始数据文件中，采样率为16393.4426 sps。 我们的FFT使用了32768个数据点。 因此，我们有16393.4426 / 32768 = 0.500288 Hz / bin。 所以我们在峰值的频率是（44921）* 0.500288 = 2246.7934赫兹。</p>
+<p>了解峰值的频率，您现在可以在本书的网页（<a href="http://www.exstrom.com/magnum.html" rel="external nofollow noopener noreferrer" target="_blank">http://www.exstrom.com/magnum.html</a>)上使用频率到磁场转换器来获得磁场。</p>
+<p>当然，你应该知道你对当地地球场估计的高峰位置。 如果使用去离子水代替蒸馏水，峰值应显着增大。</p>
+<h3 id="75-峰值位置的高分辨率光谱"><a class="markdownIt-Anchor" href="#75-峰值位置的高分辨率光谱"></a> 7.5 峰值位置的高分辨率光谱</h3>
+<hr>
+<ul>
+<li>数据采集指南：<a href="http://www.ni.com/white-paper/11055/zhs/" rel="external nofollow noopener noreferrer" target="_blank">http://www.ni.com/white-paper/11055/zhs/</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称\参数</th>
+<th style="text-align:center">图片</th>
+<th style="text-align:center">系统支持</th>
+<th style="text-align:center">价格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a href="https://item.taobao.com/item.htm?spm=a230r.1.14.101.5abf5f51SVSRXX&amp;id=534538408667&amp;ns=1&amp;abbucket=1#detail" rel="external nofollow noopener noreferrer" target="_blank">山青水青电子测量技术</a></td>
+<td style="text-align:center"><img style="width:300px;" src="https://gd1.alicdn.com/imgextra/i4/134803376/TB2e_dQpHZnBKNjSZFKXXcGOVXa_!!134803376.jpg"></td>
+<td style="text-align:center">xp,win7,win10</td>
+<td style="text-align:center">585</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://item.taobao.com/item.htm?spm=a230r.1.14.55.5abf5f51SVSRXX&amp;id=541538078385&amp;ns=1&amp;abbucket=1#detail" rel="external nofollow noopener noreferrer" target="_blank">智能数采</a></td>
+<td style="text-align:center"><img style="width:300px;" src="https://gd3.alicdn.com/imgextra/i3/2972316446/TB2P38hXYEF6uJjSZFOXXXUvVXa_!!2972316446.jpg"></td>
+<td style="text-align:center">win, linux</td>
+<td style="text-align:center">999</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://item.taobao.com/item.htm?spm=a230r.1.14.196.5abf5f51SVSRXX&amp;id=24347560618&amp;ns=1&amp;abbucket=1#detail" rel="external nofollow noopener noreferrer" target="_blank">迷你USB数据采集卡</a></td>
+<td style="text-align:center"><img style="width:300px;" src="https://gd3.alicdn.com/imgextra/i3/1087172351/O1CN011TEnbl2dsAriZaO_!!1087172351.jpg"></td>
+<td style="text-align:center">win,linux</td>
+<td style="text-align:center">119</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://item.taobao.com/item.htm?spm=2013.1.0.0.3a6f2671RpDrPv&amp;id=524320311827" rel="external nofollow noopener noreferrer" target="_blank">高性价比USB多功能数据采集-100K单端</a></td>
+<td style="text-align:center"><img style="width:300px;" src="https://gd3.alicdn.com/imgextra/i4/1087172351/O1CN011TEncsVQGl3CTxD_!!1087172351.jpg"></td>
+<td style="text-align:center">windows,linux,树莓派</td>
+<td style="text-align:center">350</td>
+</tr>
+</tbody>
+</table>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Mosfet:<a href="https://zh.wikipedia.org/wiki/%E9%87%91%E5%B1%AC%E6%B0%A7%E5%8C%96%E7%89%A9%E5%8D%8A%E5%B0%8E%E9%AB%94%E5%A0%B4%E6%95%88%E9%9B%BB%E6%99%B6%E9%AB%94" rel="external nofollow noopener noreferrer" target="_blank">金属氧化物场效应管</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+</div>
+
+
+      </div>
+      
+  	</div>
+
+    <!-- After footer scripts -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+  </body>
+</html>
