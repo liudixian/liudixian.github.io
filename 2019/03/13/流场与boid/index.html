@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="has-navbar-fixed-top">
 <head><meta name="generator" content="Hexo 3.8.0">
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <meta charset="utf-8">
 <title>流场与boid - 刘迪先</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -16,21 +16,22 @@
 
 
 
-    <meta name="description" content="流场跟随路径：跟随路径实现步骤： 随机一个向量矩阵 计算当前速度的未来位置 点 p 计算 向量 A ：流场起始位置 a 到 点 p 的向量 计算向量 B ：计算流场起始 点 a 到 末点 b 计算法线交点位置： 标量投影法   seek( terget) 转向到法线交点延长线上的前方某点  流场：跟随路径：一、 点乘（点积）： 通过点乘的两个公式可以计算两向量之间的夹角值 $$cos(\theta">
+    <meta name="description" content="frome nature of code Daniel shiffmann">
 <meta name="keywords" content="流场">
 <meta property="og:type" content="article">
 <meta property="og:title" content="流场与boid">
 <meta property="og:url" content="http://liudixian.github.io/2019/03/13/流场与boid/index.html">
 <meta property="og:site_name" content="刘迪先">
-<meta property="og:description" content="流场跟随路径：跟随路径实现步骤： 随机一个向量矩阵 计算当前速度的未来位置 点 p 计算 向量 A ：流场起始位置 a 到 点 p 的向量 计算向量 B ：计算流场起始 点 a 到 末点 b 计算法线交点位置： 标量投影法   seek( terget) 转向到法线交点延长线上的前方某点  流场：跟随路径：一、 点乘（点积）： 通过点乘的两个公式可以计算两向量之间的夹角值 $$cos(\theta">
+<meta property="og:description" content="frome nature of code Daniel shiffmann">
 <meta property="og:locale" content="zh">
+<meta property="og:image" content="http://liudixian.github.io/.io//boid.png">
 <meta property="og:image" content="http://liudixian.github.io/.io//6-25.png">
 <meta property="og:image" content="http://liudixian.github.io/.io//6-28.png">
-<meta property="og:updated_time" content="2019-03-17T17:13:59.957Z">
+<meta property="og:updated_time" content="2019-06-04T13:58:37.232Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="流场与boid">
-<meta name="twitter:description" content="流场跟随路径：跟随路径实现步骤： 随机一个向量矩阵 计算当前速度的未来位置 点 p 计算 向量 A ：流场起始位置 a 到 点 p 的向量 计算向量 B ：计算流场起始 点 a 到 末点 b 计算法线交点位置： 标量投影法   seek( terget) 转向到法线交点延长线上的前方某点  流场：跟随路径：一、 点乘（点积）： 通过点乘的两个公式可以计算两向量之间的夹角值 $$cos(\theta">
-<meta name="twitter:image" content="http://liudixian.github.io/.io//6-25.png">
+<meta name="twitter:description" content="frome nature of code Daniel shiffmann">
+<meta name="twitter:image" content="http://liudixian.github.io/.io//boid.png">
 
 
 
@@ -51,7 +52,7 @@
 
 <link rel="stylesheet" href="/css/style.css">
 
-<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
 
     
@@ -71,7 +72,7 @@
 </head>
 <body>
     
-<!-- hexo-inject:begin --><!-- hexo-inject:end --><nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item navbar-logo" href="/">
@@ -90,9 +91,9 @@
             
             <a class="navbar-item " href="/archives">Archives</a>
             
-            <a class="navbar-item " href="/categories/LifeStyle">Lifestyle</a>
+            <a class="navbar-item " href="/categories/媒介理论">Media Theory</a>
             
-            <a class="navbar-item " href="/categories/Music">Music</a>
+            <a class="navbar-item " href="/categories/works">Works</a>
             
             <a class="navbar-item " href="/categories/Technology">Technology</a>
             
@@ -177,13 +178,16 @@
         <span class="column is-narrow">
             
             
-            7 分钟 read (About 986 words)
+            7 分钟 read (About 1000 words)
         </span>
         
     </div>
     <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-        <h1 id="流场"><a href="#流场" class="headerlink" title="流场"></a>流场</h1><h2 id="跟随路径："><a href="#跟随路径：" class="headerlink" title="跟随路径："></a>跟随路径：</h2><h5 id="跟随路径实现步骤："><a href="#跟随路径实现步骤：" class="headerlink" title="跟随路径实现步骤："></a>跟随路径实现步骤：</h5><ol>
+        <p><img src="/.io//boid.png" alt="boid"><br><em>frome nature of code Daniel shiffmann</em></p>
+<a id="more"></a>
+
+<h1 id="流场"><a href="#流场" class="headerlink" title="流场"></a>流场</h1><h2 id="跟随路径："><a href="#跟随路径：" class="headerlink" title="跟随路径："></a>跟随路径：</h2><h5 id="跟随路径实现步骤："><a href="#跟随路径实现步骤：" class="headerlink" title="跟随路径实现步骤："></a>跟随路径实现步骤：</h5><ol>
 <li>随机一个向量矩阵</li>
 <li>计算当前速度的未来位置 点 p</li>
 <li>计算 向量 A ：流场起始位置 a 到 点 p 的向量</li>
@@ -197,19 +201,19 @@
 <h5 id="流场：跟随路径："><a href="#流场：跟随路径：" class="headerlink" title="流场：跟随路径："></a>流场：跟随路径：</h5><p>一、 点乘（点积）： <strong>通过点乘的两个公式可以计算两向量之间的夹角值</strong></p>
 <p>$$cos(\theta) = (\vec A·\vec B)/ \left(\Vert \vec A \Vert * \Vert \vec B \Vert \right)$$</p>
 <p>$$ \theta = cos^-1 \left((\vec A·\vec B)/\left(\Vert \vec A \Vert * \Vert \vec B \Vert  \right) \right) $$</p>
-<figure class="highlight processing hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">//processing 实现</span></span><br><span class="line"><span class="hljs-keyword">PVector</span> a = <span class="hljs-keyword">new</span> <span class="hljs-keyword">PVector</span>(<span class="hljs-number">10</span>,<span class="hljs-number">2</span>);</span><br><span class="line"><span class="hljs-keyword">PVector</span> b = <span class="hljs-keyword">new</span> <span class="hljs-keyword">PVector</span>(<span class="hljs-number">4</span>,<span class="hljs-number">-3</span>);</span><br><span class="line"><span class="hljs-built_in">float</span> theta = <span class="hljs-built_in">acos</span>(a.dot(b)/a.<span class="hljs-built_in">mag</span>() * b.<span class="hljs-built_in">mag</span>());</span><br><span class="line"><span class="hljs-comment">//现成的函数 void public float angleBetween(PVector v1, PVector v2);  &#123;… :return theta&#125;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//processing 实现</span></span><br><span class="line"><span class="keyword">PVector</span> a = <span class="keyword">new</span> <span class="keyword">PVector</span>(<span class="number">10</span>,<span class="number">2</span>);</span><br><span class="line"><span class="keyword">PVector</span> b = <span class="keyword">new</span> <span class="keyword">PVector</span>(<span class="number">4</span>,<span class="number">-3</span>);</span><br><span class="line"><span class="built_in">float</span> theta = <span class="built_in">acos</span>(a.dot(b)/a.<span class="built_in">mag</span>() * b.<span class="built_in">mag</span>());</span><br><span class="line"><span class="comment">//现成的函数 void public float angleBetween(PVector v1, PVector v2);  &#123;… :return theta&#125;</span></span><br></pre></td></tr></table></figure>
 
 <p>二、 <strong>标量投影：</strong> 计算法线交点</p>
 <p>1） <img src="/.io//6-25.png" alt=""></p>
-<figure class="highlight processing hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">/*方法二 公式化约  </span></span><br><span class="line"><span class="hljs-comment">- 已知 B = |A| * cos0;</span></span><br><span class="line"><span class="hljs-comment">- 又 A*B= |A|*|B|*cos0  ---&gt;如果</span></span><br><span class="line"><span class="hljs-comment">- 如果 |B| == 1；</span></span><br><span class="line"><span class="hljs-comment">- 则：A*B= |A|*1*cos0  ---&gt; A*B= |A|*cos0（B的长度为'1'）</span></span><br><span class="line"><span class="hljs-comment">- 因此 d 的计算得以简化为：d =  a.dot(b);</span></span><br><span class="line"><span class="hljs-comment">- 这一过程通常称为“标量投影”，即：|A|* cos(0)就是向量 A 到 B 的标量投影</span></span><br><span class="line"><span class="hljs-comment">*/</span></span><br><span class="line">“标量投影”，即：|A|* <span class="hljs-built_in">cos</span>(<span class="hljs-number">0</span>)就是向量 A 到 B 的标量投影</span><br></pre></td></tr></table></figure>
+<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*方法二 公式化约  </span></span><br><span class="line"><span class="comment">- 已知 B = |A| * cos0;</span></span><br><span class="line"><span class="comment">- 又 A*B= |A|*|B|*cos0  ---&gt;如果</span></span><br><span class="line"><span class="comment">- 如果 |B| == 1；</span></span><br><span class="line"><span class="comment">- 则：A*B= |A|*1*cos0  ---&gt; A*B= |A|*cos0（B的长度为'1'）</span></span><br><span class="line"><span class="comment">- 因此 d 的计算得以简化为：d =  a.dot(b);</span></span><br><span class="line"><span class="comment">- 这一过程通常称为“标量投影”，即：|A|* cos(0)就是向量 A 到 B 的标量投影</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">“标量投影”，即：|A|* <span class="built_in">cos</span>(<span class="number">0</span>)就是向量 A 到 B 的标量投影</span><br></pre></td></tr></table></figure>
 
 <p><img src="/.io//6-28.png" alt=""></p>
 <p>2) 计算法线交点的两种方法：</p>
 <p>普通：</p>
-<figure class="highlight processing hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">void</span> followA(Path p) &#123;</span><br><span class="line">    <span class="hljs-comment">//计算未来位置</span></span><br><span class="line">    <span class="hljs-keyword">PVector</span> predic = vel.<span class="hljs-built_in">get</span>();</span><br><span class="line">    predic.normalize();</span><br><span class="line">    predic.mult(<span class="hljs-number">25</span>);</span><br><span class="line">    <span class="hljs-keyword">PVector</span> predicLoc = predic.<span class="hljs-built_in">add</span>(loc, predic);   <span class="hljs-comment">//预期位置</span></span><br><span class="line">    <span class="hljs-comment">//计算 向量 A</span></span><br><span class="line">    <span class="hljs-keyword">PVector</span> a = <span class="hljs-keyword">PVector</span>.sub(predicLoc, p.start);   <span class="hljs-comment">// a向量</span></span><br><span class="line">    <span class="hljs-comment">//计算向量 B</span></span><br><span class="line">    <span class="hljs-keyword">PVector</span> b = <span class="hljs-keyword">PVector</span>.sub(p.end, p.start);</span><br><span class="line">    <span class="hljs-comment">//法线交点位置</span></span><br><span class="line">    <span class="hljs-built_in">float</span> theta = <span class="hljs-keyword">PVector</span>.angleBetween(a, b);   <span class="hljs-comment">//"点乘" 计算夹角</span></span><br><span class="line">    <span class="hljs-built_in">float</span> d = a.<span class="hljs-built_in">mag</span>() * <span class="hljs-built_in">cos</span>(theta);  <span class="hljs-comment">//起始位置到法线交点的长度</span></span><br><span class="line">    b.normalize();  <span class="hljs-comment">//b 向量的方向标量</span></span><br><span class="line">    b.mult(d);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> followA(Path p) &#123;</span><br><span class="line">    <span class="comment">//计算未来位置</span></span><br><span class="line">    <span class="keyword">PVector</span> predic = vel.<span class="built_in">get</span>();</span><br><span class="line">    predic.normalize();</span><br><span class="line">    predic.mult(<span class="number">25</span>);</span><br><span class="line">    <span class="keyword">PVector</span> predicLoc = predic.<span class="built_in">add</span>(loc, predic);   <span class="comment">//预期位置</span></span><br><span class="line">    <span class="comment">//计算 向量 A</span></span><br><span class="line">    <span class="keyword">PVector</span> a = <span class="keyword">PVector</span>.sub(predicLoc, p.start);   <span class="comment">// a向量</span></span><br><span class="line">    <span class="comment">//计算向量 B</span></span><br><span class="line">    <span class="keyword">PVector</span> b = <span class="keyword">PVector</span>.sub(p.end, p.start);</span><br><span class="line">    <span class="comment">//法线交点位置</span></span><br><span class="line">    <span class="built_in">float</span> theta = <span class="keyword">PVector</span>.angleBetween(a, b);   <span class="comment">//"点乘" 计算夹角</span></span><br><span class="line">    <span class="built_in">float</span> d = a.<span class="built_in">mag</span>() * <span class="built_in">cos</span>(theta);  <span class="comment">//起始位置到法线交点的长度</span></span><br><span class="line">    b.normalize();  <span class="comment">//b 向量的方向标量</span></span><br><span class="line">    b.mult(d);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 
 <p>标量投影：</p>
-<figure class="highlight processing hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">void</span> followB(Path p) &#123;</span><br><span class="line">    <span class="hljs-comment">//计算未来位置</span></span><br><span class="line">    <span class="hljs-keyword">PVector</span> predic = vel.<span class="hljs-built_in">get</span>();</span><br><span class="line">    predic.normalize();</span><br><span class="line">    predic.mult(<span class="hljs-number">25</span>);</span><br><span class="line">    <span class="hljs-keyword">PVector</span> predicLoc = predic.<span class="hljs-built_in">add</span>(loc, predic);   <span class="hljs-comment">//预期位置</span></span><br><span class="line">    <span class="hljs-comment">//计算 向量 A</span></span><br><span class="line">    <span class="hljs-keyword">PVector</span> a = <span class="hljs-keyword">PVector</span>.sub(predicLoc, p.start);   <span class="hljs-comment">// a向量</span></span><br><span class="line">    <span class="hljs-comment">//计算向量 B</span></span><br><span class="line">    <span class="hljs-keyword">PVector</span> b = <span class="hljs-keyword">PVector</span>.sub(p.end, p.start);</span><br><span class="line">    <span class="hljs-comment">//法线交点位置</span></span><br><span class="line">    <span class="hljs-comment">/*方法二 公式化约  </span></span><br><span class="line"><span class="hljs-comment">     - 已知 B = |A| * cos0;</span></span><br><span class="line"><span class="hljs-comment">     - 又 A*B= |A|*|B|*cos0  ---&gt;如果</span></span><br><span class="line"><span class="hljs-comment">     - 如果 |B| == 1；</span></span><br><span class="line"><span class="hljs-comment">     - 则：A*B= |A|*1*cos0  ---&gt; A*B= |A|*cos0（B的长度为'1'）</span></span><br><span class="line"><span class="hljs-comment">     - 因此 d 的计算得以简化为：d =  a.dot(b);</span></span><br><span class="line"><span class="hljs-comment">     - 这一过程通常称为“标量投影”，即：|A|* cos(0)就是向量 A 到 B 的标量投影</span></span><br><span class="line"><span class="hljs-comment">     */</span></span><br><span class="line">    b.normalize();</span><br><span class="line">    <span class="hljs-comment">//float d = a.dot(n);</span></span><br><span class="line">    b.mult(a.dot(b));</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> followB(Path p) &#123;</span><br><span class="line">    <span class="comment">//计算未来位置</span></span><br><span class="line">    <span class="keyword">PVector</span> predic = vel.<span class="built_in">get</span>();</span><br><span class="line">    predic.normalize();</span><br><span class="line">    predic.mult(<span class="number">25</span>);</span><br><span class="line">    <span class="keyword">PVector</span> predicLoc = predic.<span class="built_in">add</span>(loc, predic);   <span class="comment">//预期位置</span></span><br><span class="line">    <span class="comment">//计算 向量 A</span></span><br><span class="line">    <span class="keyword">PVector</span> a = <span class="keyword">PVector</span>.sub(predicLoc, p.start);   <span class="comment">// a向量</span></span><br><span class="line">    <span class="comment">//计算向量 B</span></span><br><span class="line">    <span class="keyword">PVector</span> b = <span class="keyword">PVector</span>.sub(p.end, p.start);</span><br><span class="line">    <span class="comment">//法线交点位置</span></span><br><span class="line">    <span class="comment">/*方法二 公式化约  </span></span><br><span class="line"><span class="comment">     - 已知 B = |A| * cos0;</span></span><br><span class="line"><span class="comment">     - 又 A*B= |A|*|B|*cos0  ---&gt;如果</span></span><br><span class="line"><span class="comment">     - 如果 |B| == 1；</span></span><br><span class="line"><span class="comment">     - 则：A*B= |A|*1*cos0  ---&gt; A*B= |A|*cos0（B的长度为'1'）</span></span><br><span class="line"><span class="comment">     - 因此 d 的计算得以简化为：d =  a.dot(b);</span></span><br><span class="line"><span class="comment">     - 这一过程通常称为“标量投影”，即：|A|* cos(0)就是向量 A 到 B 的标量投影</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    b.normalize();</span><br><span class="line">    <span class="comment">//float d = a.dot(n);</span></span><br><span class="line">    b.mult(a.dot(b));</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="Boid类的实现"><a href="#Boid类的实现" class="headerlink" title="Boid类的实现"></a>Boid类的实现</h2><p>要点：</p>
 <ul>
@@ -521,7 +525,7 @@
         window.INSIGHT_CONFIG = INSIGHT_CONFIG;
     })(window);
 </script>
-<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/insight.js"></script>
     
 </body>
 </html>

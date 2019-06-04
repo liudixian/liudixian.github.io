@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="has-navbar-fixed-top">
 <head><meta name="generator" content="Hexo 3.8.0">
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <meta charset="utf-8">
 <title>地磁 - 刘迪先</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -70,7 +70,7 @@
 
 <link rel="stylesheet" href="/css/style.css">
 
-<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
 
     
@@ -90,7 +90,7 @@
 </head>
 <body>
     
-<!-- hexo-inject:begin --><!-- hexo-inject:end --><nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item navbar-logo" href="/">
@@ -109,9 +109,9 @@
             
             <a class="navbar-item " href="/archives">Archives</a>
             
-            <a class="navbar-item " href="/categories/LifeStyle">Lifestyle</a>
+            <a class="navbar-item " href="/categories/媒介理论">Media Theory</a>
             
-            <a class="navbar-item " href="/categories/Music">Music</a>
+            <a class="navbar-item " href="/categories/works">Works</a>
             
             <a class="navbar-item " href="/categories/Technology">Technology</a>
             
@@ -256,7 +256,7 @@
 <p>对于Magnum，您应该获取至少半秒的数据。 如果你明显少于此，则进动信号频谱将开始变宽，并且可能变得更难以精确定位峰值。 可用的进动信号将持续不超过2到3秒，因此不需要比这更长时间地获取数据。 对于大多数目的而言，从0.5到3.0秒的任何地方获取数据应该是足够的。</p>
 <h3 id="6-4-用Magnum制作的模数转换器-The-ADC-board-used-in-the-Magnum"><a href="#6-4-用Magnum制作的模数转换器-The-ADC-board-used-in-the-Magnum" class="headerlink" title="6.4 用Magnum制作的模数转换器 The ADC board used in the Magnum"></a>6.4 用Magnum制作的模数转换器 The ADC board used in the Magnum</h3><p>Magnum中使用的ADC板是IOtech（<a href="http://www.iotech.com/)的ADAC" rel="external nofollow noopener noreferrer" target="_blank">http://www.iotech.com/)的ADAC</a> / 5501MF（<a href="ftp://ftp.iotech.com/ADAC.5500.20Series.20Users.20Manual.pdf）。" rel="external nofollow noopener noreferrer" target="_blank">ftp://ftp.iotech.com/ADAC.5500.20Series.20Users.20Manual.pdf）。</a> 它是一个12位ADC，具有8个不对称（或16个单端）模拟输入，最大采样率为100 kHz。</p>
 <p>需要从IOtech获取的部件：</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> - Data acquisition board: ADAC/5501MF $384</span><br><span class="line"> - Terminal board: ADAC-TB-16 $139</span><br><span class="line"> - Cable: CA-G55-ADAC $69</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> - Data acquisition board: ADAC/5501MF $384</span><br><span class="line"> - Terminal board: ADAC-TB-16 $139</span><br><span class="line"> - Cable: CA-G55-ADAC $69</span><br></pre></td></tr></table></figure>
 
 <p>没有必要使用这个特定的数据采集板，但本书附带的软件（用于与电路板通信并获取数据）是为该电路板编写的。如果您更喜欢使用不同的数据采集板， 所需的基本功能是：</p>
 <ol>
@@ -271,7 +271,7 @@
 <p>要启动脉冲，ADL将运行程序命令发送到脉冲切换器。然后脉冲切换器将偏振线圈中的电流接通指定的时间。关闭电流后，切换器会在触发数据采集系统（DAQ）开始采集数据之前等待很短的时间。</p>
 <p>数据采集完成后，ADL将对数据进行缩放，以使值反映真实的电压电平。 如果指定了多个脉冲，则将另一个运行程序命令发送到脉冲切换器，并重复上述过程。 程序平均来自所有脉冲的数据并将结果存储在数据文件中。</p>
 <p>如上所述，ADL执行系统设置和运行所需的参数包含在运行程序时在命令行上指定的参数文件中。 示例参数文件如下所示。</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">ADAC5501 // Device name (32 char max)</span><br><span class="line">D // Input type [D]ifferential or [S]ingle ended</span><br><span class="line">0 // Channel number [0-7] (Diff) or [0-15] (SE)</span><br><span class="line">B // Polarity [U]nipolar or [B]ipolar</span><br><span class="line">1 // Gain [1,2,4,8,16,32,64]</span><br><span class="line">16384 // Samples per second</span><br><span class="line">65536 // Number of samples</span><br><span class="line">6.0 // Pulse length in seconds [0-13]</span><br><span class="line">0.1 // Daq trigger delay in seconds</span><br><span class="line">4 // Number of pulses</span><br><span class="line">10.0 // Pulse delay in seconds</span><br><span class="line">magnum1.dat // Output file name</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">ADAC5501 // Device name (32 char max)</span><br><span class="line">D // Input type [D]ifferential or [S]ingle ended</span><br><span class="line">0 // Channel number [0-7] (Diff) or [0-15] (SE)</span><br><span class="line">B // Polarity [U]nipolar or [B]ipolar</span><br><span class="line">1 // Gain [1,2,4,8,16,32,64]</span><br><span class="line">16384 // Samples per second</span><br><span class="line">65536 // Number of samples</span><br><span class="line">6.0 // Pulse length in seconds [0-13]</span><br><span class="line">0.1 // Daq trigger delay in seconds</span><br><span class="line">4 // Number of pulses</span><br><span class="line">10.0 // Pulse delay in seconds</span><br><span class="line">magnum1.dat // Output file name</span><br></pre></td></tr></table></figure>
 
 <p>所有这些参数必须出现在每个参数文件中，并且必须按所示顺序显示。 每行的第一项是参数的值，双斜杠标记后面的所有内容都是注释。 注释描述了参数是什么以及它可以采用的可能值。</p>
 <p>前七个参数用于初始化数据采集系统。接下来的四个用于初始化脉冲编程器和运行脉冲序列。最后一个参数给出了程序运行时创建的数据文件的名称。我们现在将描述每个参数的含义。</p>
@@ -301,7 +301,7 @@
 <p>现在我们可以在图7.3中看到滤波器的频率响应是什么。</p>
 <p><img src="/.io//7.3.jpg" alt="7.3"><br>图7.3：Butterworth带通滤波器频率响应，6阶，fc = 2100,2400 Hz。</p>
 <p>我们现在可以删除我们的Magnum数据文件：</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rdf bpfmagnum.cof elpaso1.dat 2000 32768 elpaso1bpf.dat</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rdf bpfmagnum.cof elpaso1.dat 2000 32768 elpaso1bpf.dat</span><br></pre></td></tr></table></figure>
 
 <p>结果如图7.3所示。</p>
 <p><img src="/.io//7.4.jpg" alt="7.4"></p>
@@ -572,7 +572,7 @@
         window.INSIGHT_CONFIG = INSIGHT_CONFIG;
     })(window);
 </script>
-<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/insight.js"></script>
     
 </body>
 </html>
