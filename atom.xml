@@ -5,9 +5,9 @@
   <subtitle>uilxxx</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://liudixian.com/"/>
+  <link href="http://liudixian.github.io/"/>
   <updated>2019-06-04T04:59:42.705Z</updated>
-  <id>http://liudixian.com/</id>
+  <id>http://liudixian.github.io/</id>
   
   <author>
     <name>liudixian</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>齐物等观</title>
-    <link href="http://liudixian.com/2019/06/04/%E9%BD%90%E7%89%A9%E7%AD%89%E8%A7%82/"/>
-    <id>http://liudixian.com/2019/06/04/齐物等观/</id>
+    <link href="http://liudixian.github.io/2019/06/04/%E9%BD%90%E7%89%A9%E7%AD%89%E8%A7%82/"/>
+    <id>http://liudixian.github.io/2019/06/04/齐物等观/</id>
     <published>2019-06-04T04:59:09.000Z</published>
     <updated>2019-06-04T04:59:42.705Z</updated>
     
@@ -43,8 +43,8 @@
   
   <entry>
     <title>Form_follows_format</title>
-    <link href="http://liudixian.com/2019/03/24/Form-follows-format/"/>
-    <id>http://liudixian.com/2019/03/24/Form-follows-format/</id>
+    <link href="http://liudixian.github.io/2019/03/24/Form-follows-format/"/>
+    <id>http://liudixian.github.io/2019/03/24/Form-follows-format/</id>
     <published>2019-03-24T13:37:31.000Z</published>
     <updated>2019-03-24T14:50:22.435Z</updated>
     
@@ -61,17 +61,17 @@
     
     </summary>
     
-      <category term="媒介理论" scheme="http://liudixian.com/categories/%E5%AA%92%E4%BB%8B%E7%90%86%E8%AE%BA/"/>
+      <category term="媒介理论" scheme="http://liudixian.github.io/categories/%E5%AA%92%E4%BB%8B%E7%90%86%E8%AE%BA/"/>
     
     
-      <category term="Media Art Net I" scheme="http://liudixian.com/tags/Media-Art-Net-I/"/>
+      <category term="Media Art Net I" scheme="http://liudixian.github.io/tags/Media-Art-Net-I/"/>
     
   </entry>
   
   <entry>
     <title>Github_tutorial</title>
-    <link href="http://liudixian.com/2019/03/20/Github-tutorial/"/>
-    <id>http://liudixian.com/2019/03/20/Github-tutorial/</id>
+    <link href="http://liudixian.github.io/2019/03/20/Github-tutorial/"/>
+    <id>http://liudixian.github.io/2019/03/20/Github-tutorial/</id>
     <published>2019-03-20T14:28:51.000Z</published>
     <updated>2019-03-20T14:29:19.244Z</updated>
     
@@ -89,14 +89,14 @@
     </summary>
     
     
-      <category term="github" scheme="http://liudixian.com/tags/github/"/>
+      <category term="github" scheme="http://liudixian.github.io/tags/github/"/>
     
   </entry>
   
   <entry>
     <title>Shader_Study_01</title>
-    <link href="http://liudixian.com/2019/03/17/Shader-Study-01/"/>
-    <id>http://liudixian.com/2019/03/17/Shader-Study-01/</id>
+    <link href="http://liudixian.github.io/2019/03/17/Shader-Study-01/"/>
+    <id>http://liudixian.github.io/2019/03/17/Shader-Study-01/</id>
     <published>2019-03-17T06:11:12.000Z</published>
     <updated>2019-03-17T15:05:11.911Z</updated>
     
@@ -113,17 +113,17 @@
     
     </summary>
     
-      <category term="3d渲染" scheme="http://liudixian.com/categories/3d%E6%B8%B2%E6%9F%93/"/>
+      <category term="3d渲染" scheme="http://liudixian.github.io/categories/3d%E6%B8%B2%E6%9F%93/"/>
     
     
-      <category term="shader" scheme="http://liudixian.com/tags/shader/"/>
+      <category term="shader" scheme="http://liudixian.github.io/tags/shader/"/>
     
   </entry>
   
   <entry>
     <title>流场与boid</title>
-    <link href="http://liudixian.com/2019/03/13/%E6%B5%81%E5%9C%BA%E4%B8%8Eboid/"/>
-    <id>http://liudixian.com/2019/03/13/流场与boid/</id>
+    <link href="http://liudixian.github.io/2019/03/13/%E6%B5%81%E5%9C%BA%E4%B8%8Eboid/"/>
+    <id>http://liudixian.github.io/2019/03/13/流场与boid/</id>
     <published>2019-03-13T05:53:56.000Z</published>
     <updated>2019-03-17T17:13:59.957Z</updated>
     
@@ -140,17 +140,17 @@
     
     </summary>
     
-      <category term="Nature of code" scheme="http://liudixian.com/categories/Nature-of-code/"/>
+      <category term="Nature of code" scheme="http://liudixian.github.io/categories/Nature-of-code/"/>
     
     
-      <category term="流场" scheme="http://liudixian.com/tags/%E6%B5%81%E5%9C%BA/"/>
+      <category term="流场" scheme="http://liudixian.github.io/tags/%E6%B5%81%E5%9C%BA/"/>
     
   </entry>
   
   <entry>
     <title>虚拟叙事</title>
-    <link href="http://liudixian.com/2019/01/03/%E8%99%9A%E6%8B%9F%E5%8F%99%E4%BA%8B-md/"/>
-    <id>http://liudixian.com/2019/01/03/虚拟叙事-md/</id>
+    <link href="http://liudixian.github.io/2019/01/03/%E8%99%9A%E6%8B%9F%E5%8F%99%E4%BA%8B-md/"/>
+    <id>http://liudixian.github.io/2019/01/03/虚拟叙事-md/</id>
     <published>2019-01-03T15:11:58.000Z</published>
     <updated>2019-01-03T15:24:21.000Z</updated>
     
@@ -172,8 +172,8 @@
   
   <entry>
     <title>艺术驻留</title>
-    <link href="http://liudixian.com/2018/12/22/%E8%89%BA%E6%9C%AF%E9%A9%BB%E7%95%99/"/>
-    <id>http://liudixian.com/2018/12/22/艺术驻留/</id>
+    <link href="http://liudixian.github.io/2018/12/22/%E8%89%BA%E6%9C%AF%E9%A9%BB%E7%95%99/"/>
+    <id>http://liudixian.github.io/2018/12/22/艺术驻留/</id>
     <published>2018-12-22T04:18:46.000Z</published>
     <updated>2018-12-22T04:21:15.000Z</updated>
     
@@ -190,14 +190,14 @@
     </summary>
     
     
-      <category term="艺术驻留" scheme="http://liudixian.com/tags/%E8%89%BA%E6%9C%AF%E9%A9%BB%E7%95%99/"/>
+      <category term="艺术驻留" scheme="http://liudixian.github.io/tags/%E8%89%BA%E6%9C%AF%E9%A9%BB%E7%95%99/"/>
     
   </entry>
   
   <entry>
     <title>网站资源</title>
-    <link href="http://liudixian.com/2018/12/22/%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90/"/>
-    <id>http://liudixian.com/2018/12/22/网站资源/</id>
+    <link href="http://liudixian.github.io/2018/12/22/%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90/"/>
+    <id>http://liudixian.github.io/2018/12/22/网站资源/</id>
     <published>2018-12-22T04:17:50.000Z</published>
     <updated>2018-12-22T04:31:49.000Z</updated>
     
@@ -214,14 +214,14 @@
     </summary>
     
     
-      <category term="网站收藏" scheme="http://liudixian.com/tags/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/"/>
+      <category term="网站收藏" scheme="http://liudixian.github.io/tags/%E7%BD%91%E7%AB%99%E6%94%B6%E8%97%8F/"/>
     
   </entry>
   
   <entry>
     <title>科技艺术史工作坊_Krac</title>
-    <link href="http://liudixian.com/2018/11/26/11-26-Krac/"/>
-    <id>http://liudixian.com/2018/11/26/11-26-Krac/</id>
+    <link href="http://liudixian.github.io/2018/11/26/11-26-Krac/"/>
+    <id>http://liudixian.github.io/2018/11/26/11-26-Krac/</id>
     <published>2018-11-26T01:18:54.000Z</published>
     <updated>2018-12-21T11:58:45.000Z</updated>
     
@@ -246,8 +246,8 @@
   
   <entry>
     <title>11/25_mt</title>
-    <link href="http://liudixian.com/2018/11/25/11-25-mt/"/>
-    <id>http://liudixian.com/2018/11/25/11-25-mt/</id>
+    <link href="http://liudixian.github.io/2018/11/25/11-25-mt/"/>
+    <id>http://liudixian.github.io/2018/11/25/11-25-mt/</id>
     <published>2018-11-25T12:53:05.000Z</published>
     <updated>2018-11-25T13:56:06.000Z</updated>
     
@@ -274,14 +274,14 @@
     </summary>
     
     
-      <category term="mt&amp;t" scheme="http://liudixian.com/tags/mt-t/"/>
+      <category term="mt&amp;t" scheme="http://liudixian.github.io/tags/mt-t/"/>
     
   </entry>
   
   <entry>
     <title>processing入门工作坊</title>
-    <link href="http://liudixian.com/2018/11/25/processing%E5%85%A5%E9%97%A8%E5%B7%A5%E4%BD%9C%E5%9D%8A/"/>
-    <id>http://liudixian.com/2018/11/25/processing入门工作坊/</id>
+    <link href="http://liudixian.github.io/2018/11/25/processing%E5%85%A5%E9%97%A8%E5%B7%A5%E4%BD%9C%E5%9D%8A/"/>
+    <id>http://liudixian.github.io/2018/11/25/processing入门工作坊/</id>
     <published>2018-11-25T06:47:09.000Z</published>
     <updated>2018-11-25T06:48:58.000Z</updated>
     
@@ -302,8 +302,8 @@
   
   <entry>
     <title>媒体技术课程</title>
-    <link href="http://liudixian.com/2018/11/25/%E5%AA%92%E4%BD%93%E6%8A%80%E6%9C%AF%E8%AF%BE%E7%A8%8B/"/>
-    <id>http://liudixian.com/2018/11/25/媒体技术课程/</id>
+    <link href="http://liudixian.github.io/2018/11/25/%E5%AA%92%E4%BD%93%E6%8A%80%E6%9C%AF%E8%AF%BE%E7%A8%8B/"/>
+    <id>http://liudixian.github.io/2018/11/25/媒体技术课程/</id>
     <published>2018-11-25T05:14:12.000Z</published>
     <updated>2018-11-25T11:24:46.000Z</updated>
     
@@ -320,14 +320,14 @@
     </summary>
     
     
-      <category term="processing" scheme="http://liudixian.com/tags/processing/"/>
+      <category term="processing" scheme="http://liudixian.github.io/tags/processing/"/>
     
   </entry>
   
   <entry>
     <title>p5js_learning</title>
-    <link href="http://liudixian.com/2018/11/21/p5js-learning/"/>
-    <id>http://liudixian.com/2018/11/21/p5js-learning/</id>
+    <link href="http://liudixian.github.io/2018/11/21/p5js-learning/"/>
+    <id>http://liudixian.github.io/2018/11/21/p5js-learning/</id>
     <published>2018-11-21T09:02:52.000Z</published>
     <updated>2018-11-21T17:05:17.000Z</updated>
     
@@ -348,8 +348,8 @@
   
   <entry>
     <title>Mechine_learning</title>
-    <link href="http://liudixian.com/2018/11/21/Mechine-learning/"/>
-    <id>http://liudixian.com/2018/11/21/Mechine-learning/</id>
+    <link href="http://liudixian.github.io/2018/11/21/Mechine-learning/"/>
+    <id>http://liudixian.github.io/2018/11/21/Mechine-learning/</id>
     <published>2018-11-21T08:44:03.000Z</published>
     <updated>2018-12-21T11:07:02.000Z</updated>
     
@@ -366,14 +366,14 @@
     </summary>
     
     
-      <category term="技术" scheme="http://liudixian.com/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://liudixian.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
   <entry>
     <title>地磁</title>
-    <link href="http://liudixian.com/2018/11/21/%E5%9C%B0%E7%A3%81/"/>
-    <id>http://liudixian.com/2018/11/21/地磁/</id>
+    <link href="http://liudixian.github.io/2018/11/21/%E5%9C%B0%E7%A3%81/"/>
+    <id>http://liudixian.github.io/2018/11/21/地磁/</id>
     <published>2018-11-21T05:43:13.000Z</published>
     <updated>2018-11-23T12:00:14.000Z</updated>
     
@@ -395,8 +395,8 @@
   
   <entry>
     <title>Vehicles-Vatentino</title>
-    <link href="http://liudixian.com/2018/11/20/Vehicles-Vatentino/"/>
-    <id>http://liudixian.com/2018/11/20/Vehicles-Vatentino/</id>
+    <link href="http://liudixian.github.io/2018/11/20/Vehicles-Vatentino/"/>
+    <id>http://liudixian.github.io/2018/11/20/Vehicles-Vatentino/</id>
     <published>2018-11-19T17:41:06.000Z</published>
     <updated>2018-11-19T17:41:39.000Z</updated>
     
@@ -418,8 +418,8 @@
   
   <entry>
     <title>打开黑匣子</title>
-    <link href="http://liudixian.com/2018/11/19/%E6%89%93%E5%BC%80%E9%BB%91%E5%8C%A3%E5%AD%90/"/>
-    <id>http://liudixian.com/2018/11/19/打开黑匣子/</id>
+    <link href="http://liudixian.github.io/2018/11/19/%E6%89%93%E5%BC%80%E9%BB%91%E5%8C%A3%E5%AD%90/"/>
+    <id>http://liudixian.github.io/2018/11/19/打开黑匣子/</id>
     <published>2018-11-19T08:56:28.000Z</published>
     <updated>2018-11-19T14:49:54.000Z</updated>
     
@@ -439,14 +439,14 @@
     </summary>
     
     
-      <category term="workshop" scheme="http://liudixian.com/tags/workshop/"/>
+      <category term="workshop" scheme="http://liudixian.github.io/tags/workshop/"/>
     
   </entry>
   
   <entry>
     <title>East2018</title>
-    <link href="http://liudixian.com/2018/11/17/East2018/"/>
-    <id>http://liudixian.com/2018/11/17/East2018/</id>
+    <link href="http://liudixian.github.io/2018/11/17/East2018/"/>
+    <id>http://liudixian.github.io/2018/11/17/East2018/</id>
     <published>2018-11-17T02:21:49.000Z</published>
     <updated>2018-11-18T09:18:12.000Z</updated>
     
@@ -463,14 +463,14 @@
     </summary>
     
     
-      <category term="East" scheme="http://liudixian.com/tags/East/"/>
+      <category term="East" scheme="http://liudixian.github.io/tags/East/"/>
     
   </entry>
   
   <entry>
     <title>虚构的生态学</title>
-    <link href="http://liudixian.com/2018/11/15/%E8%99%9A%E6%9E%84%E7%9A%84%E7%94%9F%E6%80%81%E5%AD%A6/"/>
-    <id>http://liudixian.com/2018/11/15/虚构的生态学/</id>
+    <link href="http://liudixian.github.io/2018/11/15/%E8%99%9A%E6%9E%84%E7%9A%84%E7%94%9F%E6%80%81%E5%AD%A6/"/>
+    <id>http://liudixian.github.io/2018/11/15/虚构的生态学/</id>
     <published>2018-11-15T01:10:28.000Z</published>
     <updated>2018-11-15T01:11:17.000Z</updated>
     
@@ -487,14 +487,14 @@
     </summary>
     
     
-      <category term="ever Elusive" scheme="http://liudixian.com/tags/ever-Elusive/"/>
+      <category term="ever Elusive" scheme="http://liudixian.github.io/tags/ever-Elusive/"/>
     
   </entry>
   
   <entry>
     <title>系统美学与交互语境</title>
-    <link href="http://liudixian.com/2018/11/10/%E4%BA%A4%E6%B5%81%EF%BC%8C%E4%BA%92%E5%8A%A8%E5%92%8C%E7%B3%BB%E7%BB%9F/"/>
-    <id>http://liudixian.com/2018/11/10/交流，互动和系统/</id>
+    <link href="http://liudixian.github.io/2018/11/10/%E4%BA%A4%E6%B5%81%EF%BC%8C%E4%BA%92%E5%8A%A8%E5%92%8C%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://liudixian.github.io/2018/11/10/交流，互动和系统/</id>
     <published>2018-11-10T12:24:14.000Z</published>
     <updated>2018-11-22T16:56:21.000Z</updated>
     
@@ -510,7 +510,7 @@
     </summary>
     
     
-      <category term="MediaArtNetII" scheme="http://liudixian.com/tags/MediaArtNetII/"/>
+      <category term="MediaArtNetII" scheme="http://liudixian.github.io/tags/MediaArtNetII/"/>
     
   </entry>
   
