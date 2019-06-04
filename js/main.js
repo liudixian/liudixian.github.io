@@ -1,80 +1,200 @@
-$(document).ready(function(){
+/*
+	Phantom by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
+(function($) {
 
+	skel.breakpoints({
+		xlarge:	'(max-width: 1680px)',
+		large:	'(max-width: 1280px)',
+		medium:	'(max-width: 980px)',
+		small:	'(max-width: 736px)',
+		xsmall:	'(max-width: 480px)'
+	});
 
-    //mobile menu toggling
-    $("#menu_icon").click(function(){
-        $("header nav ul").toggleClass("show_menu");
-        $("#menu_icon").toggleClass("close_menu");
-        return false;
-    });
+	$(function() {
 
-    
+		var	$window = $(window),
+			$body = $('body');
 
-    //Contact Page Map Centering
-    var hw = $('header').width() + 50;
-    var mw = $('#map').width();
-    var wh = $(window).height();
-    var ww = $(window).width();
+		// Disable animations/transitions until the page has loaded.
+			$body.addClass('is-loading');
 
-    $('#map').css({
-        "max-width" : mw,
-        "height" : wh
-    });
+			$window.on('load', function() {
+				window.setTimeout(function() {
+					$body.removeClass('is-loading');
+				}, 100);
+			});
 
-    if(ww>1100){
-         $('#map').css({
-            "margin-left" : hw
-        });
-    }
+		// Touch?
+			if (skel.vars.touch)
+				$body.addClass('is-touch');
 
-   
+		// Forms.
+			var $form = $('form');
 
+			// Auto-resizing textareas.
+				$form.find('textarea').each(function() {
 
+					var $this = $(this),
+						$wrapper = $('<div class="textarea-wrapper"></div>'),
+						$submits = $this.find('input[type="submit"]');
 
-    //Tooltip
-    $("a").mouseover(function(){
+					$this
+						.wrap($wrapper)
+						.attr('rows', 1)
+						.css('overflow', 'hidden')
+						.css('resize', 'none')
+						.on('keydown', function(event) {
 
-        var attr_title = $(this).attr("data-title");
+							if (event.keyCode == 13
+							&&	event.ctrlKey) {
 
-        if( attr_title == undefined || attr_title == "") return false;
-        
-        $(this).after('<span class="tooltip"></span>');
+								event.preventDefault();
+								event.stopPropagation();
 
-        var tooltip = $(".tooltip");
-        tooltip.append($(this).data('title'));
+								$(this).blur();
 
-         
-        var tipwidth = tooltip.outerWidth();
-        var a_width = $(this).width();
-        var a_hegiht = $(this).height() + 3 + 4;
+							}
 
-        //if the tooltip width is smaller than the a/link/parent width
-        if(tipwidth < a_width){
-            tipwidth = a_width;
-            $('.tooltip').outerWidth(tipwidth);
-        }
+						})
+						.on('blur focus', function() {
+							$this.val($.trim($this.val()));
+						})
+						.on('input blur focus --init', function() {
 
-        var tipwidth = '-' + (tipwidth - a_width)/2;
-        $('.tooltip').css({
-            'left' : tipwidth + 'px',
-            'bottom' : a_hegiht + 'px'
-        }).stop().animate({
-            opacity : 1
-        }, 200);
-       
+							$wrapper
+								.css('height', $this.height());
 
-    });
+							$this
+								.css('height', 'auto')
+								.css('height', $this.prop('scrollHeight') + 'px');
 
-    $("a").mouseout(function(){
-        var tooltip = $(".tooltip");       
-        tooltip.remove();
-    });
+						})
+						.on('keyup', function(event) {
 
+							if (event.keyCode == 9)
+								$this
+									.select();
 
-});
+						})
+						.triggerHandler('--init');
 
+					// Fix.
+						if (skel.vars.browser == 'ie'
+						||	skel.vars.mobile)
+							$this
+								.css('max-height', '10em')
+								.css('overflow-y', 'auto');
 
+				});
 
+			// Fix: Placeholder polyfill.
+				$form.placeholder();
 
+		// Prioritize "important" elements on medium.
+			skel.on('+medium -medium', function() {
+				$.prioritize(
+					'.important\\28 medium\\29',
+					skel.breakpoint('medium').active
+				);
+			});
 
+		// Menu.
+			var $menu = $('#menu');
+
+			$menu.wrapInner('<div class="inner"></div>');
+
+			$menu._locked = false;
+
+			$menu._lock = function() {
+
+				if ($menu._locked)
+					return false;
+
+				$menu._locked = true;
+
+				window.setTimeout(function() {
+					$menu._locked = false;
+				}, 350);
+
+				return true;
+
+			};
+
+			$menu._show = function() {
+
+				if ($menu._lock())
+					$body.addClass('is-menu-visible');
+
+			};
+
+			$menu._hide = function() {
+
+				if ($menu._lock())
+					$body.removeClass('is-menu-visible');
+
+			};
+
+			$menu._toggle = function() {
+
+				if ($menu._lock())
+					$body.toggleClass('is-menu-visible');
+
+			};
+
+			$menu
+				.appendTo($body)
+				.on('click', function(event) {
+					event.stopPropagation();
+				})
+				.on('click', 'a', function(event) {
+
+					var href = $(this).attr('href');
+
+					event.preventDefault();
+					event.stopPropagation();
+
+					// Hide.
+						$menu._hide();
+
+					// Redirect.
+						if (href == '#menu')
+							return;
+
+						window.setTimeout(function() {
+							window.location.href = href;
+						}, 350);
+
+				})
+				.append('<a class="close" href="#menu">Close</a>');
+
+			$body
+				.on('click', 'a[href="#menu"]', function(event) {
+
+					event.stopPropagation();
+					event.preventDefault();
+
+					// Toggle.
+						$menu._toggle();
+
+				})
+				.on('click', function(event) {
+
+					// Hide.
+						$menu._hide();
+
+				})
+				.on('keydown', function(event) {
+
+					// Hide on escape.
+						if (event.keyCode == 27)
+							$menu._hide();
+
+				});
+
+	});
+
+})(jQuery);
