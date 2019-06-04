@@ -1,93 +1,28 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="zh">
+<html class="has-navbar-fixed-top">
 <head><meta name="generator" content="Hexo 3.8.0">
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+<title>Shader_Study_01 - 刘迪先</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="theme-color" content="#222">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
 
 
 
 
 
 
+<meta name="keywords" content="media art and theory">
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="shader,">
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="刘迪先" type="application/atom+xml">
-
-
-
-
-
-
-<meta name="description" content="Unity shaderLab  Standard Surface Shader 标准表面着色器，是一种基于物理的着色系统（使用了Physically Based Rendering（简称PBR）技术，即基于物理的渲染技术），以模拟现实真实的方式来模拟材质与灯光之间的关系，可以很轻易的表现出各种金属反光效果，同时此种Shader的书写逻辑也更符合人类的思维模式。 Unlit Shader Ver">
+    <meta name="description" content="Unity shaderLab Standard Surface Shader标准表面着色器，是一种基于物理的着色系统（使用了Physically Based Rendering（简称PBR）技术，即基于物理的渲染技术），以模拟现实真实的方式来模拟材质与灯光之间的关系，可以很轻易的表现出各种金属反光效果，同时此种Shader的书写逻辑也更符合人类的思维模式。 Unlit ShaderVertex/">
 <meta name="keywords" content="shader">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Shader_Study_01">
 <meta property="og:url" content="http://liudixian.github.io/2019/03/17/Shader-Study-01/index.html">
 <meta property="og:site_name" content="刘迪先">
-<meta property="og:description" content="Unity shaderLab  Standard Surface Shader 标准表面着色器，是一种基于物理的着色系统（使用了Physically Based Rendering（简称PBR）技术，即基于物理的渲染技术），以模拟现实真实的方式来模拟材质与灯光之间的关系，可以很轻易的表现出各种金属反光效果，同时此种Shader的书写逻辑也更符合人类的思维模式。 Unlit Shader Ver">
+<meta property="og:description" content="Unity shaderLab Standard Surface Shader标准表面着色器，是一种基于物理的着色系统（使用了Physically Based Rendering（简称PBR）技术，即基于物理的渲染技术），以模拟现实真实的方式来模拟材质与灯光之间的关系，可以很轻易的表现出各种金属反光效果，同时此种Shader的书写逻辑也更符合人类的思维模式。 Unlit ShaderVertex/">
 <meta property="og:locale" content="zh">
 <meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTDCPWauUIUSUMGdZZA1RxGFOBiaKIgL82xtiaJibPxU8dUS8KnoZBW7VvQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1">
 <meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTdR4HVC29j1fCWucYvQe4I3SXlkYqb4cFfkjodHZzRwgbicNHkluTXZw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1">
@@ -104,867 +39,582 @@
 <meta property="og:updated_time" content="2019-03-17T15:05:11.911Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Shader_Study_01">
-<meta name="twitter:description" content="Unity shaderLab  Standard Surface Shader 标准表面着色器，是一种基于物理的着色系统（使用了Physically Based Rendering（简称PBR）技术，即基于物理的渲染技术），以模拟现实真实的方式来模拟材质与灯光之间的关系，可以很轻易的表现出各种金属反光效果，同时此种Shader的书写逻辑也更符合人类的思维模式。 Unlit Shader Ver">
+<meta name="twitter:description" content="Unity shaderLab Standard Surface Shader标准表面着色器，是一种基于物理的着色系统（使用了Physically Based Rendering（简称PBR）技术，即基于物理的渲染技术），以模拟现实真实的方式来模拟材质与灯光之间的关系，可以很轻易的表现出各种金属反光效果，同时此种Shader的书写逻辑也更符合人类的思维模式。 Unlit ShaderVertex/">
 <meta name="twitter:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTDCPWauUIUSUMGdZZA1RxGFOBiaKIgL82xtiaJibPxU8dUS8KnoZBW7VvQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1">
 
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
 
 
-
-  <link rel="canonical" href="http://liudixian.github.io/2019/03/17/Shader-Study-01/">
-
+<link rel="icon" href="/favicon.png">
 
 
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
 
 
-  <title>Shader_Study_01 | 刘迪先</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-  
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
 
 
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
-
+    
 
 
 </head>
-
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh">
-
-  
-  
+<body>
     
-  
-
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">刘迪先</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+<!-- hexo-inject:begin --><!-- hexo-inject:end --><nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="/">
+                
+                <img src="/images/logo.png" alt="" height="28">
+                
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="navbar-menu navbar-start">
+            
+            <a class="navbar-item " href="/archives">Archives</a>
+            
+            <a class="navbar-item " href="/categories/LifeStyle">Lifestyle</a>
+            
+            <a class="navbar-item " href="/categories/Music">Music</a>
+            
+            <a class="navbar-item " href="/categories/Technology">Technology</a>
+            
+            <a class="navbar-item " href="/about">About</a>
+            
+        </div>
+        
+        <div class="navbar-menu navbar-end">
+            
+            <a class="navbar-item search" title="Search" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            
+            
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="Table of Contents">
+                    <i class="fa fa-list"></i>
+                </a>
+                <div class="navbar-dropdown is-right">
+                    
+                    
+                    
+                    
+                    <a class="navbar-item" href="#Unity-shaderLab">1&nbsp;&nbsp;<b>Unity shaderLab</b></a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#Shader名称路径">1.1&nbsp;&nbsp;Shader名称路径</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#Properties">1.2&nbsp;&nbsp;Properties</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#SubShaders">1.3&nbsp;&nbsp;SubShaders</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#FallBack">1.4&nbsp;&nbsp;FallBack</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#CustomEditor">1.5&nbsp;&nbsp;CustomEditor</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#Properties-属性">1.6&nbsp;&nbsp;Properties 属性</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#数据类型-Color">1.6.1&nbsp;&nbsp;数据类型 Color</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#int">1.6.2&nbsp;&nbsp;int</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#float">1.6.3&nbsp;&nbsp;float</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#Vector-四维向量">1.6.4&nbsp;&nbsp;Vector 四维向量</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#2D-2D纹理">1.6.5&nbsp;&nbsp;2D 2D纹理</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#3D-3D纹理">1.6.6&nbsp;&nbsp;3D 3D纹理</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#Cube-立方体纹理">1.6.7&nbsp;&nbsp;Cube 立方体纹理</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#通用属性标记">1.6.8&nbsp;&nbsp;通用属性标记</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#pass-渲染一次模型">1.7&nbsp;&nbsp;pass 渲染一次模型</a>
+                    
+                    
+                    
+                    <a class="navbar-item" href="#片段着色器">1.7.1&nbsp;&nbsp;片段着色器</a>
+                    
+                </div>
+            </div>
+            
+            
+            <a class="navbar-item" title="GitHub" href="https://github.com/ppoffice/hexo-theme-minos" rel="external nofollow noopener noreferrer" target="_blank">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+               
+            
+        </div>
     </div>
-      
-        <p class="site-subtitle">uilxxx</p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            Home
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            Tags
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
-            
-            Categories
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            Archives
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
 </nav>
 
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
-    
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://liudixian.github.io/2019/03/17/Shader-Study-01/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="liudixian">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="刘迪先">
-    </span>
-
-    
-      <header class="post-header">
-
+    <section class="section">
+    <div class="container">
+    <article class="article content gallery" itemscope="" itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        
+            Shader_Study_01
+        
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="2019-03-17T06:11:12.000Z" itemprop="datePublished">3月 17 2019</time>
+        </span>
+        
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <a class="article-category-link" href="/categories/3d渲染/">3d渲染</a>
+        </span>
         
         
-          <h1 class="post-title" itemprop="name headline">Shader_Study_01</h1>
+        <span class="column is-narrow">
+            
+            
+            29 分钟 read (About 4399 words)
+        </span>
         
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-17T14:11:12+08:00">
-                2019-03-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/3d渲染/" itemprop="url" rel="index">
-                    <span itemprop="name">3d渲染</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
     
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h2 id="unity-shaderlab"><a class="markdownIt-Anchor" href="#unity-shaderlab"></a> Unity shaderLab</h2>
-<ul>
-<li>Standard Surface Shader<br>
-标准表面着色器，是一种基于物理的着色系统（使用了Physically Based Rendering（简称PBR）技术，即基于物理的渲染技术），以模拟现实真实的方式来模拟材质与灯光之间的关系，可以很轻易的表现出各种金属反光效果，同时此种Shader的书写逻辑也更符合人类的思维模式。</li>
-<li>Unlit Shader<br>
-Vertex/Fragment Shader,也就是最基本的顶点片断着色器，不受光照影响的Shader，多用于特效、UI上的效果制作。</li>
-<li>Image Effect Shader<br>
-也是顶点片断着色器，只不过是针对后处理而定制的模版，后处理是什么呢？Bloom（也有人叫Glow/泛光/辉光等说法）、调色、景深、模糊等，这些基于最终整个屏幕画面而进行再处理的Shader就是后处理。</li>
-<li>Compute Shader<br>
-Compute Shader是运行在图形显卡上的一段程序，独立于常规渲染管线之外的，它可以直接将GPU作为并行处理器加以利用，从而使GPU不仅具有3D渲染能力，还具有其他的运算能力。<br>
-Shhttps:ader Variant Collection<br>
-Shader变体收集器，在上面创建的时候，你会发现Shader Variant Collection与以上四个是被隔开的，就是因为这个与它们不一样，它不是制作Shader的模版,而只是对Shader变体进行打包用的容器。</li>
+        <h2 id="Unity-shaderLab"><a href="#Unity-shaderLab" class="headerlink" title="Unity shaderLab"></a>Unity shaderLab</h2><ul>
+<li>Standard Surface Shader<br>标准表面着色器，是一种基于物理的着色系统（使用了Physically Based Rendering（简称PBR）技术，即基于物理的渲染技术），以模拟现实真实的方式来模拟材质与灯光之间的关系，可以很轻易的表现出各种金属反光效果，同时此种Shader的书写逻辑也更符合人类的思维模式。</li>
+<li>Unlit Shader<br>Vertex/Fragment Shader,也就是最基本的顶点片断着色器，不受光照影响的Shader，多用于特效、UI上的效果制作。</li>
+<li>Image Effect Shader<br>也是顶点片断着色器，只不过是针对后处理而定制的模版，后处理是什么呢？Bloom（也有人叫Glow/泛光/辉光等说法）、调色、景深、模糊等，这些基于最终整个屏幕画面而进行再处理的Shader就是后处理。</li>
+<li>Compute Shader<br>Compute Shader是运行在图形显卡上的一段程序，独立于常规渲染管线之外的，它可以直接将GPU作为并行处理器加以利用，从而使GPU不仅具有3D渲染能力，还具有其他的运算能力。<br>Shhttps:ader Variant Collection<br>Shader变体收集器，在上面创建的时候，你会发现Shader Variant Collection与以上四个是被隔开的，就是因为这个与它们不一样，它不是制作Shader的模版,而只是对Shader变体进行打包用的容器。</li>
 </ul>
 <blockquote>
 <p>注：以上的Standard Surface Shader、Unlit Shader、Image Effect Shader仅仅只是Unity为了方便我们书写而内置的几个模版，你完全可以建一个Unlit Shader，然后将其改成Surface Shader,同样也可以将一个Standard Surface Shader改成顶点片断着色器，所以这一点一定要明白，它们只是内容格式不一样的模版本而已，我们完全可以自由修改成任意我们想要的一种着色器类型，当然我们也可以通过一些手段来定制出我们自己的模版，这在后续章节中我们再进行详细介绍。</p>
 </blockquote>
 <p>让我们来总结一下Shader与材质的关系：</p>
 <ul>
-<li>
-<p>一个Shader可以与无数个材质关联。</p>
+<li><p>一个Shader可以与无数个材质关联。</p>
 </li>
-<li>
-<p>一个材质同一时刻只能关联于一个Shader。（为什么说是同一时刻，因为我们可以通过代码去动态改变材质所关联的Shader）</p>
+<li><p>一个材质同一时刻只能关联于一个Shader。（为什么说是同一时刻，因为我们可以通过代码去动态改变材质所关联的Shader）</p>
 </li>
-<li>
-<p>材质可以赋与模型，但是Shader不行。</p>
+<li><p>材质可以赋与模型，但是Shader不行。</p>
 </li>
-<li>
-<p>材质就像是Shader的实例，每个材质都可以参数不一样呈现不同的效果，但是当Shader改变时，关联它的所有材质都会相应的改变。</p>
+<li><p>材质就像是Shader的实例，每个材质都可以参数不一样呈现不同的效果，但是当Shader改变时，关联它的所有材质都会相应的改变。</p>
 </li>
-<li>
-<p>举个例子：比如游戏中的怪物，我们只需做一个Shader，然后每个怪物给它一个材质球，材质球上赋与不同的贴图与参数来表现不同的怪物。</p>
+<li><p>举个例子：比如游戏中的怪物，我们只需做一个Shader，然后每个怪物给它一个材质球，材质球上赋与不同的贴图与参数来表现不同的怪物。</p>
 </li>
 </ul>
 <blockquote>
 <p>小技巧：在创建材质球的时候，如果我们选中某个Shader，然后在它上面点击右键来创建材质的话，那么这个材质会自动与此Shader进行关联，无需再单独指定。</p>
 </blockquote>
-<h3 id="shader名称路径"><a class="markdownIt-Anchor" href="#shader名称路径"></a> Shader名称路径</h3>
-<p>第一行的内容是 Shader “Unlit/NewUnlitShader”，如果你的脚本编缉器有语法高亮功能，那么你会看到这一行中的Shader字眼被标注为不同的颜色，表示这是个关键字，后面&quot;&quot;双引号中的内容就是具体的路径与名称。<br>
-我们尝试将其名称改成：<br>
-Shader “TA/MyFirstShader”<br>
-在材质球中的路径会变成如下，其中双引号中的/表示的是创建子层级。</p>
+<h3 id="Shader名称路径"><a href="#Shader名称路径" class="headerlink" title="Shader名称路径"></a>Shader名称路径</h3><p>第一行的内容是 Shader “Unlit/NewUnlitShader”，如果你的脚本编缉器有语法高亮功能，那么你会看到这一行中的Shader字眼被标注为不同的颜色，表示这是个关键字，后面””双引号中的内容就是具体的路径与名称。<br>我们尝试将其名称改成：<br>Shader “TA/MyFirstShader”<br>在材质球中的路径会变成如下，其中双引号中的/表示的是创建子层级。</p>
 <p>同样我们也可以把名称路径改成中文字符（没有在正式项目中使用过，建议大家也不要这样问做，最好还是用英文!）：</p>
-<p>如果我们把路径名称放在Hidden下面的话，比如：<br>
-Shader “Hidden/TA/MyFirstShader”<br>
-则表示在材质面板中隐藏此Shader,你将无法通过材质下拉列表中找到它。这在做一些不需暴露的Shader时很有用处，可以使Shader下拉列表更精简整洁。</p>
-<p>而Shader文件的名称，也就是我们在Project面板中的资源文件的名称，是可以与Shader内部的路径名称不一样的，这点与C#是不同的。<br>
-在定义内部路径名称时，建议统一规划下，不要Shader过多后导致很混乱，不便于美术去使用。</p>
-<h3 id="properties"><a class="markdownIt-Anchor" href="#properties"></a> Properties</h3>
-<p>属性，材质球面板中显示的贴图和一些参数什么的都是在此Properties中进行定义设置的，内容必须写在Properties后的{}内。当然，如果你确定不需要属性的话也可以将整个Properties以及它的{}全部删除，因为它是可选项。<br>
-我们下一篇会进行Properties的详细说明，包括如何实现滑杆、开关、下拉选择框等。</p>
-<h3 id="subshaders"><a class="markdownIt-Anchor" href="#subshaders"></a> SubShaders</h3>
-<p>如果你够细心的话你会发现为什么SubShaders带个S呢，因为它可以有不止一个呀，实际上每个Shader中都可以包含多个SubShader，不可以没有，必须至少有一个，因为当前Shader的核心算法实现就是在SubShader中来实现的。在加载Shader时，Unity将遍历所有SubShader列表，并最终选择用户机器支持的第一个。<br>
-这个功能到底有什么用呢？<br>
-我们都知道不同的硬件性能是不一样的，游戏内通常把机器配置分为高中低三种，假如我们做了一个效果很好的Shader，但是呢却只能在高配机上有较好的性能表现，中低端就显的太费性能，这时怎么办呢，SubShader在这时就可以派上用场了，我们可以在这个Shader内做三个SubShader，分别对应于高中低不同的配置。</p>
-<h3 id="fallback"><a class="markdownIt-Anchor" href="#fallback"></a> FallBack</h3>
-<p>备胎，就是备胎的意思，有的时候我们写的Shader难免在一些机器上会出现不支持的问题（最终呈现的就是显示成粉红色），而这个时候我们只要添加了FallBack，并且在后面的双引号内写上了其它Shader的有效路径名称，那么在碰到不支持的硬件时这个Shader就会自动切换成FallBack内的Shader，如果FallBack内的Shader也不支持呢，那就继续从FallBack内的Shader中再找FallBack。。。。</p>
-<h3 id="customeditor"><a class="markdownIt-Anchor" href="#customeditor"></a> CustomEditor</h3>
-<p>自定义界面，也就是说我们可以通过这个功能来自由定义材质面板的显示结果，它可以改写Properties中定义的显示方式。<br>
-举个你一定见过的例子：</p>
+<p>如果我们把路径名称放在Hidden下面的话，比如：<br>Shader “Hidden/TA/MyFirstShader”<br>则表示在材质面板中隐藏此Shader,你将无法通过材质下拉列表中找到它。这在做一些不需暴露的Shader时很有用处，可以使Shader下拉列表更精简整洁。</p>
+<p>而Shader文件的名称，也就是我们在Project面板中的资源文件的名称，是可以与Shader内部的路径名称不一样的，这点与C#是不同的。<br>在定义内部路径名称时，建议统一规划下，不要Shader过多后导致很混乱，不便于美术去使用。</p>
+<h3 id="Properties"><a href="#Properties" class="headerlink" title="Properties"></a>Properties</h3><p>属性，材质球面板中显示的贴图和一些参数什么的都是在此Properties中进行定义设置的，内容必须写在Properties后的{}内。当然，如果你确定不需要属性的话也可以将整个Properties以及它的{}全部删除，因为它是可选项。<br>我们下一篇会进行Properties的详细说明，包括如何实现滑杆、开关、下拉选择框等。</p>
+<h3 id="SubShaders"><a href="#SubShaders" class="headerlink" title="SubShaders"></a>SubShaders</h3><p>如果你够细心的话你会发现为什么SubShaders带个S呢，因为它可以有不止一个呀，实际上每个Shader中都可以包含多个SubShader，不可以没有，必须至少有一个，因为当前Shader的核心算法实现就是在SubShader中来实现的。在加载Shader时，Unity将遍历所有SubShader列表，并最终选择用户机器支持的第一个。<br>这个功能到底有什么用呢？<br>我们都知道不同的硬件性能是不一样的，游戏内通常把机器配置分为高中低三种，假如我们做了一个效果很好的Shader，但是呢却只能在高配机上有较好的性能表现，中低端就显的太费性能，这时怎么办呢，SubShader在这时就可以派上用场了，我们可以在这个Shader内做三个SubShader，分别对应于高中低不同的配置。</p>
+<h3 id="FallBack"><a href="#FallBack" class="headerlink" title="FallBack"></a>FallBack</h3><p>备胎，就是备胎的意思，有的时候我们写的Shader难免在一些机器上会出现不支持的问题（最终呈现的就是显示成粉红色），而这个时候我们只要添加了FallBack，并且在后面的双引号内写上了其它Shader的有效路径名称，那么在碰到不支持的硬件时这个Shader就会自动切换成FallBack内的Shader，如果FallBack内的Shader也不支持呢，那就继续从FallBack内的Shader中再找FallBack。。。。</p>
+<h3 id="CustomEditor"><a href="#CustomEditor" class="headerlink" title="CustomEditor"></a>CustomEditor</h3><p>自定义界面，也就是说我们可以通过这个功能来自由定义材质面板的显示结果，它可以改写Properties中定义的显示方式。<br>举个你一定见过的例子：</p>
 <p>Standard Shader对应的材质面板显示与众不同，很高级，这就是因为它利用了CustomEditor的功能来实现的，要做到这一点，必须要用到C#来写代码实现，这对于刚入门学Shader的同学来说不是易事，同时也由于这个功能在大多数情况下是不需要的，所以我们先抛开它，知道有它的存在就好了。后续如果有机会我们再专门解讲这个。</p>
 <hr>
-<h3 id="properties-属性"><a class="markdownIt-Anchor" href="#properties-属性"></a> Properties 属性</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">[Attribute]_Name(&quot;Display Name&quot;, Type) = Default Value</span><br><span class="line"></span><br><span class="line">- Attribute</span><br><span class="line">- _Name 变量名 外部访问</span><br><span class="line">- Display Name 材质面板上的名称</span><br><span class="line">    /*</span><br><span class="line">    建议这里的显示名称要起的有意义，要知道最终在材质上调节的人很大部分情况下不会是你自己，别人更不可能知道每个属性内部是如何关联以及有什么作用，所以当我们TA在做完一个Shader给到使用人员的时候，一定要给他讲解一下，不管是有个说明文档还是简单沟通下都是有必要的。这样才能最大发挥Shader的使用效果，所以显示名称起着一半说明书的作用，一定要重视。</span><br><span class="line">    什么样的名字是有意义的呢？</span><br><span class="line">    作用与通道的组合（在需要说明通道的情况下）。</span><br><span class="line">    比如：一张基础表面色贴图，可以用&quot;Base (RGB)&quot;,这样即说明了此贴图是基本贴图，同时又说明了此贴图在表面色上只使用到了RGB三个通道。</span><br><span class="line">    */</span><br><span class="line">- Type 类型</span><br><span class="line">    - Color</span><br><span class="line">    - int</span><br><span class="line">    - float</span><br><span class="line">    - Vector</span><br><span class="line">    - 2d texture 纹理</span><br><span class="line">    - 3d textture纹理</span><br><span class="line">    - cube 立方体纹理</span><br><span class="line">- Default Value</span><br><span class="line">    /*默认值，当第一次指定此Shader时，或者在材质面板上执行Reset时，属性的值会自动恢复到默认值，不同的类型具体写法也不太一样，下面会结合类型进行详细说明。*/</span><br></pre></td></tr></table></figure>
-<h4 id="数据类型-color"><a class="markdownIt-Anchor" href="#数据类型-color"></a> 数据类型 Color</h4>
-<p>example:</p>
-<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line">&#123;</span><br><span class="line">    _Color("颜色", color) = (1,1,1,1);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>变量名：<code>_Color</code><br>
-显示名称：我是Color<br>
-类型：Color<br>
-默认值：（1,1,1,1）<br>
-颜色属性是个四维分量，也就是由四个数值来组成的，每个数值代表着颜色的一个通道。四个数值依次为RGBA（红，绿，蓝，透明）。<br>
-RGB的取值是0-255(2的8次方个值域），而在Shader中被归一化为0-1间。</p>
+<h3 id="Properties-属性"><a href="#Properties-属性" class="headerlink" title="Properties 属性"></a>Properties 属性</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">[Attribute]_Name(&quot;Display Name&quot;, Type) = Default Value</span><br><span class="line"></span><br><span class="line">- Attribute</span><br><span class="line">- _Name 变量名 外部访问</span><br><span class="line">- Display Name 材质面板上的名称</span><br><span class="line">    /*</span><br><span class="line">    建议这里的显示名称要起的有意义，要知道最终在材质上调节的人很大部分情况下不会是你自己，别人更不可能知道每个属性内部是如何关联以及有什么作用，所以当我们TA在做完一个Shader给到使用人员的时候，一定要给他讲解一下，不管是有个说明文档还是简单沟通下都是有必要的。这样才能最大发挥Shader的使用效果，所以显示名称起着一半说明书的作用，一定要重视。</span><br><span class="line">    什么样的名字是有意义的呢？</span><br><span class="line">    作用与通道的组合（在需要说明通道的情况下）。</span><br><span class="line">    比如：一张基础表面色贴图，可以用&quot;Base (RGB)&quot;,这样即说明了此贴图是基本贴图，同时又说明了此贴图在表面色上只使用到了RGB三个通道。</span><br><span class="line">    */</span><br><span class="line">- Type 类型</span><br><span class="line">    - Color</span><br><span class="line">    - int</span><br><span class="line">    - float</span><br><span class="line">    - Vector</span><br><span class="line">    - 2d texture 纹理</span><br><span class="line">    - 3d textture纹理</span><br><span class="line">    - cube 立方体纹理</span><br><span class="line">- Default Value</span><br><span class="line">    /*默认值，当第一次指定此Shader时，或者在材质面板上执行Reset时，属性的值会自动恢复到默认值，不同的类型具体写法也不太一样，下面会结合类型进行详细说明。*/</span><br></pre></td></tr></table></figure>
+
+<h4 id="数据类型-Color"><a href="#数据类型-Color" class="headerlink" title="数据类型 Color"></a>数据类型 Color</h4><p>example:</p>
+<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line">&#123;</span><br><span class="line">    _Color("颜色", color) = (1,1,1,1);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>变量名：<code>_Color</code><br>显示名称：我是Color<br>类型：Color<br>默认值：（1,1,1,1）<br>颜色属性是个四维分量，也就是由四个数值来组成的，每个数值代表着颜色的一个通道。四个数值依次为RGBA（红，绿，蓝，透明）。<br>RGB的取值是0-255(2的8次方个值域），而在Shader中被归一化为0-1间。</p>
 <blockquote>
-<p>Shader中的浮点数值后不需要加后缀f，否则会出错。<br>
-零点几的值可以省略零，比如0.95可以写成.95</p>
+<p>Shader中的浮点数值后不需要加后缀f，否则会出错。<br>零点几的值可以省略零，比如0.95可以写成.95</p>
 </blockquote>
 <p><strong>[HDR]</strong></p>
-<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line">&#123;</span><br><span class="line">    _Color("颜色", color) = (1,1,1,1);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line">&#123;</span><br><span class="line">    _Color("颜色", color) = (1,1,1,1);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>HDR可以使颜色亮度的值超过1，通过这个值可以配合镜头Bloom效果做出物体泛光的视觉效果。</p>
-<h4 id="int"><a class="markdownIt-Anchor" href="#int"></a> int</h4>
-<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3     _Int("我是Int", Int) = 1</span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
-<p>变量名：<code>_Int</code><br>
-显示名称：我是Int<br>
-类型：Int<br>
-默认值：1<br>
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTDCPWauUIUSUMGdZZA1RxGFOBiaKIgL82xtiaJibPxU8dUS8KnoZBW7VvQ/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""><br>
-虽然在材质面板中我们可以随意输入数值，比如0.55,但是在Shader内部它却只能被识别为整数。</p>
+<h4 id="int"><a href="#int" class="headerlink" title="int"></a>int</h4><figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3     _Int("我是Int", Int) = 1</span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>变量名：<code>_Int</code><br>显示名称：我是Int<br>类型：Int<br>默认值：1<br><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTDCPWauUIUSUMGdZZA1RxGFOBiaKIgL82xtiaJibPxU8dUS8KnoZBW7VvQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt=""><br>虽然在材质面板中我们可以随意输入数值，比如0.55,但是在Shader内部它却只能被识别为整数。</p>
 <blockquote>
 <p>注意，此值并不是四舍五入，而是直接取整，比如1.999,结果是1.</p>
 </blockquote>
-<h4 id="float"><a class="markdownIt-Anchor" href="#float"></a> float</h4>
-<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3     _Float("我是Float", Float) = 0.5</span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
-<p>变量名：<code>_Float</code><br>
-显示名称：我是Float<br>
-类型：Float<br>
-默认值：0.5<br>
-和Int长的很像，只不过Float中支持浮点数。</p>
+<h4 id="float"><a href="#float" class="headerlink" title="float"></a>float</h4><figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3     _Float("我是Float", Float) = 0.5</span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>变量名：<code>_Float</code><br>显示名称：我是Float<br>类型：Float<br>默认值：0.5<br>和Int长的很像，只不过Float中支持浮点数。</p>
 <blockquote>
 <p>在Shader中Float是最基本的类型，而Int只是一种伪整型，从Shader精度上来讲并不存在整型。所以在Properties内完全可以用Float替代Int。</p>
 </blockquote>
 <p><strong>[Range]</strong></p>
-<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties  </span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3     _Float("我是Float", Range( 0 , 1)) = 0.5</span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
-<p>很常用的一种属性标记，主要是用来将浮点数限制在一个可以通过滑动条来选择的一个区间。<br>
-将此属性中原有的Float替换成Range (Min,Max)即可，Min=最小值，Max=最大值。<br>
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTdR4HVC29j1fCWucYvQe4I3SXlkYqb4cFfkjodHZzRwgbicNHkluTXZw/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""></p>
+<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties  </span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3     _Float("我是Float", Range( 0 , 1)) = 0.5</span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>很常用的一种属性标记，主要是用来将浮点数限制在一个可以通过滑动条来选择的一个区间。<br>将此属性中原有的Float替换成Range (Min,Max)即可，Min=最小值，Max=最大值。<br><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTdR4HVC29j1fCWucYvQe4I3SXlkYqb4cFfkjodHZzRwgbicNHkluTXZw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" alt=""></p>
 <p><strong>PowerSlider</strong></p>
-<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties  </span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3     [PowerSlider(3)]_Float("我是Float", Range( 0 , 1)) = 0.5</span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTDeuKtLYsILtYzCOJCG39Q5RwUvouNviaV25A02oV2AfXHIiapjfGIJ3g/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""><br>
-我们拿它跟上面的不加PowerSlider来对比，同样是值0.5,在材质面板上滑杆的位置是不一样的。<br>
-PowerSlider (Value)<br>
-其中Value的值我们可以自由定义，支持浮点数,值越大会导致滑条的曲度变化越大，值为1时不改变。</p>
+<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties  </span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3     [PowerSlider(3)]_Float("我是Float", Range( 0 , 1)) = 0.5</span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTDeuKtLYsILtYzCOJCG39Q5RwUvouNviaV25A02oV2AfXHIiapjfGIJ3g/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" alt=""><br>我们拿它跟上面的不加PowerSlider来对比，同样是值0.5,在材质面板上滑杆的位置是不一样的。<br>PowerSlider (Value)<br>其中Value的值我们可以自由定义，支持浮点数,值越大会导致滑条的曲度变化越大，值为1时不改变。</p>
 <blockquote>
 <p>此属性标记的主要作用，是方便用户调节滑杆。比如有个属性值是从0-1,但是很大部分情况下所用到的值都是0-0.1左右，同时需要更精细的在这区间进行微调。那么正常情况下，用户在整个滑条上想选择0-0.1之间本身就变的很难了，更不要说在这区间微调了。所以这个时候就可以利用PowerSlider来解决此问题。</p>
 </blockquote>
 <p><strong>[IntRange]</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line">2 &#123;</span><br><span class="line">3      [IntRange]_Float(&quot;我是Float&quot;, Range( 0 , 1)) = 1</span><br><span class="line">4 &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line">2 &#123;</span><br><span class="line">3      [IntRange]_Float(&quot;我是Float&quot;, Range( 0 , 1)) = 1</span><br><span class="line">4 &#125;</span><br></pre></td></tr></table></figure>
+
 <p>加了它之后呢，你在材质面板上拖动时就只能生成整数了。所以说我们完全可以用Float来代替Int。</p>
 <blockquote>
 <p>注意，当添加了[IntRange]后，默认值会被自动进行处理，假如默认值你写的是0.1,则在Shader内部会自动向下取整，取值为0.</p>
 </blockquote>
-<p><strong>[Toggle]</strong><br>
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTS84mcoVBSaYGnDTHv92SVB1ScVausRvpbsFosJnFkiapAIcDLwJ5kIQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""></p>
+<p><strong>[Toggle]</strong><br><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTS84mcoVBSaYGnDTHv92SVB1ScVausRvpbsFosJnFkiapAIcDLwJ5kIQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" alt=""></p>
 <p><strong>[Enum]</strong></p>
-<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3      [Enum(UnityEngine.Rendering.CullMode)]_Float("我是Float", Float) = 1  </span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTwk9k2FmxagPY8vVUTRxVicE8va3C2beHKxfWwjTnibjFAc58tkhHV2fQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""></p>
-<h4 id="vector-四维向量"><a class="markdownIt-Anchor" href="#vector-四维向量"></a> Vector 四维向量</h4>
-<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3      _Vector("我是Vector", Vector) = (0,0,0,0)  </span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
-<p>变量名：<code>_Vector</code><br>
-显示名称：我是Vector<br>
-类型：Vector<br>
-默认值：0,0,0,0<br>
-<img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgT5PRxnWbAWlfWvj9NrwmdO5p27Loicpojq0RnNTJ3eqb72RLic7tX2pbw/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""></p>
-<p>由四个Float组合而成的Vector，在材质面板中显示的是四个数值输入框。<br>
-四个分量分别对应XYZW，也可以叫做RGBA。</p>
+<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3      [Enum(UnityEngine.Rendering.CullMode)]_Float("我是Float", Float) = 1  </span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTwk9k2FmxagPY8vVUTRxVicE8va3C2beHKxfWwjTnibjFAc58tkhHV2fQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" alt=""></p>
+<h4 id="Vector-四维向量"><a href="#Vector-四维向量" class="headerlink" title="Vector 四维向量"></a>Vector 四维向量</h4><figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3      _Vector("我是Vector", Vector) = (0,0,0,0)  </span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>变量名：<code>_Vector</code><br>显示名称：我是Vector<br>类型：Vector<br>默认值：0,0,0,0<br><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgT5PRxnWbAWlfWvj9NrwmdO5p27Loicpojq0RnNTJ3eqb72RLic7tX2pbw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" alt=""></p>
+<p>由四个Float组合而成的Vector，在材质面板中显示的是四个数值输入框。<br>四个分量分别对应XYZW，也可以叫做RGBA。</p>
 <blockquote>
 <p>XYZW与RGBA同样都是四个分量组合，只是在用于颜色时我们通常用RGBA来表示，用作坐标时习惯用XYZW来表示而已，同样我们也是可以用Vector来输出颜色，只是不那么方便直观而已。</p>
 </blockquote>
-<h4 id="2d-2d纹理"><a class="markdownIt-Anchor" href="#2d-2d纹理"></a> 2D 2D纹理</h4>
-<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> Properties</span><br><span class="line"><span class="number">2</span> &#123;  </span><br><span class="line">3      _MainTex("我是2D纹理", 2D) = "white" &#123;&#125;  </span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
-<p>变量名：<code>_MainTex</code><br>
-显示名称：我是2D纹理<br>
-类型：2D<br>
-默认值：white</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTaS0AbAMdVnibncExoMU1uta235fEpbKq0aTm1WBqOsDuNtaHzCZmGDw/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""></p>
-<p>纹理贴图，也是Shader中最最常用的属性之一。<br>
-<strong>[NoScaleOffset]</strong></p>
-<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> Properties</span><br><span class="line"><span class="number">2</span> &#123;  </span><br><span class="line">3      [NoScaleOffset]_MainTex("我是2D纹理", 2D) = "white" &#123;&#125;</span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="2D-2D纹理"><a href="#2D-2D纹理" class="headerlink" title="2D 2D纹理"></a>2D 2D纹理</h4><figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-number">1</span> Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;  </span><br><span class="line">3      _MainTex("我是2D纹理", 2D) = "white" &#123;&#125;  </span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>变量名：<code>_MainTex</code><br>显示名称：我是2D纹理<br>类型：2D<br>默认值：white</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTaS0AbAMdVnibncExoMU1uta235fEpbKq0aTm1WBqOsDuNtaHzCZmGDw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" alt=""></p>
+<p>纹理贴图，也是Shader中最最常用的属性之一。<br><strong>[NoScaleOffset]</strong></p>
+<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-number">1</span> Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;  </span><br><span class="line">3      [NoScaleOffset]_MainTex("我是2D纹理", 2D) = "white" &#123;&#125;</span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+
 <p>在材质面板中除了显示贴图槽以外默认还会显示两组Float。</p>
 <ol>
 <li>Tiling （贴图重复度）</li>
 <li>Offset （贴图偏移值）</li>
 </ol>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTbQ0PsRq9fK2DFcS9ickHjsTKZyMarWpFclJyqGicQWiaad8RP46FIhlAQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""></p>
-<p><strong>[Normal]</strong><br>
-法线贴图</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgT0Z6NB0bxSKbVxLjWLAEKDN34bmjTLLfKyOyUZNyO9xeCqUoDStC7iaQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTbQ0PsRq9fK2DFcS9ickHjsTKZyMarWpFclJyqGicQWiaad8RP46FIhlAQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" alt=""></p>
+<p><strong>[Normal]</strong><br>法线贴图</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgT0Z6NB0bxSKbVxLjWLAEKDN34bmjTLLfKyOyUZNyO9xeCqUoDStC7iaQ/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" alt=""></p>
 <blockquote>
 <p>有一点一定要注意，有时美术在其它软件中导出了法线贴图，但在Unity直接拖上来还是会有警告提示，是因为没有在贴图导入面板中把Texture Type设置为Normal，只有这样这张贴图才会被Unity识别为法线。</p>
 </blockquote>
-<p><strong>默认值</strong><br>
-2D纹理的默认值有以下几种：<br>
-white<br>
-black<br>
-gray<br>
-bump<br>
-如果不设置默认值，即=&quot;&quot;{}，则其实与=“gray”{}相同。<br>
-当设置了默认值后，Shader内部会自动调用Unity内部准备的一张小图片，white就是纯白色,black就是纯黑色，gray就是灰色图，bump就是法线图。</p>
-<h4 id="3d-3d纹理"><a class="markdownIt-Anchor" href="#3d-3d纹理"></a> 3D 3D纹理</h4>
-<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3     _MainTex("我是3D纹理", 3d) = "" &#123;&#125;</span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
-<p>变量名：<code>_MainTex</code><br>
-显示名称：我是3D纹理<br>
-类型：3d<br>
-默认值：空</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTh6TxcbxutNGlG7x2iab1oxOsMzHOCSaa0elVIrpPPFanXBneR4I28pg/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""><br>
-3D纹理主要用在查找表或者体积数据上，默认值与2D的不同，不管如何设置都只会显示为灰色图。</p>
-<h4 id="cube-立方体纹理"><a class="markdownIt-Anchor" href="#cube-立方体纹理"></a> Cube 立方体纹理</h4>
-<p>变量名：<code>_MainTex</code><br>
-显示名称：我是Cube纹理<br>
-类型：CUBE<br>
-默认值：空</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgT2wJel1fwWVSZfuNr8TydDicicZdFOZYbzEficd8WSZdecLqpclZ36hxQA/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""></p>
-<p>Cubemap是一个由六个独立的正方形纹理组成的集合，它将多个纹理组合起来映射到一个单一纹理。<br>
-基本上说CubeMap包含6个2D纹理，这每个2D纹理是一个立方体（cube）的一个面，也就是说它是一个有贴图的立方体。<br>
-想像成一个方形盒子被我们拆开铺平的情景。<br>
-CubeMap通常被用来作为具有反射属性物体的反射源。</p>
-<h4 id="通用属性标记"><a class="markdownIt-Anchor" href="#通用属性标记"></a> 通用属性标记</h4>
-<p>还有一些比较常用的属性标记，可以用于任何属性，下面来介绍下：</p>
+<p><strong>默认值</strong><br>2D纹理的默认值有以下几种：<br>white<br>black<br>gray<br>bump<br>如果不设置默认值，即=””{}，则其实与=”gray”{}相同。<br>当设置了默认值后，Shader内部会自动调用Unity内部准备的一张小图片，white就是纯白色,black就是纯黑色，gray就是灰色图，bump就是法线图。</p>
+<h4 id="3D-3D纹理"><a href="#3D-3D纹理" class="headerlink" title="3D 3D纹理"></a>3D 3D纹理</h4><figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3     _MainTex("我是3D纹理", 3d) = "" &#123;&#125;</span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>变量名：<code>_MainTex</code><br>显示名称：我是3D纹理<br>类型：3d<br>默认值：空</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTh6TxcbxutNGlG7x2iab1oxOsMzHOCSaa0elVIrpPPFanXBneR4I28pg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" alt=""><br>3D纹理主要用在查找表或者体积数据上，默认值与2D的不同，不管如何设置都只会显示为灰色图。</p>
+<h4 id="Cube-立方体纹理"><a href="#Cube-立方体纹理" class="headerlink" title="Cube 立方体纹理"></a>Cube 立方体纹理</h4><p>变量名：<code>_MainTex</code><br>显示名称：我是Cube纹理<br>类型：CUBE<br>默认值：空</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgT2wJel1fwWVSZfuNr8TydDicicZdFOZYbzEficd8WSZdecLqpclZ36hxQA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" alt=""></p>
+<p>Cubemap是一个由六个独立的正方形纹理组成的集合，它将多个纹理组合起来映射到一个单一纹理。<br>基本上说CubeMap包含6个2D纹理，这每个2D纹理是一个立方体（cube）的一个面，也就是说它是一个有贴图的立方体。<br>想像成一个方形盒子被我们拆开铺平的情景。<br>CubeMap通常被用来作为具有反射属性物体的反射源。</p>
+<h4 id="通用属性标记"><a href="#通用属性标记" class="headerlink" title="通用属性标记"></a>通用属性标记</h4><p>还有一些比较常用的属性标记，可以用于任何属性，下面来介绍下：</p>
 <p><strong>[Header]</strong></p>
-<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> Properties</span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3     [Header(This is Header )]_Int("我是Int", Int) = 1</span><br><span class="line">4   _Float("我是Float", Range( 0 , 1)) = 1</span><br><span class="line"><span class="number">5</span> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-number">1</span> Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3     [Header(This is Header )]_Int("我是Int", Int) = 1</span><br><span class="line">4   _Float("我是Float", Range( 0 , 1)) = 1</span><br><span class="line"><span class="hljs-number">5</span> &#125;</span><br></pre></td></tr></table></figure>
+
 <p>在材质面板上进行标注，通常用作分类组别用，注意只支持英文、数字、空格以及下划线。</p>
-<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTve9vZCB0m2WmJpcRjlT5FKUpEIAfoK4ev0iaP4xMSj750Z5Equ5icGAg/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""></p>
-<p><strong>[HideInInspector]</strong><br>
-在材质面板中隐藏此条属性，在不希望暴露某条属性时可以快速将其隐藏。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTve9vZCB0m2WmJpcRjlT5FKUpEIAfoK4ev0iaP4xMSj750Z5Equ5icGAg/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1" alt=""></p>
+<p><strong>[HideInInspector]</strong><br>在材质面板中隐藏此条属性，在不希望暴露某条属性时可以快速将其隐藏。</p>
 <hr>
-<h3 id="pass-渲染一次模型"><a class="markdownIt-Anchor" href="#pass-渲染一次模型"></a> pass 渲染一次模型</h3>
-<p>模板</p>
-<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">CGPROGRAM</span><br><span class="line">         <span class="meta">#pragma vertex vert   //vertex name</span></span><br><span class="line">         <span class="meta">#pragma fragment frag  //fragment name</span></span><br><span class="line">         <span class="comment">// make fog work</span></span><br><span class="line"></span><br><span class="line">         <span class="type">float</span> vert (float4 vert : POSITION) : SV_POSITION   <span class="comment">//POSITION 语义</span></span><br><span class="line">         &#123;</span><br><span class="line">             <span class="keyword">return</span> UnityObjectToClipPos( vert );</span><br><span class="line">         &#125;</span><br><span class="line">         ENDCG</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
-<h4 id="片段着色器"><a class="markdownIt-Anchor" href="#片段着色器"></a> 片段着色器</h4>
-<p>片断着色器也被称作像素着色器，主要是处理最终显示在屏幕上的像素结果。<br>
-经过顶点着色器的处理，我们已经得到了最终显示在屏幕上的顶点矩阵，内部会自动进行插值计算，以获得当前模型的所有片断像素，然后每个像素都会执行一次片断着色器，得到最终每个像素的颜色值。</p>
+<h3 id="pass-渲染一次模型"><a href="#pass-渲染一次模型" class="headerlink" title="pass 渲染一次模型"></a>pass 渲染一次模型</h3><p>模板</p>
+<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">CGPROGRAM</span><br><span class="line">         <span class="hljs-meta">#pragma vertex vert   //vertex name</span></span><br><span class="line">         <span class="hljs-meta">#pragma fragment frag  //fragment name</span></span><br><span class="line">         <span class="hljs-comment">// make fog work</span></span><br><span class="line"></span><br><span class="line">         <span class="hljs-type">float</span> vert (float4 vert : POSITION) : SV_POSITION   <span class="hljs-comment">//POSITION 语义</span></span><br><span class="line">         &#123;</span><br><span class="line">             <span class="hljs-keyword">return</span> UnityObjectToClipPos( vert );</span><br><span class="line">         &#125;</span><br><span class="line">         ENDCG</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
 
-      
+<h4 id="片段着色器"><a href="#片段着色器" class="headerlink" title="片段着色器"></a>片段着色器</h4><p>片断着色器也被称作像素着色器，主要是处理最终显示在屏幕上的像素结果。<br>经过顶点着色器的处理，我们已经得到了最终显示在屏幕上的顶点矩阵，内部会自动进行插值计算，以获得当前模型的所有片断像素，然后每个像素都会执行一次片断着色器，得到最终每个像素的颜色值。</p>
+
+    
+    </div>
+    
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="/tags/shader/">#shader</a></span>
+    
     </div>
     
     
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/shader/" rel="tag"># shader</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop  article-nav-prev">
             
-              <a href="/2019/03/13/流场与boid/" rel="next" title="流场与boid">
-                <i class="fa fa-chevron-left"></i> 流场与boid
-              </a>
+            <a href="/2019/03/20/Github-tutorial/">Github_tutorial</a>
             
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
+        </span>
+        <span class="column is-12-mobile is-half-desktop  article-nav-next">
             
-              <a href="/2019/03/20/Github-tutorial/" rel="prev" title="Github_tutorial">
-                Github_tutorial <i class="fa fa-chevron-right"></i>
-              </a>
+            <a href="/2019/03/13/流场与boid/">流场与boid</a>
             
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-
-    <div class="post-spread">
-      
+        </span>
     </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-
-  
-
-
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
     
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
-
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">liudixian</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">26</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index-1.html">
-                  <span class="site-state-item-count">5</span>
-                  <span class="site-state-item-name">categories</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index-1.html">
-                  <span class="site-state-item-count">14</span>
-                  <span class="site-state-item-name">tags</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-            <div class="feed-link motion-element">
-              <a href="/atom.xml" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
-            </div>
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#unity-shaderlab"><span class="nav-number">1.</span> <span class="nav-text"> Unity shaderLab</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#shader名称路径"><span class="nav-number">1.1.</span> <span class="nav-text"> Shader名称路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#properties"><span class="nav-number">1.2.</span> <span class="nav-text"> Properties</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#subshaders"><span class="nav-number">1.3.</span> <span class="nav-text"> SubShaders</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fallback"><span class="nav-number">1.4.</span> <span class="nav-text"> FallBack</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#customeditor"><span class="nav-number">1.5.</span> <span class="nav-text"> CustomEditor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#properties-属性"><span class="nav-number">1.6.</span> <span class="nav-text"> Properties 属性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据类型-color"><span class="nav-number">1.6.1.</span> <span class="nav-text"> 数据类型 Color</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#int"><span class="nav-number">1.6.2.</span> <span class="nav-text"> int</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#float"><span class="nav-number">1.6.3.</span> <span class="nav-text"> float</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#vector-四维向量"><span class="nav-number">1.6.4.</span> <span class="nav-text"> Vector 四维向量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2d-2d纹理"><span class="nav-number">1.6.5.</span> <span class="nav-text"> 2D 2D纹理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3d-3d纹理"><span class="nav-number">1.6.6.</span> <span class="nav-text"> 3D 3D纹理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cube-立方体纹理"><span class="nav-number">1.6.7.</span> <span class="nav-text"> Cube 立方体纹理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#通用属性标记"><span class="nav-number">1.6.8.</span> <span class="nav-text"> 通用属性标记</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pass-渲染一次模型"><span class="nav-number">1.7.</span> <span class="nav-text"> pass 渲染一次模型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#片段着色器"><span class="nav-number">1.7.1.</span> <span class="nav-text"> 片段着色器</span></a></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
-
-      
-
-    </div>
-  </aside>
+</article>
 
 
-        
-      </div>
-    </main>
+<div class="sharebox">
+    
+<div class="notification is-danger">
+    You need to set <code>install_url</code> to use ShareThis. Please set it in <code>_config.yml</code>.
+</div>
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">liudixian</span>
-
-  
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io" rel="external nofollow noopener noreferrer">Hexo</a></div>
 
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next" rel="external nofollow noopener noreferrer">NexT.Muse</a> v5.1.4</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
+<div class="comments">
+    <h3 class="title is-4">Comments</h3>
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+<div id="disqus_thread">
     
-
+    <div class="notification is-danger">
+        You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.
+    </div>
     
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
 
-  </div>
+    </div>
+</section>
+    <footer class="footer">
+    <div class="container">
+        <div class="columns content">
+            <div class="column is-narrow has-text-centered">
+                &copy; 2019 liudixian&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> & <a href="http://github.com/ppoffice/hexo-theme-minos" rel="external nofollow noopener noreferrer" target="_blank">Minos</a>
+            </div>
+            <div class="column is-hidden-mobile"></div>
 
-  
+            
+            <div class="column is-narrow">
+                <div class="columns is-mobile is-multiline is-centered">
+                
+                    
+                <a class="column is-narrow has-text-black" title="GitHub" href="https://github.com/ppoffice/hexo-theme-minos" rel="external nofollow noopener noreferrer" target="_blank">
+                    
+                    GitHub
+                    
+                </a>
+                
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</footer>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+<!-- test if the browser is outdated -->
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/" rel="external nofollow noopener noreferrer" target="_blank">Update my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // plugin function, place inside DOM ready function
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        })
+    });
+</script>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+    moment.locale("zh-CN");
 </script>
 
 
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
         tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
         }
-      });
+    });
+</script>
+
+    
+    
+    
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            if (typeof($.fn.lightGallery) === 'function') {
+                $('.article.gallery').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof($.fn.justifiedGallery) === 'function') {
+                $('.justified-gallery').justifiedGallery();
+            }
+        });
+    })(jQuery);
+</script>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+        .hljs {
+            position: relative;
+        }
+
+        .hljs .clipboard-btn {
+            float: right;
+            color: #9a9a9a;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hljs .clipboard-btn:hover {
+          color: #8a8a8a;
+        }
+
+        .hljs > .clipboard-btn {
+            display: none;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+        }
+
+        .hljs:hover > .clipboard-btn {
+            display: inline;
+        }
+
+        .hljs > figcaption > .clipboard-btn {
+            margin-right: 4px;
+        }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('figure.hljs').each(function(i, figure) {
+          var codeId = 'code-' + i;
+          var code = figure.querySelector('.code');
+          var copyButton = $('<button>Copy <i class="far fa-clipboard"></i></button>');
+          code.id = codeId;
+          copyButton.addClass('clipboard-btn');
+          copyButton.attr('data-clipboard-target-id', codeId);
+
+          var figcaption = figure.querySelector('figcaption');
+
+          if (figcaption) {
+            figcaption.append(copyButton[0]);
+          } else {
+            figure.prepend(copyButton[0]);
+          }
+        })
+
+        var clipboard = new ClipboardJS('.clipboard-btn', {
+          target: function(trigger) {
+            return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+          }
+        });
+        clipboard.on('success', function(e) {
+          e.clearSelection();
+        })
+      })
     </script>
 
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-  
+    
+    
+
+    
 
 
-  
+<script src="/js/script.js"></script>
 
-  
-
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-mask"></div>
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    
 </body>
 </html>
