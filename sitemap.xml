@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://liudixian.github.io/2019/01/03/%E8%99%9A%E6%8B%9F%E5%8F%99%E4%BA%8B/</loc>
+    
+    <lastmod>2019-06-14T19:43:24.596Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://liudixian.github.io/2019/06/15/%E5%AA%92%E4%BD%93%E7%90%86%E8%AE%BA%E9%87%8D%E8%A6%81%E4%BA%BA%E7%89%A9%E5%B9%B4%E8%A1%A8/</loc>
     
-    <lastmod>2019-06-14T19:25:32.362Z</lastmod>
+    <lastmod>2019-06-14T19:41:33.714Z</lastmod>
     
   </url>
   
@@ -65,23 +72,9 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/2019/01/03/%E8%99%9A%E6%8B%9F%E5%8F%99%E4%BA%8B-md/</loc>
-    
-    <lastmod>2019-01-03T15:24:21.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://liudixian.github.io/2018/12/22/%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90/</loc>
     
     <lastmod>2018-12-22T04:31:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/12/22/%E8%89%BA%E6%9C%AF%E9%A9%BB%E7%95%99/</loc>
-    
-    <lastmod>2018-12-22T04:21:15.000Z</lastmod>
     
   </url>
   
@@ -93,7 +86,7 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/categories/index.html</loc>
+    <loc>http://liudixian.github.io/about/index.html</loc>
     
     <lastmod>2018-12-21T13:34:48.000Z</lastmod>
     
@@ -107,7 +100,7 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/about/index.html</loc>
+    <loc>http://liudixian.github.io/categories/index.html</loc>
     
     <lastmod>2018-12-21T13:34:48.000Z</lastmod>
     
