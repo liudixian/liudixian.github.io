@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://liudixian.github.io/2019/06/15/%E5%AA%92%E4%BD%93%E7%90%86%E8%AE%BA%E9%87%8D%E8%A6%81%E4%BA%BA%E7%89%A9%E5%B9%B4%E8%A1%A8/</loc>
+    
+    <lastmod>2019-06-14T17:27:23.762Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://liudixian.github.io/2019/03/13/%E6%B5%81%E5%9C%BA%E4%B8%8Eboid/</loc>
     
     <lastmod>2019-06-04T13:58:37.232Z</lastmod>
@@ -79,14 +86,14 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/about/index.html</loc>
+    <loc>http://liudixian.github.io/categories/index.html</loc>
     
     <lastmod>2018-12-21T13:34:48.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/categories/index.html</loc>
+    <loc>http://liudixian.github.io/about/index.html</loc>
     
     <lastmod>2018-12-21T13:34:48.000Z</lastmod>
     
@@ -205,21 +212,14 @@
   </url>
   
   <url>
+    <loc>http://liudixian.github.io/write/index.html</loc>
+    
+    <lastmod>2018-11-07T17:04:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://liudixian.github.io/2018/11/01/listenning/</loc>
-    
-    <lastmod>2018-11-07T17:04:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/cv/index.html</loc>
-    
-    <lastmod>2018-11-07T17:04:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/listening-trashed/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
@@ -233,14 +233,7 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/trashed/index.html</loc>
-    
-    <lastmod>2018-11-07T17:04:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/write/index.html</loc>
+    <loc>http://liudixian.github.io/cv/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
@@ -248,6 +241,20 @@
   
   <url>
     <loc>http://liudixian.github.io/work/index.html</loc>
+    
+    <lastmod>2018-11-07T17:04:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://liudixian.github.io/trashed/index.html</loc>
+    
+    <lastmod>2018-11-07T17:04:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://liudixian.github.io/listening-trashed/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
