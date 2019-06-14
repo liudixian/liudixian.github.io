@@ -113,13 +113,13 @@
         
         <div class="navbar-menu navbar-end">
             
-            <a class="navbar-item search" title="Search" href="javascript:;">
+            <a class="navbar-item search" title="Chercher" href="javascript:;">
                 <i class="fas fa-search"></i>
             </a>
             
             
             <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
-                <a class="navbar-item" title="Table of Contents">
+                <a class="navbar-item" title="Table des Matières">
                     <i class="fa fa-list"></i>
                 </a>
                 <div class="navbar-dropdown is-right">
@@ -244,7 +244,7 @@
         <span class="column is-narrow">
             
             
-            29 分钟 read (About 4406 words)
+            29 分钟 lire (À propos 4406 mots)
         </span>
         
     </div>
@@ -315,10 +315,10 @@ Shader “Hidden/TA/MyFirstShader”<br>
 <p>Standard Shader对应的材质面板显示与众不同，很高级，这就是因为它利用了CustomEditor的功能来实现的，要做到这一点，必须要用到C#来写代码实现，这对于刚入门学Shader的同学来说不是易事，同时也由于这个功能在大多数情况下是不需要的，所以我们先抛开它，知道有它的存在就好了。后续如果有机会我们再专门解讲这个。</p>
 <hr>
 <h3 id="properties-属性"><a class="markdownIt-Anchor" href="#properties-属性"></a> Properties 属性</h3>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">[Attribute]_Name(&quot;Display Name&quot;, Type) = Default Value</span><br><span class="line"></span><br><span class="line">- Attribute</span><br><span class="line">- _Name 变量名 外部访问</span><br><span class="line">- Display Name 材质面板上的名称</span><br><span class="line">    /*</span><br><span class="line">    建议这里的显示名称要起的有意义，要知道最终在材质上调节的人很大部分情况下不会是你自己，别人更不可能知道每个属性内部是如何关联以及有什么作用，所以当我们TA在做完一个Shader给到使用人员的时候，一定要给他讲解一下，不管是有个说明文档还是简单沟通下都是有必要的。这样才能最大发挥Shader的使用效果，所以显示名称起着一半说明书的作用，一定要重视。</span><br><span class="line">    什么样的名字是有意义的呢？</span><br><span class="line">    作用与通道的组合（在需要说明通道的情况下）。</span><br><span class="line">    比如：一张基础表面色贴图，可以用&quot;Base (RGB)&quot;,这样即说明了此贴图是基本贴图，同时又说明了此贴图在表面色上只使用到了RGB三个通道。</span><br><span class="line">    */</span><br><span class="line">- Type 类型</span><br><span class="line">    - Color</span><br><span class="line">    - int</span><br><span class="line">    - float</span><br><span class="line">    - Vector</span><br><span class="line">    - 2d texture 纹理</span><br><span class="line">    - 3d textture纹理</span><br><span class="line">    - cube 立方体纹理</span><br><span class="line">- Default Value</span><br><span class="line">    /*默认值，当第一次指定此Shader时，或者在材质面板上执行Reset时，属性的值会自动恢复到默认值，不同的类型具体写法也不太一样，下面会结合类型进行详细说明。*/</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">[Attribute]_Name(&quot;Display Name&quot;, Type) = Default Value</span><br><span class="line"></span><br><span class="line">- Attribute</span><br><span class="line">- _Name 变量名 外部访问</span><br><span class="line">- Display Name 材质面板上的名称</span><br><span class="line">    /*</span><br><span class="line">    建议这里的显示名称要起的有意义，要知道最终在材质上调节的人很大部分情况下不会是你自己，别人更不可能知道每个属性内部是如何关联以及有什么作用，所以当我们TA在做完一个Shader给到使用人员的时候，一定要给他讲解一下，不管是有个说明文档还是简单沟通下都是有必要的。这样才能最大发挥Shader的使用效果，所以显示名称起着一半说明书的作用，一定要重视。</span><br><span class="line">    什么样的名字是有意义的呢？</span><br><span class="line">    作用与通道的组合（在需要说明通道的情况下）。</span><br><span class="line">    比如：一张基础表面色贴图，可以用&quot;Base (RGB)&quot;,这样即说明了此贴图是基本贴图，同时又说明了此贴图在表面色上只使用到了RGB三个通道。</span><br><span class="line">    */</span><br><span class="line">- Type 类型</span><br><span class="line">    - Color</span><br><span class="line">    - int</span><br><span class="line">    - float</span><br><span class="line">    - Vector</span><br><span class="line">    - 2d texture 纹理</span><br><span class="line">    - 3d textture纹理</span><br><span class="line">    - cube 立方体纹理</span><br><span class="line">- Default Value</span><br><span class="line">    /*默认值，当第一次指定此Shader时，或者在材质面板上执行Reset时，属性的值会自动恢复到默认值，不同的类型具体写法也不太一样，下面会结合类型进行详细说明。*/</span><br></pre></td></tr></table></figure>
 <h4 id="数据类型-color"><a class="markdownIt-Anchor" href="#数据类型-color"></a> 数据类型 Color</h4>
 <p>example:</p>
-<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line">&#123;</span><br><span class="line">    _Color("颜色", color) = (1,1,1,1);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line">&#123;</span><br><span class="line">    _Color("颜色", color) = (1,1,1,1);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>变量名：<code>_Color</code><br>
 显示名称：我是Color<br>
 类型：Color<br>
@@ -330,10 +330,10 @@ RGB的取值是0-255(2的8次方个值域），而在Shader中被归一化为0-1
 零点几的值可以省略零，比如0.95可以写成.95</p>
 </blockquote>
 <p><strong>[HDR]</strong></p>
-<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line">&#123;</span><br><span class="line">    _Color("颜色", color) = (1,1,1,1);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line">&#123;</span><br><span class="line">    _Color("颜色", color) = (1,1,1,1);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>HDR可以使颜色亮度的值超过1，通过这个值可以配合镜头Bloom效果做出物体泛光的视觉效果。</p>
 <h4 id="int"><a class="markdownIt-Anchor" href="#int"></a> int</h4>
-<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3     _Int("我是Int", Int) = 1</span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3     _Int("我是Int", Int) = 1</span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
 <p>变量名：<code>_Int</code><br>
 显示名称：我是Int<br>
 类型：Int<br>
@@ -344,7 +344,7 @@ RGB的取值是0-255(2的8次方个值域），而在Shader中被归一化为0-1
 <p>注意，此值并不是四舍五入，而是直接取整，比如1.999,结果是1.</p>
 </blockquote>
 <h4 id="float"><a class="markdownIt-Anchor" href="#float"></a> float</h4>
-<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3     _Float("我是Float", Float) = 0.5</span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3     _Float("我是Float", Float) = 0.5</span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
 <p>变量名：<code>_Float</code><br>
 显示名称：我是Float<br>
 类型：Float<br>
@@ -354,12 +354,12 @@ RGB的取值是0-255(2的8次方个值域），而在Shader中被归一化为0-1
 <p>在Shader中Float是最基本的类型，而Int只是一种伪整型，从Shader精度上来讲并不存在整型。所以在Properties内完全可以用Float替代Int。</p>
 </blockquote>
 <p><strong>[Range]</strong></p>
-<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties  </span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3     _Float("我是Float", Range( 0 , 1)) = 0.5</span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties  </span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3     _Float("我是Float", Range( 0 , 1)) = 0.5</span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
 <p>很常用的一种属性标记，主要是用来将浮点数限制在一个可以通过滑动条来选择的一个区间。<br>
 将此属性中原有的Float替换成Range (Min,Max)即可，Min=最小值，Max=最大值。<br>
 <img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTdR4HVC29j1fCWucYvQe4I3SXlkYqb4cFfkjodHZzRwgbicNHkluTXZw/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""></p>
 <p><strong>PowerSlider</strong></p>
-<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties  </span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3     [PowerSlider(3)]_Float("我是Float", Range( 0 , 1)) = 0.5</span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties  </span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3     [PowerSlider(3)]_Float("我是Float", Range( 0 , 1)) = 0.5</span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
 <p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTDeuKtLYsILtYzCOJCG39Q5RwUvouNviaV25A02oV2AfXHIiapjfGIJ3g/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""><br>
 我们拿它跟上面的不加PowerSlider来对比，同样是值0.5,在材质面板上滑杆的位置是不一样的。<br>
 PowerSlider (Value)<br>
@@ -368,7 +368,7 @@ PowerSlider (Value)<br>
 <p>此属性标记的主要作用，是方便用户调节滑杆。比如有个属性值是从0-1,但是很大部分情况下所用到的值都是0-0.1左右，同时需要更精细的在这区间进行微调。那么正常情况下，用户在整个滑条上想选择0-0.1之间本身就变的很难了，更不要说在这区间微调了。所以这个时候就可以利用PowerSlider来解决此问题。</p>
 </blockquote>
 <p><strong>[IntRange]</strong></p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line">2 &#123;</span><br><span class="line">3      [IntRange]_Float(&quot;我是Float&quot;, Range( 0 , 1)) = 1</span><br><span class="line">4 &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line">2 &#123;</span><br><span class="line">3      [IntRange]_Float(&quot;我是Float&quot;, Range( 0 , 1)) = 1</span><br><span class="line">4 &#125;</span><br></pre></td></tr></table></figure>
 <p>加了它之后呢，你在材质面板上拖动时就只能生成整数了。所以说我们完全可以用Float来代替Int。</p>
 <blockquote>
 <p>注意，当添加了[IntRange]后，默认值会被自动进行处理，假如默认值你写的是0.1,则在Shader内部会自动向下取整，取值为0.</p>
@@ -376,10 +376,10 @@ PowerSlider (Value)<br>
 <p><strong>[Toggle]</strong><br>
 <img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTS84mcoVBSaYGnDTHv92SVB1ScVausRvpbsFosJnFkiapAIcDLwJ5kIQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""></p>
 <p><strong>[Enum]</strong></p>
-<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3      [Enum(UnityEngine.Rendering.CullMode)]_Float("我是Float", Float) = 1  </span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3      [Enum(UnityEngine.Rendering.CullMode)]_Float("我是Float", Float) = 1  </span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
 <p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTwk9k2FmxagPY8vVUTRxVicE8va3C2beHKxfWwjTnibjFAc58tkhHV2fQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""></p>
 <h4 id="vector-四维向量"><a class="markdownIt-Anchor" href="#vector-四维向量"></a> Vector 四维向量</h4>
-<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3      _Vector("我是Vector", Vector) = (0,0,0,0)  </span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3      _Vector("我是Vector", Vector) = (0,0,0,0)  </span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
 <p>变量名：<code>_Vector</code><br>
 显示名称：我是Vector<br>
 类型：Vector<br>
@@ -391,7 +391,7 @@ PowerSlider (Value)<br>
 <p>XYZW与RGBA同样都是四个分量组合，只是在用于颜色时我们通常用RGBA来表示，用作坐标时习惯用XYZW来表示而已，同样我们也是可以用Vector来输出颜色，只是不那么方便直观而已。</p>
 </blockquote>
 <h4 id="2d-2d纹理"><a class="markdownIt-Anchor" href="#2d-2d纹理"></a> 2D 2D纹理</h4>
-<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-number">1</span> Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;  </span><br><span class="line">3      _MainTex("我是2D纹理", 2D) = "white" &#123;&#125;  </span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> Properties</span><br><span class="line"><span class="number">2</span> &#123;  </span><br><span class="line">3      _MainTex("我是2D纹理", 2D) = "white" &#123;&#125;  </span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
 <p>变量名：<code>_MainTex</code><br>
 显示名称：我是2D纹理<br>
 类型：2D<br>
@@ -399,7 +399,7 @@ PowerSlider (Value)<br>
 <p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTaS0AbAMdVnibncExoMU1uta235fEpbKq0aTm1WBqOsDuNtaHzCZmGDw/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""></p>
 <p>纹理贴图，也是Shader中最最常用的属性之一。<br>
 <strong>[NoScaleOffset]</strong></p>
-<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-number">1</span> Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;  </span><br><span class="line">3      [NoScaleOffset]_MainTex("我是2D纹理", 2D) = "white" &#123;&#125;</span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> Properties</span><br><span class="line"><span class="number">2</span> &#123;  </span><br><span class="line">3      [NoScaleOffset]_MainTex("我是2D纹理", 2D) = "white" &#123;&#125;</span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
 <p>在材质面板中除了显示贴图槽以外默认还会显示两组Float。</p>
 <ol>
 <li>Tiling （贴图重复度）</li>
@@ -421,7 +421,7 @@ bump<br>
 如果不设置默认值，即=&quot;&quot;{}，则其实与=“gray”{}相同。<br>
 当设置了默认值后，Shader内部会自动调用Unity内部准备的一张小图片，white就是纯白色,black就是纯黑色，gray就是灰色图，bump就是法线图。</p>
 <h4 id="3d-3d纹理"><a class="markdownIt-Anchor" href="#3d-3d纹理"></a> 3D 3D纹理</h4>
-<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3     _MainTex("我是3D纹理", 3d) = "" &#123;&#125;</span><br><span class="line"><span class="hljs-number">4</span> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Properties</span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3     _MainTex("我是3D纹理", 3d) = "" &#123;&#125;</span><br><span class="line"><span class="number">4</span> &#125;</span><br></pre></td></tr></table></figure>
 <p>变量名：<code>_MainTex</code><br>
 显示名称：我是3D纹理<br>
 类型：3d<br>
@@ -441,7 +441,7 @@ CubeMap通常被用来作为具有反射属性物体的反射源。</p>
 <h4 id="通用属性标记"><a class="markdownIt-Anchor" href="#通用属性标记"></a> 通用属性标记</h4>
 <p>还有一些比较常用的属性标记，可以用于任何属性，下面来介绍下：</p>
 <p><strong>[Header]</strong></p>
-<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-number">1</span> Properties</span><br><span class="line"><span class="hljs-number">2</span> &#123;</span><br><span class="line">3     [Header(This is Header )]_Int("我是Int", Int) = 1</span><br><span class="line">4   _Float("我是Float", Range( 0 , 1)) = 1</span><br><span class="line"><span class="hljs-number">5</span> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> Properties</span><br><span class="line"><span class="number">2</span> &#123;</span><br><span class="line">3     [Header(This is Header )]_Int("我是Int", Int) = 1</span><br><span class="line">4   _Float("我是Float", Range( 0 , 1)) = 1</span><br><span class="line"><span class="number">5</span> &#125;</span><br></pre></td></tr></table></figure>
 <p>在材质面板上进行标注，通常用作分类组别用，注意只支持英文、数字、空格以及下划线。</p>
 <p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/icOjsYBJEic5oZV7FZiagDfzElc1E6uJCgTve9vZCB0m2WmJpcRjlT5FKUpEIAfoK4ev0iaP4xMSj750Z5Equ5icGAg/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt=""></p>
 <p><strong>[HideInInspector]</strong><br>
@@ -449,7 +449,7 @@ CubeMap通常被用来作为具有反射属性物体的反射源。</p>
 <hr>
 <h3 id="pass-渲染一次模型"><a class="markdownIt-Anchor" href="#pass-渲染一次模型"></a> pass 渲染一次模型</h3>
 <p>模板</p>
-<figure class="highlight glsl hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">CGPROGRAM</span><br><span class="line">         <span class="hljs-meta">#pragma vertex vert   //vertex name</span></span><br><span class="line">         <span class="hljs-meta">#pragma fragment frag  //fragment name</span></span><br><span class="line">         <span class="hljs-comment">// make fog work</span></span><br><span class="line"></span><br><span class="line">         <span class="hljs-type">float</span> vert (float4 vert : POSITION) : SV_POSITION   <span class="hljs-comment">//POSITION 语义</span></span><br><span class="line">         &#123;</span><br><span class="line">             <span class="hljs-keyword">return</span> UnityObjectToClipPos( vert );</span><br><span class="line">         &#125;</span><br><span class="line">         ENDCG</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">CGPROGRAM</span><br><span class="line">         <span class="meta">#pragma vertex vert   //vertex name</span></span><br><span class="line">         <span class="meta">#pragma fragment frag  //fragment name</span></span><br><span class="line">         <span class="comment">// make fog work</span></span><br><span class="line"></span><br><span class="line">         <span class="type">float</span> vert (float4 vert : POSITION) : SV_POSITION   <span class="comment">//POSITION 语义</span></span><br><span class="line">         &#123;</span><br><span class="line">             <span class="keyword">return</span> UnityObjectToClipPos( vert );</span><br><span class="line">         &#125;</span><br><span class="line">         ENDCG</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
 <h4 id="片段着色器"><a class="markdownIt-Anchor" href="#片段着色器"></a> 片段着色器</h4>
 <p>片断着色器也被称作像素着色器，主要是处理最终显示在屏幕上的像素结果。<br>
 经过顶点着色器的处理，我们已经得到了最终显示在屏幕上的顶点矩阵，内部会自动进行插值计算，以获得当前模型的所有片断像素，然后每个像素都会执行一次片断着色器，得到最终每个像素的颜色值。</p>
@@ -491,7 +491,7 @@ CubeMap通常被用来作为具有反射属性物体的反射源。</p>
 
 
 <div class="comments">
-    <h3 class="title is-4">Comments</h3>
+    <h3 class="title is-4">Commentaires</h3>
     
 <div id="disqus_thread">
     
@@ -681,7 +681,7 @@ CubeMap通常被用来作为具有反射属性物体的反射源。</p>
     <div class="searchbox-mask"></div>
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Que voulez-vous chercher ?">
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -695,9 +695,9 @@ CubeMap通常被用来作为具有反射属性物体的反射源。</p>
             TRANSLATION: {
                 POSTS: 'Posts',
                 PAGES: 'Pages',
-                CATEGORIES: 'Categories',
+                CATEGORIES: 'Catégories',
                 TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
+                UNTITLED: '(Sans Titre)',
             },
             CONTENT_URL: '/content.json',
         };

@@ -121,7 +121,7 @@
         
         <div class="navbar-menu navbar-end">
             
-            <a class="navbar-item search" title="Search" href="javascript:;">
+            <a class="navbar-item search" title="Chercher" href="javascript:;">
                 <i class="fas fa-search"></i>
             </a>
             
@@ -155,7 +155,7 @@
         <span class="column is-narrow">
             
             
-            1 小时 read (About 9487 words)
+            1 小时 lire (À propos 9487 mots)
         </span>
         
     </div>
@@ -291,7 +291,7 @@
 <h3 id="64-用magnum制作的模数转换器-the-adc-board-used-in-the-magnum"><a class="markdownIt-Anchor" href="#64-用magnum制作的模数转换器-the-adc-board-used-in-the-magnum"></a> 6.4 用Magnum制作的模数转换器 The ADC board used in the Magnum</h3>
 <p>Magnum中使用的ADC板是IOtech（<a href="http://www.iotech.com/" rel="external nofollow noopener noreferrer" target="_blank">http://www.iotech.com/</a>)的ADAC / 5501MF（<a href="ftp://ftp.iotech.com/ADAC.5500.20Series.20Users.20Manual.pdf%EF%BC%89%E3%80%82" rel="external nofollow noopener noreferrer" target="_blank">ftp://ftp.iotech.com/ADAC.5500.20Series.20Users.20Manual.pdf）。</a> 它是一个12位ADC，具有8个不对称（或16个单端）模拟输入，最大采样率为100 kHz。</p>
 <p>需要从IOtech获取的部件：</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> - Data acquisition board: ADAC/5501MF $384</span><br><span class="line"> - Terminal board: ADAC-TB-16 $139</span><br><span class="line"> - Cable: CA-G55-ADAC $69</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> - Data acquisition board: ADAC/5501MF $384</span><br><span class="line"> - Terminal board: ADAC-TB-16 $139</span><br><span class="line"> - Cable: CA-G55-ADAC $69</span><br></pre></td></tr></table></figure>
 <p>没有必要使用这个特定的数据采集板，但本书附带的软件（用于与电路板通信并获取数据）是为该电路板编写的。如果您更喜欢使用不同的数据采集板， 所需的基本功能是：</p>
 <ol>
 <li>不同的输入口</li>
@@ -306,7 +306,7 @@
 <p>要启动脉冲，ADL将运行程序命令发送到脉冲切换器。然后脉冲切换器将偏振线圈中的电流接通指定的时间。关闭电流后，切换器会在触发数据采集系统（DAQ）开始采集数据之前等待很短的时间。</p>
 <p>数据采集完成后，ADL将对数据进行缩放，以使值反映真实的电压电平。 如果指定了多个脉冲，则将另一个运行程序命令发送到脉冲切换器，并重复上述过程。 程序平均来自所有脉冲的数据并将结果存储在数据文件中。</p>
 <p>如上所述，ADL执行系统设置和运行所需的参数包含在运行程序时在命令行上指定的参数文件中。 示例参数文件如下所示。</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">ADAC5501 // Device name (32 char max)</span><br><span class="line">D // Input type [D]ifferential or [S]ingle ended</span><br><span class="line">0 // Channel number [0-7] (Diff) or [0-15] (SE)</span><br><span class="line">B // Polarity [U]nipolar or [B]ipolar</span><br><span class="line">1 // Gain [1,2,4,8,16,32,64]</span><br><span class="line">16384 // Samples per second</span><br><span class="line">65536 // Number of samples</span><br><span class="line">6.0 // Pulse length in seconds [0-13]</span><br><span class="line">0.1 // Daq trigger delay in seconds</span><br><span class="line">4 // Number of pulses</span><br><span class="line">10.0 // Pulse delay in seconds</span><br><span class="line">magnum1.dat // Output file name</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">ADAC5501 // Device name (32 char max)</span><br><span class="line">D // Input type [D]ifferential or [S]ingle ended</span><br><span class="line">0 // Channel number [0-7] (Diff) or [0-15] (SE)</span><br><span class="line">B // Polarity [U]nipolar or [B]ipolar</span><br><span class="line">1 // Gain [1,2,4,8,16,32,64]</span><br><span class="line">16384 // Samples per second</span><br><span class="line">65536 // Number of samples</span><br><span class="line">6.0 // Pulse length in seconds [0-13]</span><br><span class="line">0.1 // Daq trigger delay in seconds</span><br><span class="line">4 // Number of pulses</span><br><span class="line">10.0 // Pulse delay in seconds</span><br><span class="line">magnum1.dat // Output file name</span><br></pre></td></tr></table></figure>
 <p>所有这些参数必须出现在每个参数文件中，并且必须按所示顺序显示。 每行的第一项是参数的值，双斜杠标记后面的所有内容都是注释。 注释描述了参数是什么以及它可以采用的可能值。</p>
 <p>前七个参数用于初始化数据采集系统。接下来的四个用于初始化脉冲编程器和运行脉冲序列。最后一个参数给出了程序运行时创建的数据文件的名称。我们现在将描述每个参数的含义。</p>
 <p>如果系统使用多个数据采集卡，则设备名称参数仅具有意义。该参数实际上并未由ADL使用，但它包含在内，因此可以轻松修改程序以使用多个数据采集卡。但它必须保留为参数文件中的第一项。</p>
@@ -342,7 +342,7 @@ MST）。</p>
 <p><img src="/.io//7.3.jpg" alt="7.3"><br>
 图7.3：Butterworth带通滤波器频率响应，6阶，fc = 2100,2400 Hz。</p>
 <p>我们现在可以删除我们的Magnum数据文件：</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rdf bpfmagnum.cof elpaso1.dat 2000 32768 elpaso1bpf.dat</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rdf bpfmagnum.cof elpaso1.dat 2000 32768 elpaso1bpf.dat</span><br></pre></td></tr></table></figure>
 <p>结果如图7.3所示。</p>
 <p><img src="/.io//7.4.jpg" alt="7.4"></p>
 <p>图7.4：使用Butterworth BPF输入的数据，6阶。</p>
@@ -449,7 +449,7 @@ fft 0 32768 elpaso1bpf.dat elpaso1bpf.fft</p>
 
 
 <div class="comments">
-    <h3 class="title is-4">Comments</h3>
+    <h3 class="title is-4">Commentaires</h3>
     
 <div id="disqus_thread">
     
@@ -639,7 +639,7 @@ fft 0 32768 elpaso1bpf.dat elpaso1bpf.fft</p>
     <div class="searchbox-mask"></div>
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Que voulez-vous chercher ?">
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -653,9 +653,9 @@ fft 0 32768 elpaso1bpf.dat elpaso1bpf.fft</p>
             TRANSLATION: {
                 POSTS: 'Posts',
                 PAGES: 'Pages',
-                CATEGORIES: 'Categories',
+                CATEGORIES: 'Catégories',
                 TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
+                UNTITLED: '(Sans Titre)',
             },
             CONTENT_URL: '/content.json',
         };
