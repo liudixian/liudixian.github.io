@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://liudixian.github.io/2019/03/20/Github-tutorial/</loc>
+    
+    <lastmod>2019-06-14T20:02:10.513Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://liudixian.github.io/2018/05/10/Zielinski/</loc>
+    
+    <lastmod>2019-06-14T20:00:29.193Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://liudixian.github.io/2018/11/02/landscape/</loc>
+    
+    <lastmod>2019-06-14T19:55:30.725Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://liudixian.github.io/2019/03/24/Form-follows-format/</loc>
+    
+    <lastmod>2019-06-14T19:52:12.135Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://liudixian.github.io/2018/11/26/11-26-Krac/</loc>
+    
+    <lastmod>2019-06-14T19:49:20.095Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://liudixian.github.io/2018/12/22/%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90/</loc>
+    
+    <lastmod>2019-06-14T19:46:59.365Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://liudixian.github.io/2019/01/03/%E8%99%9A%E6%8B%9F%E5%8F%99%E4%BA%8B/</loc>
     
     <lastmod>2019-06-14T19:43:24.596Z</lastmod>
@@ -37,20 +79,6 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/2019/03/20/Github-tutorial/</loc>
-    
-    <lastmod>2019-06-04T13:16:26.054Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2019/03/24/Form-follows-format/</loc>
-    
-    <lastmod>2019-06-04T13:15:17.182Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://liudixian.github.io/2018/11/15/%E8%99%9A%E6%9E%84%E7%9A%84%E7%94%9F%E6%80%81%E5%AD%A6/</loc>
     
     <lastmod>2019-06-04T13:14:43.040Z</lastmod>
@@ -72,13 +100,6 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/2018/12/22/%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90/</loc>
-    
-    <lastmod>2018-12-22T04:31:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://liudixian.github.io/2018/11/08/MarkHansen/</loc>
     
     <lastmod>2018-12-21T15:12:33.000Z</lastmod>
@@ -86,7 +107,7 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/about/index.html</loc>
+    <loc>http://liudixian.github.io/categories/index.html</loc>
     
     <lastmod>2018-12-21T13:34:48.000Z</lastmod>
     
@@ -100,16 +121,9 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/categories/index.html</loc>
+    <loc>http://liudixian.github.io/about/index.html</loc>
     
     <lastmod>2018-12-21T13:34:48.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/26/11-26-Krac/</loc>
-    
-    <lastmod>2018-12-21T11:58:45.000Z</lastmod>
     
   </url>
   
@@ -131,20 +145,6 @@
     <loc>http://liudixian.github.io/tags/index-1.html</loc>
     
     <lastmod>2018-12-21T11:06:21.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/02/cotom/</loc>
-    
-    <lastmod>2018-12-19T13:52:02.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/25/11-25-mt/</loc>
-    
-    <lastmod>2018-11-25T13:56:06.000Z</lastmod>
     
   </url>
   
@@ -205,14 +205,7 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/2018/05/10/Zielinski/</loc>
-    
-    <lastmod>2018-11-09T16:26:38.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/02/landscape/</loc>
+    <loc>http://liudixian.github.io/cv/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
@@ -233,20 +226,6 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/cv/index.html</loc>
-    
-    <lastmod>2018-11-07T17:04:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/work/index.html</loc>
-    
-    <lastmod>2018-11-07T17:04:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://liudixian.github.io/write/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
@@ -254,7 +233,7 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/2018/11/01/listenning/</loc>
+    <loc>http://liudixian.github.io/work/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
