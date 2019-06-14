@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://liudixian.github.io/"/>
-  <updated>2019-06-14T18:09:32.836Z</updated>
+  <updated>2019-06-14T18:12:03.340Z</updated>
   <id>http://liudixian.github.io/</id>
   
   <author>
@@ -21,18 +21,13 @@
     <link href="http://liudixian.github.io/2019/06/15/hexo%E6%B7%BB%E5%8A%A0%E5%9B%BE%E7%89%87%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
     <id>http://liudixian.github.io/2019/06/15/hexo添加图片注意事项/</id>
     <published>2019-06-14T18:04:00.000Z</published>
-    <updated>2019-06-14T18:09:32.836Z</updated>
+    <updated>2019-06-14T18:12:03.340Z</updated>
     
-    <content type="html"><![CDATA[<ol><li><p>&#x5F00;&#x542F;post_asset_folder,&#x4F1A;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x540C;&#x540D;&#x6587;&#x4EF6;&#x5939;&#x3002;</p></li><li><p>&#x5B89;&#x88C5;&#x63D2;&#x4EF6;</p><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install  hexo-asset-image@<span class="hljs-number">0.0</span><span class="hljs-number">.2</span> --save</span><br></pre></td></tr></table></figure></li></ol><p>==&#x6CE8;&#x610F;&#x4E00;&#x5B9A;&#x8981;&#x662F; 0.02&#x7248;&#x672C;&#xFF0C;0.03&#x6709;bug==</p><ol start="2"><li>&#x5728;&#x6587;&#x7AE0;&#x4E2D;&#x5F15;&#x7528;&#x56FE;&#x7247;</li></ol><figure class="highlight markdown hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="hljs-string">图片名</span>](<span class="hljs-link">./文章同名文件夹/图片名.jpg</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p><img src="/2019/06/15/hexo&#x6DFB;&#x52A0;&#x56FE;&#x7247;&#x6CE8;&#x610F;&#x4E8B;&#x9879;/a.png" alt="titlePicture"></p><a id="more"></a><ol><li><p>&#x5F00;&#x542F;post_asset_folder,&#x4F1A;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x540C;&#x540D;&#x6587;&#x4EF6;&#x5939;&#x3002;</p></li><li><p>&#x5B89;&#x88C5;&#x63D2;&#x4EF6;</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install  hexo-asset-image@<span class="number">0.0</span><span class="number">.2</span> --save</span><br></pre></td></tr></table></figure></li></ol><p>==&#x6CE8;&#x610F;&#x4E00;&#x5B9A;&#x8981;&#x662F; 0.02&#x7248;&#x672C;&#xFF0C;0.03&#x6709;bug==</p><ol start="2"><li>&#x5728;&#x6587;&#x7AE0;&#x4E2D;&#x5F15;&#x7528;&#x56FE;&#x7247;</li></ol><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">图片名</span>](<span class="link">./文章同名文件夹/图片名.jpg</span>)</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&amp;#x5F00;&amp;#x542F;post_asset_folder,&amp;#x4F1A;&amp;#x81EA;&amp;#x52A8;&amp;#x751F;&amp;#x6210;&amp;#x540C;&amp;#x540D;&amp;#x6587;&amp;#x4EF6;&amp;#x5939;&amp;#x3002;&lt;/p&gt;
-&lt;
-      
+      &lt;p&gt;&lt;img src=&quot;/2019/06/15/hexo&amp;#x6DFB;&amp;#x52A0;&amp;#x56FE;&amp;#x7247;&amp;#x6CE8;&amp;#x610F;&amp;#x4E8B;&amp;#x9879;/a.png&quot; alt=&quot;titlePicture&quot;&gt;&lt;/p&gt;
     
     </summary>
     
