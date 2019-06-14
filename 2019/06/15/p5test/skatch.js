@@ -14,13 +14,15 @@ let current;
 let previous;
 
 function setup() {
-  createCanvas(720, 400);
+  createCanvas(displayWidth, displayHeight);
+  fullscreen(true);
   current = createVector(0,0);
   previous = createVector(0,0);
 };
 
 function draw() {
-  background(200);
+    colorMode(RGB,255,255,255,255);
+  background(245);
 
   // If it's time for a new point
   if (millis() > next && painting) {
@@ -121,9 +123,11 @@ class Particle {
   // Draw particle and connect it with a line
   // Draw a line to another
   display(other) {
-    stroke(0, this.lifespan);
+    colorMode(HSB,255,100,100,255);
+    stroke(this.lifespan,100,100*(this.lifespan/255), this.lifespan);
+    strokeWeight(5);
     fill(0, this.lifespan/2);
-    ellipse(this.position.x,this.position.y, 8, 8);
+    // ellipse(this.position.x,this.position.y, 8, 8);
     // If we need to draw a line
     if (other) {
       line(this.position.x, this.position.y, other.position.x, other.position.y);
