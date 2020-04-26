@@ -1,0 +1,28 @@
+body{
+    display: block;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#defaultCanvas0 {
+    display: inline;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 20px auto; 
+    border:1px rgb(0, 0, 0) solid;
+    /* padding: 0px 100px 100px 0px; */
+    /* overflow: hidden;*/
+}
+
+
+#defaultCanvas1 {
+    display: inline;
+    background-color: gray;
+    text-align: center;
+    margin: 0 auto; 
+    padding: 0px 100px 100px 0px;
+}
+
+
