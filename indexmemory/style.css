@@ -11,7 +11,7 @@ body{
     background-color: rgb(0, 0, 0);
     text-align: center;
     margin: 20px auto; 
-    border:1px rgb(0, 0, 0) solid;
+    border:1px rgb(123, 123, 123) solid;
     /* padding: 0px 100px 100px 0px; */
     /* overflow: hidden;*/
 }
