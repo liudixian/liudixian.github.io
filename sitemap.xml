@@ -2,170 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://liudixian.github.io/2019/03/17/Shader-Study-01/</loc>
+    <loc>http://liudixian.github.io/2020/05/18/%E6%8C%87%E9%92%88Index/</loc>
     
-    <lastmod>2019-06-16T14:37:11.717Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2019/06/15/p5test/</loc>
-    
-    <lastmod>2019-06-14T22:01:28.329Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/12/22/%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90/</loc>
-    
-    <lastmod>2019-06-14T21:01:12.864Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/02/landscape/</loc>
-    
-    <lastmod>2019-06-14T20:49:04.384Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/21/Mechine-learning/</loc>
-    
-    <lastmod>2019-06-14T20:38:10.431Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/17/East2018/</loc>
-    
-    <lastmod>2019-06-14T20:34:25.134Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2019/06/04/%E9%BD%90%E7%89%A9%E7%AD%89%E8%A7%82/</loc>
-    
-    <lastmod>2019-06-14T20:32:54.281Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/10/%E8%89%BA%E6%9C%AF%EF%BC%8C%E7%A7%91%E5%AD%A6%E5%92%8C%E6%8A%80%E6%9C%AF/</loc>
-    
-    <lastmod>2019-06-14T20:29:13.470Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/19/%E6%89%93%E5%BC%80%E9%BB%91%E5%8C%A3%E5%AD%90/</loc>
-    
-    <lastmod>2019-06-14T20:28:44.070Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/08/MarkHansen/</loc>
-    
-    <lastmod>2019-06-14T20:23:09.449Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/20/Vehicles-Vatentino/</loc>
-    
-    <lastmod>2019-06-14T20:22:13.066Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/21/%E5%9C%B0%E7%A3%81/</loc>
-    
-    <lastmod>2019-06-14T20:17:39.181Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/21/p5js-learning/</loc>
-    
-    <lastmod>2019-06-14T20:15:44.474Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/25/%E5%AA%92%E4%BD%93%E6%8A%80%E6%9C%AF%E8%AF%BE%E7%A8%8B/</loc>
-    
-    <lastmod>2019-06-14T20:10:55.527Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/25/processing%E5%85%A5%E9%97%A8%E5%B7%A5%E4%BD%9C%E5%9D%8A/</loc>
-    
-    <lastmod>2019-06-14T20:10:12.157Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2019/03/20/Github-tutorial/</loc>
-    
-    <lastmod>2019-06-14T20:08:18.545Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/05/10/Zielinski/</loc>
-    
-    <lastmod>2019-06-14T20:00:29.193Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2019/03/24/Form-follows-format/</loc>
-    
-    <lastmod>2019-06-14T19:52:12.135Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/26/11-26-Krac/</loc>
-    
-    <lastmod>2019-06-14T19:49:20.095Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2019/01/03/%E8%99%9A%E6%8B%9F%E5%8F%99%E4%BA%8B/</loc>
-    
-    <lastmod>2019-06-14T19:43:24.596Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2019/06/15/%E5%AA%92%E4%BD%93%E7%90%86%E8%AE%BA%E9%87%8D%E8%A6%81%E4%BA%BA%E7%89%A9%E5%B9%B4%E8%A1%A8/</loc>
-    
-    <lastmod>2019-06-14T19:41:33.714Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2019/06/15/hexo%E6%B7%BB%E5%8A%A0%E5%9B%BE%E7%89%87%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</loc>
-    
-    <lastmod>2019-06-14T18:12:03.340Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2019/03/13/%E6%B5%81%E5%9C%BA%E4%B8%8Eboid/</loc>
-    
-    <lastmod>2019-06-04T13:58:37.232Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/2018/11/15/%E8%99%9A%E6%9E%84%E7%9A%84%E7%94%9F%E6%80%81%E5%AD%A6/</loc>
-    
-    <lastmod>2019-06-04T13:14:43.040Z</lastmod>
+    <lastmod>2020-05-18T15:49:44.732Z</lastmod>
     
   </url>
   
@@ -177,14 +16,14 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/about/index.html</loc>
+    <loc>http://liudixian.github.io/tags/index.html</loc>
     
     <lastmod>2018-12-21T13:34:48.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/tags/index.html</loc>
+    <loc>http://liudixian.github.io/about/index.html</loc>
     
     <lastmod>2018-12-21T13:34:48.000Z</lastmod>
     
@@ -205,21 +44,14 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/2018/11/10/%E4%BA%A4%E6%B5%81%EF%BC%8C%E4%BA%92%E5%8A%A8%E5%92%8C%E7%B3%BB%E7%BB%9F/</loc>
-    
-    <lastmod>2018-11-22T16:56:21.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/cv/index.html</loc>
+    <loc>http://liudixian.github.io/listening-trashed/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/listening-trashed/index.html</loc>
+    <loc>http://liudixian.github.io/cv/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
@@ -233,14 +65,14 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/write/index.html</loc>
+    <loc>http://liudixian.github.io/work/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/work/index.html</loc>
+    <loc>http://liudixian.github.io/write/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
