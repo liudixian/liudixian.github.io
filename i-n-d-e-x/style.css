@@ -1,0 +1,38 @@
+a:hover{
+    scale: 1.1;
+}
+
+
+body{
+    background-color: rgb(14, 14, 14);
+}
+
+.content{
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+    margin: 200px auto;
+    color: rgb(138, 138, 138);
+}
+
+@media screen and (max-width: 600px) {
+    .content{
+        width: 100%;
+        height: auto;
+    }
+  }
+  
+
+.content img{
+    width: 100%;
+}
+
+.content img:hover{
+    background-color: rgb(223, 205, 172);
+}
+
+.content p{
+    text-align: center;
+    font-size: 12px;
+    color: rgb(82, 82, 82);
+}
