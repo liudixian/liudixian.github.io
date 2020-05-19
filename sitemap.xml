@@ -16,14 +16,14 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/tags/index.html</loc>
+    <loc>http://liudixian.github.io/about/index.html</loc>
     
     <lastmod>2018-12-21T13:34:48.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/about/index.html</loc>
+    <loc>http://liudixian.github.io/tags/index.html</loc>
     
     <lastmod>2018-12-21T13:34:48.000Z</lastmod>
     
@@ -44,21 +44,7 @@
   </url>
   
   <url>
-    <loc>http://liudixian.github.io/listening-trashed/index.html</loc>
-    
-    <lastmod>2018-11-07T17:04:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://liudixian.github.io/cv/index.html</loc>
-    
-    <lastmod>2018-11-07T17:04:26.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://liudixian.github.io/trashed/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
@@ -72,7 +58,21 @@
   </url>
   
   <url>
+    <loc>http://liudixian.github.io/trashed/index.html</loc>
+    
+    <lastmod>2018-11-07T17:04:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://liudixian.github.io/write/index.html</loc>
+    
+    <lastmod>2018-11-07T17:04:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://liudixian.github.io/listening-trashed/index.html</loc>
     
     <lastmod>2018-11-07T17:04:26.000Z</lastmod>
     
